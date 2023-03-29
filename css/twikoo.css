@@ -435,7 +435,8 @@
   height: 28px;
   text-align: center;
   -moz-appearance: textfield;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .tk-pagination .el-input .el-input__inner::-webkit-inner-spin-button,
@@ -616,7 +617,8 @@
   pointer-events: all;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.60);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transition: all 0.5s ease;
   visibility: hidden;
 }
@@ -817,7 +819,8 @@
 
 .twikoo .el-loading-mask {
   background-color: transparent;
-  backdrop-filter: opacity(20%);
+  -webkit-backdrop-filter: opacity(20%);
+          backdrop-filter: opacity(20%);
 }
 
 .twikoo .el-textarea .el-input__count {
@@ -843,11 +846,9 @@
   color: #606266;
   -webkit-appearance: none;
   text-align: center;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: 0;
   margin: 0;
-  -webkit-transition: .1s;
   transition: .1s;
   font-weight: 500;
   -moz-user-select: none;
@@ -1373,15 +1374,7 @@
   transition: border-color .2s cubic-bezier(.645, .045, .355, 1)
 }
 
-.el-textarea__inner::-webkit-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-textarea__inner:-ms-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-textarea__inner::-ms-input-placeholder {
+.el-textarea__inner::-moz-placeholder {
   color: #C0C4CC
 }
 
@@ -1414,15 +1407,7 @@
   cursor: not-allowed
 }
 
-.el-textarea.is-disabled .el-textarea__inner::-webkit-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-textarea.is-disabled .el-textarea__inner:-ms-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-textarea.is-disabled .el-textarea__inner::-ms-input-placeholder {
+.el-textarea.is-disabled .el-textarea__inner::-moz-placeholder {
   color: #C0C4CC
 }
 
@@ -1477,7 +1462,6 @@
   color: #C0C4CC;
   font-size: 14px;
   cursor: pointer;
-  -webkit-transition: color .2s cubic-bezier(.645, .045, .355, 1);
   transition: color .2s cubic-bezier(.645, .045, .355, 1)
 }
 
@@ -1487,11 +1471,7 @@
 
 .el-input .el-input__count {
   height: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   color: #909399;
   font-size: 12px
@@ -1537,15 +1517,7 @@
   display: none
 }
 
-.el-input__inner::-webkit-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-input__inner:-ms-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-input__inner::-ms-input-placeholder {
+.el-input__inner::-moz-placeholder {
   color: #C0C4CC
 }
 
@@ -1581,7 +1553,6 @@
   height: 100%;
   width: 25px;
   text-align: center;
-  -webkit-transition: all .3s;
   transition: all .3s;
   line-height: 40px
 }
@@ -1605,15 +1576,7 @@
   cursor: not-allowed
 }
 
-.el-input.is-disabled .el-input__inner::-webkit-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-input.is-disabled .el-input__inner:-ms-input-placeholder {
-  color: #C0C4CC
-}
-
-.el-input.is-disabled .el-input__inner::-ms-input-placeholder {
+.el-input.is-disabled .el-input__inner::-moz-placeholder {
   color: #C0C4CC
 }
 
@@ -1768,7 +1731,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: opacity .3s;
   transition: opacity .3s
 }
 
@@ -1802,12 +1764,10 @@
 .el-loading-spinner .circular {
   height: 42px;
   width: 42px;
-  -webkit-animation: loading-rotate 2s linear infinite;
   animation: loading-rotate 2s linear infinite
 }
 
 .el-loading-spinner .path {
-  -webkit-animation: loading-dash 1.5s ease-in-out infinite;
   animation: loading-dash 1.5s ease-in-out infinite;
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
@@ -1824,32 +1784,9 @@
   opacity: 0
 }
 
-@-webkit-keyframes loading-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg)
-  }
-}
-
 @keyframes loading-rotate {
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg)
-  }
-}
-
-@-webkit-keyframes loading-dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0
-  }
-  50% {
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: -40px
-  }
-  100% {
-    stroke-dasharray: 90, 150;
-    stroke-dashoffset: -120px
   }
 }
 
@@ -1879,7 +1816,6 @@
 .OwO {
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1918,7 +1854,6 @@
 .OwO .OwO-body .OwO-items {
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   display: none;
   padding: 10px;
@@ -1937,7 +1872,6 @@
   line-height: 14px;
   margin: 0 10px 12px 0;
   cursor: pointer;
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -1996,7 +1930,6 @@
 
 .OwO .OwO-body .OwO-bar .OwO-packages .OwO-package-active {
   background-color: rgba(144, 147, 153, 0.13);
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
