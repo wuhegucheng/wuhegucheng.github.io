@@ -1,539 +1,429 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
   <meta charset="utf-8">
   
-  <title>我的技术与生活——小站首页 | 今天也请继续加油</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="/imgs/shortcut-icon.ico" type="image/x-icon">
-
   
-    <link rel="stylesheet" href="/css/public.css" />
-    <link rel="stylesheet" href="/css/layout.css" />
-    <link rel="stylesheet" href="/css/iconfont.css" />
-    <link rel="stylesheet" href="/css/APlayer.min.css" />
-    <script src="/js/APlayer.min.js"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.pjax.min.js"></script>
+  <title>今天也请继续加油</title>
   
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script>
-    document.title = `我的技术与生活——小站首页`
-  </script>
+  <meta name="author" content="五河古城" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="今天也请继续加油">
+<meta property="og:url" content="http://wuhegucheng.github.io/index.html">
+<meta property="og:site_name" content="今天也请继续加油">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="五河古城">
+<meta name="twitter:card" content="summary">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<style>
-  .load {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(37, 35, 40);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 9999;
-  }
-  .load-circle {
-    width: 80px;
-    height: 80px;
-    border: 8px solid orange;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: rotate 1s linear infinite;
-    filter: drop-shadow(0 0 3px orange);
-  }
-  .load-circle-inner {
-    width: 40px;
-    height: 40px;
-    border: 8px solid orange;
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: rotate-reverse .5s linear infinite;
-  }
-  .load-text {
-    margin-top: 20px;
-    font-size: 24px;
-    color: orange;
-    display: flex;
-  }
-  .load-text span {
-    margin: 0 5px;
-    text-shadow: 5px 5px 5px orange;
-    animation: move 1s linear infinite;
-  }
-  .load-text span:nth-child(1) {
-    animation-delay: -0.6s;
-  }
-  .load-text span:nth-child(2) {
-    animation-delay: -0.5s;
-  }
-  .load-text span:nth-child(3) {
-    animation-delay: -0.4s;
-  }
-  .load-text span:nth-child(4) {
-    animation-delay: -0.3s;
-  }
-  .load-text span:nth-child(5) {
-    animation-delay: -0.2s;
-  }
-  .load-text span:nth-child(6) {
-    animation-delay: -0.1s;
-  }
-  @keyframes rotate {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(360deg); }
-  }
-  @keyframes rotate-reverse {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(-360deg); }
-  }
-  @keyframes move {
-    0% { transform: translateY(0%) rotate(0) scale(1); }
-    20% { transform: translateY(20%) rotate(10deg) scale(1.2); }
-    80% { transform: translateY(-10%) rotate(-20deg) scale(.8);}
-    100% { transform: translateY(0) rotate(0) scale(1); }
-  }
 
-  .progress {
-    position: fixed;
-    left: 0; top: 0;
-    width: 0;
-    height: 3px;
-    background-color: green;
-    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .1s;
-    z-index: 9999;
-  }
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">今天也请继续加油</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>今天也请继续加油</h2> <br />
+                        <span>“你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-  .to-up {
-    animation: toUp .5s 1;
-  }
-  .gray {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 9999;
-    display: none;
-    pointer-events: none;
-    background-color: #000;
-    mix-blend-mode: color;
-  }
-  @keyframes toUp {
-    from { transform: translateY(15px); opacity: 0; }
-    to { transform: translateY(0) ; opacity: 1; }
-  }
-</style>
-<body>
-  <div id="load" class="load">
-    <div class="load-circle">
-      <div class="load-circle-inner"></div>
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <!-- Breadcrumb for tag & category page -->
+
+
+
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" itemprop="mainEntityOfPage"><span itemprop="name headline">11111</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                下面这么做
+
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2023-03-29T06:33:40.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-03-29</a>
+                        </time>
+                        <a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2023/03/29/hello-world/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2023/03/29/hello-world/" itemprop="mainEntityOfPage"><span itemprop="name headline">Hello World</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2023-03-29T06:08:10.728Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2023-03-29</a>
+                        </time>
+                        <a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2023/03/29/hello-world/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+
+
+
+
+    <div class="hidden">
+        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
     </div>
-    <p class="load-text">
-      <span>L</span>
-      <span>O</span>
-      <span>A</span>
-      <span>D</span>
-      <span>I</span>
-      <span>N</span>
-      <span>G</span>
-    </p>
-  </div>
-  <div id="container" class="container w-100 vh-100" style="display: none;">
-    <header class="header">
-  <div class="header-wrapper">
-    <div class="header-left">
-      <div class="header-search">
-        <input id="search-input" type="text" class="header-search--input" placeholder="请输入要检索的文章标题" />
-        <span id="search-btn" class="header-search--icon"><i class="iconfont icon-sousuo"></i></span>
-      </div>
-      <div id="search-layer" class="header-search--layer hidden">
-        <p class="title">
-          <span>以下是搜索内容：</span>
-          <span id="close-layer-btn">关闭</span>
-        </p>
-        <ul>
-        </ul>
-      </div>
+
+
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+        <div class="sticky-area">
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
     </div>
-    <div class="header-right">
-      <ul class="header-menu">
-        <li>
-          <a href="/">
-            <i class="header-menu--icon iconfont icon-shouye"></i>
-            <span class="header-menu--span">首页</span>
-          </a>
-        </li>
-        <li>
-          <a href="/log">
-            <i class="header-menu--icon iconfont icon-rizhi"></i>
-            <span class="header-menu--span">日志</span>
-          </a>
-        </li>
-        <li>
-          <a href="/link">
-            <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
-            <span class="header-menu--span">友情链接</span>
-          </a>
-        </li>
-        <li>
-          <a href="/about">
-            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
-            <span class="header-menu--span">关于我</span>
-          </a>
-        </li>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                2
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/"><i class="fa  fa-book"></i> 11111</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/03/29/hello-world/"><i class="fa  fa-book"></i> Hello World</a>
+            
+          
+        
       </ul>
-    </div>
   </div>
-</header>
+  </aside>
 
-<script>
-  const ipt = document.querySelector('#search-input')
-  const btn = document.querySelector('#search-btn')
-  const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/03/29/hello-world/"},{"title":"11111","path":"2023/03/29/搭建自己的博客/"}]`)
-  ipt.addEventListener('keyup', e => {
-    if (e.key === 'Enter') {
-      handleSearch()
-    }
-  })
-  btn.addEventListener('click', () => {
-    handleSearch()
-  })
-
-  document.querySelector('#close-layer-btn').addEventListener('click', () => {
-    layer.classList.toggle('hidden')
-  })
-
-  function handleSearch() {
-    if (ipt.value.trim() === '') {
-      return
-    }
-    let html = ''
-    const targetPosts = posts.filter(post => post.title.includes(ipt.value))
-    targetPosts.forEach(post => {
-      html += `
-        <li>
-          <div>
-            <a href="/${post.path}">${post.title.replace(new RegExp(ipt.value), `<span>${ipt.value}</span>`)}</a>
-          </div>
-          <img src="${post.cover || '/imgs/default-cover.webp' }" />
-        </li>
-      `
-    })
-    if (html.trim () === '') {
-      html += '<p class="empty">没有搜索到内容</p>'
-    }
-    layer.querySelector('ul').innerHTML = html
-    layer.classList.remove('hidden')
-  }
-</script> 
-    <section id="main" class="main">
-      <div class="main-left-wrapper">
-<div class="main-left">
-  <div class="main-left--block">
-    <div class="main-left--info">
-      <img src="/imgs/avatar.jpg"" class="main-left--avatar" />
-      <div class="main-left--intro">
-        <p class="main-left--name">Cola.</p>
-        <div class="main-left--tags">
-          <span class="main-left--tag">中二</span>
-          <span class="main-left--tag">宅</span>
+            
+    </div>
+</section>
+        
         </div>
-      </div>
     </div>
-  
-    <div>
-      <div class="main-left--motto">
-        <p>“花有重开日，人无再少年”</p>
-        <p>“一个简单普通的男孩”</p>
-      </div>
-      <div class="main-left--github">
-        <span class="line"></span>
-        <a target="_blank" rel="noopener" href="https://github.com/Aizener"><i class="logo iconfont icon-github-fill"></i></a>
-        <span class="line"></span>
-      </div>
-      <div class="main-left--statics">
-        <a href="/categories">
-          <div>
-            <span>0</span>
-            <span>分类</span>
-          </div>
-        </a>
-        <a href="/tags">
-          <div>
-            <span>0</span>
-            <span>标签</span>
-          </div>
-        </a>
-        <a href="/archives">
-          <div>
-            <span>1 </span>
-            <span>归档</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="main-left--block">
-    <ul class="main-left--menu">
-      
-        <li>
-          <a href="/">
-            <span class="header-menu--span">小站首页</span>
-            <i class="header-menu--icon iconfont icon-shouye"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/log">
-            <span class="header-menu--span">个人日志</span>
-            <i class="header-menu--icon iconfont icon-rizhi"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/link">
-            <span class="header-menu--span">友情链接</span>
-            <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/about">
-            <span class="header-menu--span">关于自己</span>
-            <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/tools">
-            <span class="header-menu--span">我的工具</span>
-            <i class="header-menu--icon iconfont icon-gongju"></i>
-          </a>
-        </li>
-      
-    </ul>
-  </div>
-
-  <div class="main-left--block">
-    <div class="main-left--site">
-      <h5 class="main-left--title">
-        <span>站点信息</span>
-        <i class="iconfont icon-zhandian"></i>
-      </h5>
-      <p class="main-left--subtitle">
-        <span>文章数目：</span>
-        <span>2 篇</span>
-      </p>
-      <p class="main-left--subtitle">
-        <span>最近动态：</span>
-        <span>今天</span>
-      </p>
-      <p class="main-left--subtitle">
-        <span>上线时间：</span>
-        <span>407天</span>
-      </p>
-      <p class="main-left--subtitle">
-        <span>当前版本：</span>
-        <span>v1.0.2</span>
-      </p>
-    </div>
-  </div>
-</div></div>
-      <div id="main-container" class="main-container">
-
-<div class="index">
-  <div class="index-left">
-    
-      <div class="index-article">
-        <img class="index-article--cover" src="/imgs/default-cover.webp" alt="">
-        <div class="index-article--content">
-          <a href="/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">11111 </a>
-          <div>
-            
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-  </div>
-  <div class="index-center">
-    
-      <div class="index-article">
-        <img class="index-article--cover" src="/imgs/default-cover.webp" alt="">
-        <div class="index-article--content">
-          <a href="/2023/03/29/hello-world/">Hello World </a>
-          <div>
-            
-            
-          </div>
-          <div class="bg"></div>
-        </div>
-      </div>
-    
-  </div>
-  <div class="index-right">
-    <div class="index-right-wrapper">
-      
-      
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">2023年03月</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
 </div>
- </div>
-      <div class="main-right-wrapper"><div class="main-right">
-  <div class="main-right--board">
-    <div class="main-right--title">
-      <h5>公告栏</h5>
-      <i class="iconfont icon-gonggao"></i>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2023 今天也请继续加油 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by 五河古城.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
     </div>
-    <div class="main-right--content">
-      Hello~大噶好。唔系可乐爱宅着，欢迎你们来到我的博客小站，希望能在这里收获到有用的东西哦！ 
-    </div>
-  </div>
-
-  <div id="aplayer" class="main-right--music"></div>
-
-  <div class="operate-items">
-    <div class="operate-item backtop">
-      <i class="iconfont icon-huidaodingbu"></i>
-      <span>回到顶部</span>
-    </div>
-    
-    <div class="operate-item turn-comment hidden">
-      <i class="iconfont icon-pinglun"></i>
-      <span>查看评论</span>
-    </div>
-    
-  </div>
-
-  <div class="main-right--site">
-    <div class="main-right--power">
-      <p>Power By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>.</p>
-      <p>Theme：<a target="_blank" rel="noopener" href="https://github.com/Aizener/hexo-theme-cola">Cola.</a></p>
-    </div>
-    <p class="main-right--refer"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2022005384号-1</a> </p>
-  </div>
+</footer>
+</div>
 </div>
 
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
-  function setOperateItem () {
-    const reg = /\d{4}\/\d{2}\/\d{2}\/.+/
-    const path = location.pathname
-    const commentDom = document.querySelector('.turn-comment')
-    if (commentDom) {
-      if (reg.test(path) || path.match(/\/log\/.+/)) {
-        commentDom.classList.remove('hidden')
-      } else {
-        commentDom.classList.add('hidden')
-      }
+    if (!window.kr) {
+        window.kr = {};
     }
-  }
-
-  setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"卡布达","artist":"暂无","url":"/music/kabuda.mp3","cover":"https://img2.baidu.com/it/u=705831265,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"八连杀","artist":"苏三","url":"/music/八连杀.mp3","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0SWQx6YrNA8lElaG4OOKLkNkNzLO1PflKg&usqp=CAU"}]`)
-  const ap = new APlayer({
-    container: document.querySelector('#aplayer'),
-    audio: musics,
-  })
-
-  $(document).on('pjax:complete', function() {
-    setOperateItem()
-  })
-
-  document.querySelector('.backtop').addEventListener('click', () => {
-    document.documentElement.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  })
-  const dom = document.querySelector('.turn-comment')
-  dom && dom.addEventListener('click', () => {
-    const commentDom = document.querySelector('.comments-intro')
-    if (!commentDom) return
-    const top = commentDom.offsetTop, height = commentDom.offsetHeight
-    document.documentElement.scrollTo({
-      top: top - 2 * height,
-      behavior: 'smooth'
-    })
-  })
-</script></div>
-    </section>
-  </div>
-  <div id="progress" class="progress"></div>
-  <div id="gray" class="gray"></div>
-
-  <script>
-    function initScroll () {
-      document.addEventListener('scroll', () => {
-        const doc = document.documentElement
-        const scrollTop = doc.scrollTop
-        const pageHeight = doc.offsetHeight
-        const clientHeight = doc.clientHeight
-        const ratio = scrollTop / (pageHeight - clientHeight)
-        const progress = document.querySelector('#progress')
-        const avatarImg = document.querySelector('.main-left--avatar')
-        progress.style.width = (100 * ratio) + '%'
-        avatarImg.style.transform = `rotate(${360 * ratio}deg)`
-      })
-    }
-
-    const checkAndSetArticlePageLayout = () => {
-      if (/^\/\d{4}\/\d{2}\/\d{2}\/.*/.test(location.pathname)) {
-        $('.main-container, .main-right, .main-right-wrapper').addClass('is-article')
-      } else {
-        $('.main-container, .main-right, .main-right-wrapper').removeClass('is-article')
-      }
-    }
-
-    const gray = "none"
-    const setGrayStyle = () => {
-      if (gray === 'none') {
-        return
-      } else if (gray === 'index') {
-        location.pathname === '/' ? $('#gray').show() : $('#gray').hide()
-      } else if (gray === 'all') {
-        $('#gray').show()
-      }
-    }
-    setGrayStyle()
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
 
 
-    window.onload = function () {
-      checkAndSetArticlePageLayout()
-      setTimeout(() => {
-        $('#load').slideUp()
-        $('#container').slideToggle()
-        setTimeout(() => {
-          initScroll()
-        }, 500)
-      }, 500)
-    }
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    // 对所有链接跳转事件绑定pjax容器container
-    $(document).pjax('a[target!=_blank]', '#main-container', {fragment:'#main-container', timeout:8000})
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
 
-    $(document).on('pjax:start', function() {
-      // $('.main-container').hide()
-    })
-    $(document).on('pjax:complete', function() {
-      $('.main-container').addClass('to-up').on('animationend', function() {
-        $(this).removeClass('to-up')
-      })
-      setGrayStyle()
-      checkAndSetArticlePageLayout()
-    })
-    $(document).on('pjax:popstate', function() {
-      checkAndSetArticlePageLayout()
-      // $('.main-container').fadeIn()
-    })
-  </script>
-</body>
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
 </html>
