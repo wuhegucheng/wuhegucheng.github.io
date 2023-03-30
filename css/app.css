@@ -2262,16 +2262,16 @@ main >.inner {
   color: #191717;
 }
 .social .item.twitter::before {
-  background-color: #4A4AFF;
+  background-color: #2a22da;
 }
 .social .item.twitter i {
-  color: #4A4AFF;
+  color: #2a22da;
 }
 .social .item.zhihu::before {
-  background-color: #0080FF;
+  background-color: #270cfe;
 }
 .social .item.zhihu i {
-  color: #0080FF;
+  color: #270cfe;
 }
 .social .item.music::before {
   background-color: #e60026;
