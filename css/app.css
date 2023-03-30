@@ -2261,11 +2261,17 @@ main >.inner {
 .social .item.github i {
   color: #191717;
 }
-.social .item.google::before {
-  background-color: oogl;
+.social .item.twitter::before {
+  background-color: #4A4AFF;
 }
-.social .item.google i {
-  color: oogl;
+.social .item.twitter i {
+  color: #4A4AFF;
+}
+.social .item.zhihu::before {
+  background-color: #0080FF;
+}
+.social .item.zhihu i {
+  color: #0080FF;
 }
 .social .item.music::before {
   background-color: #e60026;
