@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>11111</title>
-    <url>/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>下面这么做</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/03/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo</span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting</span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub</span>.</p>
@@ -23,6 +17,51 @@
 <h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment</span></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>11111</title>
+    <url>/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>下面这么做</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/friends/index.html</url>
+    <content><![CDATA[<h1 id="本站信息"><a class="markdownIt-Anchor" href="#本站信息">#</a> 本站信息</h1>
+<ul>
+<li>
+<p>站名：五河古城的 Blog</p>
+</li>
+<li>
+<p>站长：五河古城</p>
+</li>
+<li>
+<p>地址：<a href="https://wuhegucheng.github.io/">https://wuhegucheng.github.io/</a></p>
+</li>
+<li>
+<p>标志：</p>
+<p><img data-src="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/headimg/love%20.jpg" alt="" height="200" width="200"></p>
+</li>
+<li>
+<p>简介： 五河古城 &amp; 编程笔记</p>
+</li>
+</ul>
+<h1 id="申请方法"><a class="markdownIt-Anchor" href="#申请方法">#</a> 申请方法</h1>
+<ul>
+<li>添加本站后，在本页留言，格式如下</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">site:</span> <span class="comment">#网站的名字</span></span><br><span class="line">  <span class="attr">owner:</span> <span class="comment">#您的名字</span></span><br><span class="line">  <span class="attr">url:</span> <span class="comment">#您的网址</span></span><br><span class="line">  <span class="attr">desc:</span> <span class="comment">#简短描述</span></span><br><span class="line">  <span class="attr">image:</span> <span class="comment">#一张图片</span></span><br><span class="line">  <span class="attr">color:</span> <span class="comment">#方块颜色</span></span><br><span class="line"><span class="string">```</span></span><br></pre></td></tr></table></figure>
+<h1 id="小伙伴们"><a class="markdownIt-Anchor" href="#小伙伴们">#</a> 小伙伴们</h1>
+<div class="links"><div class="item" title="贺景宸"><span class="exturl image" data-url="aHR0cHM6Ly9ibG9nLmppbmdjaGVuLmxvdmU=" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/headimg/bbtou.jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9ibG9nLmppbmdjaGVuLmxvdmU=">贺景宸</span>
+          <p class="desc">贺景宸 & 编程笔记</p>
+          </div></div><div class="item" title="王成杰" style="--block-color:#e9546b;"><span class="exturl image" data-url="aHR0cHM6Ly9yb2dlcnhzODAuZ2l0aHViLmlv" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/headimg/63375746.jpg"></span>
+          <div class="info">
+          <span class="exturl title" data-url="aHR0cHM6Ly9yb2dlcnhzODAuZ2l0aHViLmlv">王成杰</span>
+          <p class="desc">王成杰 & 编程笔记</p>
+          </div></div></div>
 ]]></content>
   </entry>
 </search>
