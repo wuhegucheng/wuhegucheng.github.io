@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://wuhegucheng.github.io</id>
+    <title>今天也请继续加油 • Posts by &#34;baz&#34; category</title>
+    <link href="http://wuhegucheng.github.io" />
+    <updated>2013-12-24T15:30:09.000Z</updated>
+    <category term="Hexo" />
+    <category term="教程" />
+    <category term="Foo" />
+    <category term="Bar" />
+    <category term="Baz" />
+    <entry>
+        <id>http://wuhegucheng.github.io/2013/12/24/categories/</id>
+        <title>Categories</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2013/12/24/categories/"/>
+        <content type="html">&lt;p&gt;This post contains 3 categories. Make sure your theme can display all of the categories.&lt;/p&gt;
+</content>
+        <updated>2013-12-24T15:30:09.000Z</updated>
+    </entry>
+</feed>

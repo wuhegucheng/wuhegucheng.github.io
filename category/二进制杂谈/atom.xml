@@ -6,6 +6,9 @@
     <updated>2020-08-13T13:45:48.000Z</updated>
     <category term="Hexo" />
     <category term="教程" />
+    <category term="Foo" />
+    <category term="Bar" />
+    <category term="Baz" />
     <entry>
         <id>http://wuhegucheng.github.io/2020/08/13/computer-science/note/theme-shoka-doc/special/</id>
         <title>Step.4 主题特殊功能</title>
