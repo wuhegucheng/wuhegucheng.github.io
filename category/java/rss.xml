@@ -7,15 +7,16 @@
         <language>zh-CN</language>
         <pubDate>Mon, 13 Apr 2020 19:12:45 +0800</pubDate>
         <lastBuildDate>Mon, 13 Apr 2020 19:12:45 +0800</lastBuildDate>
-        <category>Hexo</category>
-        <category>教程</category>
-        <category>Foo</category>
-        <category>Bar</category>
-        <category>Baz</category>
+        <category>markdown</category>
+        <category>虚拟机</category>
+        <category>rsync</category>
+        <category>NFS</category>
+        <category>ssh</category>
+        <category>http</category>
         <item>
-            <guid isPermalink="true">http://wuhegucheng.github.io/2020/04/13/computer-science/java/course-1/week-2/</guid>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2020/04/13/java/course-1/week-2/</guid>
             <title>第2周 判断</title>
-            <link>http://wuhegucheng.github.io/2020/04/13/computer-science/java/course-1/week-2/</link>
+            <link>http://wuhegucheng.github.io/2020/04/13/java/course-1/week-2/</link>
             <pubDate>Mon, 13 Apr 2020 19:12:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;:::note info&lt;br&gt;
  以下为个人学习笔记和习题整理&lt;br&gt;
@@ -190,9 +191,9 @@ grape&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://wuhegucheng.github.io/2020/04/12/computer-science/java/course-1/week-1/</guid>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2020/04/12/java/course-1/week-1/</guid>
             <title>第1周 计算</title>
-            <link>http://wuhegucheng.github.io/2020/04/12/computer-science/java/course-1/week-1/</link>
+            <link>http://wuhegucheng.github.io/2020/04/12/java/course-1/week-1/</link>
             <pubDate>Sun, 12 Apr 2020 20:46:25 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;:::note info&lt;br&gt;
  以下为个人学习笔记和习题整理&lt;br&gt;

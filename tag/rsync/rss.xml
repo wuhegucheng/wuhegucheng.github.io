@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>今天也请继续加油 • Posts by &#34;rsync&#34; tag</title>
+        <link>http://wuhegucheng.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
+        <category>markdown</category>
+        <category>虚拟机</category>
+        <category>rsync</category>
+        <category>NFS</category>
+        <category>ssh</category>
+        <category>http</category>
+        <item>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/02.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</guid>
+            <title>rsync数据备份</title>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/02.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</link>
+            <category>rsync</category>
+            <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;rsync数据备份&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#rsync数据备份&#34;&gt;#&lt;/a&gt; rsync 数据备份&lt;/h1&gt;
+&lt;h2 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;主机名&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;内网 IP&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;外网 IP&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;角色&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;web01&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;备份客户端&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;backup&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.41&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.41&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;备份服务端&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;rsync概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#rsync概述&#34;&gt;#&lt;/a&gt; rsync 概述&lt;/h2&gt;
+&lt;p&gt;rsync 是一款开源、快速、多功能、可实现&lt;strong&gt;全量及增量&lt;/strong&gt;的本地或&lt;strong&gt;远程数据同步&lt;/strong&gt;备份的优秀工具。rsync 软件适用于 Unix、linux、windows 等多种操作平台&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;为什么使用 rsync 不用 scp？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scp 是基于 ssh 协议的命令，不是一个服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scp 每次都基于全量拷贝，rsync 支持增量拷贝&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;备份类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#备份类型&#34;&gt;#&lt;/a&gt; 备份类型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;全量备份&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;将数据全部备份出来&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220513223426274.png&#34; alt=&#34;image-20220513223426274&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;增量备份&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基于上一次备份，新增部分的数据备份出来&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220513223539309.png&#34; alt=&#34;image-20220513223539309&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;差异备份&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于全量备份，新增部分的数据备份出来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;rsync应用场景&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#rsync应用场景&#34;&gt;#&lt;/a&gt; rsync 应用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;推：所有主机推送本地数据至 rsync 备份服务器，会导致数据同步缓慢（适合少量数据备份）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220513225122692.png&#34; alt=&#34;image-20220513225122692&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拉：rsync 备份服务端拉去所有主机上的数据，会导致备份服务器开销过大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/360%E6%88%AA%E5%9B%BE1814122193114116.png&#34; alt=&#34;360截图1814122193114116&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;大量服务器备份场景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220513225426835.png&#34; alt=&#34;image-20220513225426835&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;异地备份实现思路&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220513225858773.png&#34; alt=&#34;image-20220513225858773&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;rsync传输模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#rsync传输模式&#34;&gt;#&lt;/a&gt; rsync 传输模式&lt;/h2&gt;
+&lt;p&gt;&lt;font color=&#39;red&#39;&gt;&lt;strong&gt;注意：rsync 拷贝目录时，加 / 和不加 / 是有区别的&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;/etc/ ：将 etc 目录下的所有文件拷贝过去，不包括目录本身&lt;/p&gt;
+&lt;p&gt;/etc ：将 etc 目录本身和目录下的所有文件一并拷贝过去&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本地模式（cp）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Local: rsync [OPTION...] SRC... [DEST] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; [OPTION]... SOURCE DEST &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#语法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;rsync [选项] 源文件.. 目标路径&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;远程模式（scp）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Access via remote shell: &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	Pull: 拉 rsync [OPTION...] [USER@]HOST:SRC... [DEST] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	Push: 推 rsync [OPTION...] SRC... [USER@]HOST:DEST&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#语法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;拉：rsync [选项] [用户@]主机IP:文件路径 本机目录 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;推：rsync [选项] 本机文件 [用户@]主机IP:目录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;注意：如果不加 用户@ 默认以当前系统登录的用户为用户名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;守护进程模式（把 rsync 当成服务启动）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Access via rsync daemon: &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	Pull: rsync [OPTION...] [USER@]HOST::SRC... [DEST] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	Push: rsync [OPTION...] SRC... [USER@]HOST::DEST &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;拉：rsync [选项..] [用户名@]主机IP::配置文件中的模块名 本机目录 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;推：rsync [选项..] 本机文件 [用户名@]主机IP::配置文件中的模块名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;企业中为啥使用守护进程模式？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;远程模式和 scp 差不多，基于 ssh 协议&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;需要知道系统的用户名和密码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;守护进程不需要 ssh 协议，服务启动后，自带端口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;守护进程可以设置匿名用户，不需要使用系统用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;rsync选项&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#rsync选项&#34;&gt;#&lt;/a&gt; rsync 选项&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-a：归档模式传输, 等于-tropgDl &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-v：显示同步过程 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-z：压缩，提高传输效率 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;============================== &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-t：time 保持文件的时间信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-r：拷贝目录时，递归拷贝 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-o：owner 保持文件的属主信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-g：group 保持文件的属组信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-p：perm 保持文件的权限信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-D：device 保持设备文件的信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-l：&lt;span class=&#34;built_in&#34;&gt;link&lt;/span&gt; 保留软链接&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;==============================&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-P：显示进度 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-L：保留软链接指向的目标文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--exclude=PATTERN 指定排除不需要传输的文件模式 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--exclude-from=file 指定排除文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--bwlimit=1 限速传输 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--partial 断点续传 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--delete 决定数据是否要同步 &lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--password-file= 指定密码文件&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
