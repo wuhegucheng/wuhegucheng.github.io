@@ -7,13 +7,13 @@
     <category term="markdown" />
     <category term="虚拟机" />
     <category term="rsync" />
-    <category term="NFS" />
     <category term="ssh" />
     <category term="http" />
+    <category term="NFS" />
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/04.%20SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/</id>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/04.SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/</id>
         <title>ssh远程管理</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/04.%20SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/"/>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/04.SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/"/>
         <content type="html">&lt;h1 id=&#34;ssh远程管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ssh远程管理&#34;&gt;#&lt;/a&gt; ssh 远程管理&lt;/h1&gt;
 &lt;h2 id=&#34;远程连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#远程连接&#34;&gt;#&lt;/a&gt; 远程连接&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Linux：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	- ssh 端口：22 加密传输数据 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	- telnet 端口：23 明文传输数据 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Windows： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	- rdp 端口：3389 remote desktop protocol&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

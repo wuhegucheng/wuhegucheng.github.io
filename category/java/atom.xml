@@ -7,9 +7,9 @@
     <category term="markdown" />
     <category term="虚拟机" />
     <category term="rsync" />
-    <category term="NFS" />
     <category term="ssh" />
     <category term="http" />
+    <category term="NFS" />
     <entry>
         <id>http://wuhegucheng.github.io/2020/04/13/java/course-1/week-2/</id>
         <title>第2周 判断</title>

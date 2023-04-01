@@ -10,9 +10,9 @@
         <category>markdown</category>
         <category>虚拟机</category>
         <category>rsync</category>
-        <category>NFS</category>
         <category>ssh</category>
         <category>http</category>
+        <category>NFS</category>
         <item>
             <guid isPermalink="true">http://wuhegucheng.github.io/2020/04/13/java/course-1/week-2/</guid>
             <title>第2周 判断</title>

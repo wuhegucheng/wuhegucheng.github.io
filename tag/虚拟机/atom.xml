@@ -7,13 +7,13 @@
     <category term="markdown" />
     <category term="虚拟机" />
     <category term="rsync" />
-    <category term="NFS" />
     <category term="ssh" />
     <category term="http" />
+    <category term="NFS" />
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.%20CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
         <title>VMware虚拟机</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.%20CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
         <content type="html">&lt;h1 id=&#34;虚拟机的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的安装&#34;&gt;#&lt;/a&gt; 虚拟机的安装&lt;/h1&gt;
 &lt;h2 id=&#34;虚拟机典型推荐安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机典型推荐安装&#34;&gt;#&lt;/a&gt; 虚拟机典型推荐安装&lt;/h2&gt;
 &lt;h3 id=&#34;机选择典型推荐点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机选择典型推荐点击下一步&#34;&gt;#&lt;/a&gt; 机，选择典型推荐，点击下一步&lt;/h3&gt;

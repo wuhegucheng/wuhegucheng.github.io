@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>辛苦大佬帮我看看</title>
-    <url>/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h3 id="好了-大佬"><a class="markdownIt-Anchor" href="#好了-大佬">#</a> 好了， 大佬。</h3>
-<h3 id="搜索功能我终于搞出来了其他的评论功能我在钻研一下有问题再找您"><a class="markdownIt-Anchor" href="#搜索功能我终于搞出来了其他的评论功能我在钻研一下有问题再找您">#</a> 搜索功能，我终于搞出来了，其他的评论功能我在钻研一下，有问题再找您</h3>
-<h3 id="还有就是可以把我加到那个iconfont里面吗-非常感谢"><a class="markdownIt-Anchor" href="#还有就是可以把我加到那个iconfont里面吗-非常感谢">#</a> 还有就是，可以把我加到那个 iconfont 里面吗， 非常感谢！</h3>
-<p><img data-src="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/headimg/OIP.jpg" alt=""></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/03/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo</span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation</span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting</span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub</span>.</p>
@@ -27,6 +18,194 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment</span></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>辛苦大佬帮我看看</title>
+    <url>/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h3 id="好了-大佬"><a class="markdownIt-Anchor" href="#好了-大佬">#</a> 好了， 大佬。</h3>
+<h3 id="搜索功能我终于搞出来了其他的评论功能我在钻研一下有问题再找您"><a class="markdownIt-Anchor" href="#搜索功能我终于搞出来了其他的评论功能我在钻研一下有问题再找您">#</a> 搜索功能，我终于搞出来了，其他的评论功能我在钻研一下，有问题再找您</h3>
+<h3 id="还有就是可以把我加到那个iconfont里面吗-非常感谢"><a class="markdownIt-Anchor" href="#还有就是可以把我加到那个iconfont里面吗-非常感谢">#</a> 还有就是，可以把我加到那个 iconfont 里面吗， 非常感谢！</h3>
+<p><img data-src="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/headimg/OIP.jpg" alt=""></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>第2周 判断</title>
+    <url>/2020/04/13/java/course-1/week-2/</url>
+    <content><![CDATA[<p>:::note info<br>
+ 以下为个人学习笔记和习题整理<br>
+课程：零基础学 Java 语言 - 浙江大学 - 翁恺 @ 中国大学 MOOC<br>
+<span class="exturl" data-url="aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlL1pKVS0xMDAxNTQxMDAx">https://www.icourse163.org/course/ZJU-1001541001</span><br>
+:::</p>
+<h1 id="课堂笔记"><a class="markdownIt-Anchor" href="#课堂笔记">#</a> 课堂笔记</h1>
+<h2 id="关系运算"><a class="markdownIt-Anchor" href="#关系运算">#</a> 关系运算</h2>
+<ul>
+<li>六个关系运算符：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>相等</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不相等</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于或等于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于或等于</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>关系运算结果为  <code>true</code>  或  <code>false</code></li>
+<li>优先级
+<ul>
+<li>所有关系运算符的优先级比算术运算低，但比赋值运算高</li>
+<li>判断是否相等的 == 和！= 优先级比其他的低</li>
+<li>连续的关系运算是从左到右进行的</li>
+</ul>
+</li>
+<li>判断两个浮点数是否相等的方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Math.abs(f1-f2)&lt;<span class="number">0.0000001</span></span><br></pre></td></tr></table></figure>
+<ul class="task-list">
+<li>下列表达式中错误的有？</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> 5 &gt; 3 == 6 &gt; 4</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> 6 &gt; 5 &gt; 4</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> a == b == true</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" checked="true" disabled="true"><label for="cbx_3"> a == b == 6</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" checked="true" disabled="true"><label for="cbx_4"> a ==  b &gt; false</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_5" checked="true" disabled="true"><label for="cbx_5"> (a == b) &gt; false<br>
+ <code>true 和 false 不能比较大小</code> </label></li>
+</ul>
+<h2 id="判断语句-if-else"><a class="markdownIt-Anchor" href="#判断语句-if-else">#</a> 判断语句 if else</h2>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(x &lt; <span class="number">0</span>) </span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x == <span class="number">0</span>) </span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="多路分支-switch-case"><a class="markdownIt-Anchor" href="#多路分支-switch-case">#</a> 多路分支 switch case</h2>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (type)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        ...</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        System.out.println(...);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>计算 switch 后面的控制表达式以后，程序会跳到相应的 case，但是如果这个 case 内部没有 break，那么在执行完语句后，就会顺序执行到下面的 case，直到遇到 break 或者 switch 结束。</li>
+</ul>
+<h1 id="小测验"><a class="markdownIt-Anchor" href="#小测验">#</a> 小测验</h1>
+<ol>
+<li class="quiz essay">
+<p>写出以下代码段的执行结果：</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> num=<span class="number">34</span>, max=<span class="number">30</span>;</span><br><span class="line"><span class="keyword">if</span> ( num &gt;= max*<span class="number">2</span> )</span><br><span class="line">    System.out.println(<span class="string">&quot;zhang&quot;</span>);</span><br><span class="line">    System.out.println(<span class="string">&quot;huang&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;zhu&quot;</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>huang<br>
+zhu</p>
+</blockquote>
+</li>
+<li class="quiz essay">
+<p>写出以下代码段的执行结果：</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">limit</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">15</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">40</span>;</span><br><span class="line"><span class="keyword">if</span> ( limit &lt;= limit)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ( num1 == num2 )</span><br><span class="line">        System.out.println(<span class="string">&quot;lemon&quot;</span>);</span><br><span class="line">    System.out.println(<span class="string">&quot;lime&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;grape&quot;</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>lime<br>
+grape</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="编程题"><a class="markdownIt-Anchor" href="#编程题">#</a> 编程题</h1>
+<h2 id="题目1-时间换算5分"><a class="markdownIt-Anchor" href="#题目1-时间换算5分">#</a> 题目 1. 时间换算（5 分）</h2>
+<ul>
+<li>
+<p><strong>题目内容</strong><br>
+ UTC 是世界协调时，BJT 是北京时间，UTC 时间相当于 BJT 减去 8。现在，你的程序要读入一个整数，表示 BJT 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果分小于 10 分，需要保留十位上的 0。如 1124 表示 11 点 24 分，而 905 表示 9 点 5 分，36 表示 0 点 36 分，7 表示 0 点 7 分。</p>
+<p>有效的输入范围是 0 到 2359，即你的程序不可能从测试服务器读到 0 到 2359 以外的输入数据。</p>
+<p>你的程序要输出这个时间对应的 UTC 时间，输出的格式和输入的相同，即输出一个整数，表示 UTC 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果分小于 10 分，需要保留十位上的 0。</p>
+<p><em>提醒：要小心跨日的换算。</em></p>
+</li>
+<li>
+<p><strong>输入格式</strong><br>
+一个整数，表示 BJT 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果小时不是 0 而且分小于 10 分，需要保留十位上的 0。</p>
+</li>
+<li>
+<p><strong>输出格式</strong><br>
+一个整数，表示 UTC 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果小时不是 0 而且分小于 10 分，需要保留十位上的 0。</p>
+</li>
+<li>
+<p><strong>输入样例</strong><br>
+ 933</p>
+</li>
+<li>
+<p><strong>输出样例</strong><br>
+ 133</p>
+</li>
+</ul>
+<h3 id="解题代码"><a class="markdownIt-Anchor" href="#解题代码">#</a> 解题代码</h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		</span><br><span class="line">		<span class="type">int</span> <span class="variable">bjt</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">		</span><br><span class="line">		<span class="type">int</span> <span class="variable">utc</span> <span class="operator">=</span> bjt - <span class="number">800</span>;</span><br><span class="line">		<span class="keyword">if</span>(utc &lt; <span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			utc += <span class="number">2400</span>; <span class="comment">// 时为负数，则进行隔日计算</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(utc);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题目2-信号报告5分"><a class="markdownIt-Anchor" href="#题目2-信号报告5分">#</a> 题目 2. 信号报告（5 分）</h2>
+<ul>
+<li>
+<p><strong>题目内容</strong><br>
+无线电台的 RS 制信号报告是由三两个部分组成的：</p>
+<p>R (Readability) 信号可辨度即清晰度.</p>
+<p>S (Strength)    信号强度即大小.</p>
+<p>其中 R 位于报告第一位，共分 5 级，用 1—5 数字表示.</p>
+<blockquote>
+<p>1—Unreadable</p>
+<p>2—Barely readable, occasional words distinguishable</p>
+<p>3—Readable with considerable difficulty</p>
+<p>4—Readable with practically no difficulty</p>
+<p>5—Perfectly readable</p>
+</blockquote>
+<p>报告第二位是 S，共分九个级别，用 1—9 中的一位数字表示</p>
+<blockquote>
+<p>1—Faint signals, barely perceptible</p>
+<p>2—Very weak signals</p>
+<p>3—Weak signals</p>
+<p>4—Fair signals</p>
+<p>5—Fairly good signals</p>
+<p>6—Good signals</p>
+<p>7—Moderately strong signals</p>
+<p>8—Strong signals</p>
+<p>9—Extremely strong signals</p>
+</blockquote>
+<p>现在，你的程序要读入一个信号报告的数字，然后输出对应的含义。如读到 59，则输出：	<br>
+ <code>	Extremely strong signals, perfectly readable.	</code></p>
+</li>
+<li>
+<p><strong>输入格式</strong><br>
+一个整数，信号报告。整数的十位部分表示可辨度，个位部分表示强度。输入的整数范围是 [11,59] 内有效的数字，这个范围外的数字不可能出现在测试数据中。</p>
+</li>
+<li>
+<p><strong>输出格式</strong><br>
+一句话，表示这个信号报告的意义。按照题目中的文字，先输出表示强度的文字，跟上逗号和空格，然后是表示可辨度的文字，跟上句号。注意可辨度的句子的第一个字母是小写的。注意这里的标点符号都是英文的。</p>
+</li>
+<li>
+<p><strong>输入样例</strong><br>
+ 33</p>
+</li>
+<li>
+<p><strong>输出样例</strong><br>
+ Weak signals, readable with considerable difficulty.</p>
+</li>
+</ul>
+<h3 id="解题代码-2"><a class="markdownIt-Anchor" href="#解题代码-2">#</a> 解题代码</h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		</span><br><span class="line">		<span class="type">int</span> <span class="variable">rs</span> <span class="operator">=</span> in.nextInt();		</span><br><span class="line">		<span class="type">int</span> <span class="variable">readability</span> <span class="operator">=</span> rs / <span class="number">10</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">strength</span> <span class="operator">=</span> rs % <span class="number">10</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">switch</span>(strength)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Faint signals, barely perceptible&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Very weak signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Weak signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Fair signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Fairly good signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Good signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Moderately strong signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">8</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Strong signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">9</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Extremely strong signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">switch</span>(readability)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, unreadable.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, barely readable, occasional words distinguishable.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, readable with considerable difficulty.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, readable with practically no difficulty.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, perfectly readable.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+        <category>course-1</category>
+      </categories>
   </entry>
   <entry>
     <title>第1周 计算</title>
@@ -235,194 +414,13 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 获得输入的整数</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">fahrenheit</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">		<span class="comment">// 计算摄氏度</span></span><br><span class="line">		<span class="type">double</span> <span class="variable">centigrade</span> <span class="operator">=</span> (fahrenheit - <span class="number">32</span>) / (<span class="number">9</span> / <span class="number">5.0</span>);</span><br><span class="line">		<span class="comment">// 将浮点数转换为整数输出</span></span><br><span class="line">		System.out.println((<span class="type">int</span>)centigrade);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>计算机科学</category>
         <category>Java</category>
-        <category>零基础学Java语言-浙江大学-翁恺</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>第2周 判断</title>
-    <url>/2020/04/13/java/course-1/week-2/</url>
-    <content><![CDATA[<p>:::note info<br>
- 以下为个人学习笔记和习题整理<br>
-课程：零基础学 Java 语言 - 浙江大学 - 翁恺 @ 中国大学 MOOC<br>
-<span class="exturl" data-url="aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlL1pKVS0xMDAxNTQxMDAx">https://www.icourse163.org/course/ZJU-1001541001</span><br>
-:::</p>
-<h1 id="课堂笔记"><a class="markdownIt-Anchor" href="#课堂笔记">#</a> 课堂笔记</h1>
-<h2 id="关系运算"><a class="markdownIt-Anchor" href="#关系运算">#</a> 关系运算</h2>
-<ul>
-<li>六个关系运算符：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>意义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>==</td>
-<td>相等</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>不相等</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>大于或等于</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>小于或等于</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>关系运算结果为  <code>true</code>  或  <code>false</code></li>
-<li>优先级
-<ul>
-<li>所有关系运算符的优先级比算术运算低，但比赋值运算高</li>
-<li>判断是否相等的 == 和！= 优先级比其他的低</li>
-<li>连续的关系运算是从左到右进行的</li>
-</ul>
-</li>
-<li>判断两个浮点数是否相等的方法</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Math.abs(f1-f2)&lt;<span class="number">0.0000001</span></span><br></pre></td></tr></table></figure>
-<ul class="task-list">
-<li>下列表达式中错误的有？</li>
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> 5 &gt; 3 == 6 &gt; 4</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> 6 &gt; 5 &gt; 4</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> a == b == true</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_3" checked="true" disabled="true"><label for="cbx_3"> a == b == 6</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_4" checked="true" disabled="true"><label for="cbx_4"> a ==  b &gt; false</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_5" checked="true" disabled="true"><label for="cbx_5"> (a == b) &gt; false<br>
- <code>true 和 false 不能比较大小</code> </label></li>
-</ul>
-<h2 id="判断语句-if-else"><a class="markdownIt-Anchor" href="#判断语句-if-else">#</a> 判断语句 if else</h2>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(x &lt; <span class="number">0</span>) </span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x == <span class="number">0</span>) </span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="多路分支-switch-case"><a class="markdownIt-Anchor" href="#多路分支-switch-case">#</a> 多路分支 switch case</h2>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (type)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        ...</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        System.out.println(...);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>计算 switch 后面的控制表达式以后，程序会跳到相应的 case，但是如果这个 case 内部没有 break，那么在执行完语句后，就会顺序执行到下面的 case，直到遇到 break 或者 switch 结束。</li>
-</ul>
-<h1 id="小测验"><a class="markdownIt-Anchor" href="#小测验">#</a> 小测验</h1>
-<ol>
-<li class="quiz essay">
-<p>写出以下代码段的执行结果：</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> num=<span class="number">34</span>, max=<span class="number">30</span>;</span><br><span class="line"><span class="keyword">if</span> ( num &gt;= max*<span class="number">2</span> )</span><br><span class="line">    System.out.println(<span class="string">&quot;zhang&quot;</span>);</span><br><span class="line">    System.out.println(<span class="string">&quot;huang&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;zhu&quot;</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>huang<br>
-zhu</p>
-</blockquote>
-</li>
-<li class="quiz essay">
-<p>写出以下代码段的执行结果：</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">limit</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">15</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">40</span>;</span><br><span class="line"><span class="keyword">if</span> ( limit &lt;= limit)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ( num1 == num2 )</span><br><span class="line">        System.out.println(<span class="string">&quot;lemon&quot;</span>);</span><br><span class="line">    System.out.println(<span class="string">&quot;lime&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">System.out.println(<span class="string">&quot;grape&quot;</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>lime<br>
-grape</p>
-</blockquote>
-</li>
-</ol>
-<h1 id="编程题"><a class="markdownIt-Anchor" href="#编程题">#</a> 编程题</h1>
-<h2 id="题目1-时间换算5分"><a class="markdownIt-Anchor" href="#题目1-时间换算5分">#</a> 题目 1. 时间换算（5 分）</h2>
-<ul>
-<li>
-<p><strong>题目内容</strong><br>
- UTC 是世界协调时，BJT 是北京时间，UTC 时间相当于 BJT 减去 8。现在，你的程序要读入一个整数，表示 BJT 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果分小于 10 分，需要保留十位上的 0。如 1124 表示 11 点 24 分，而 905 表示 9 点 5 分，36 表示 0 点 36 分，7 表示 0 点 7 分。</p>
-<p>有效的输入范围是 0 到 2359，即你的程序不可能从测试服务器读到 0 到 2359 以外的输入数据。</p>
-<p>你的程序要输出这个时间对应的 UTC 时间，输出的格式和输入的相同，即输出一个整数，表示 UTC 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果分小于 10 分，需要保留十位上的 0。</p>
-<p><em>提醒：要小心跨日的换算。</em></p>
-</li>
-<li>
-<p><strong>输入格式</strong><br>
-一个整数，表示 BJT 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果小时不是 0 而且分小于 10 分，需要保留十位上的 0。</p>
-</li>
-<li>
-<p><strong>输出格式</strong><br>
-一个整数，表示 UTC 的时和分。整数的个位和十位表示分，百位和千位表示小时。如果小时小于 10，则没有千位部分；如果小时是 0，则没有百位部分；如果小时不是 0 而且分小于 10 分，需要保留十位上的 0。</p>
-</li>
-<li>
-<p><strong>输入样例</strong><br>
- 933</p>
-</li>
-<li>
-<p><strong>输出样例</strong><br>
- 133</p>
-</li>
-</ul>
-<h3 id="解题代码"><a class="markdownIt-Anchor" href="#解题代码">#</a> 解题代码</h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		</span><br><span class="line">		<span class="type">int</span> <span class="variable">bjt</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">		</span><br><span class="line">		<span class="type">int</span> <span class="variable">utc</span> <span class="operator">=</span> bjt - <span class="number">800</span>;</span><br><span class="line">		<span class="keyword">if</span>(utc &lt; <span class="number">0</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			utc += <span class="number">2400</span>; <span class="comment">// 时为负数，则进行隔日计算</span></span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(utc);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="题目2-信号报告5分"><a class="markdownIt-Anchor" href="#题目2-信号报告5分">#</a> 题目 2. 信号报告（5 分）</h2>
-<ul>
-<li>
-<p><strong>题目内容</strong><br>
-无线电台的 RS 制信号报告是由三两个部分组成的：</p>
-<p>R (Readability) 信号可辨度即清晰度.</p>
-<p>S (Strength)    信号强度即大小.</p>
-<p>其中 R 位于报告第一位，共分 5 级，用 1—5 数字表示.</p>
-<blockquote>
-<p>1—Unreadable</p>
-<p>2—Barely readable, occasional words distinguishable</p>
-<p>3—Readable with considerable difficulty</p>
-<p>4—Readable with practically no difficulty</p>
-<p>5—Perfectly readable</p>
-</blockquote>
-<p>报告第二位是 S，共分九个级别，用 1—9 中的一位数字表示</p>
-<blockquote>
-<p>1—Faint signals, barely perceptible</p>
-<p>2—Very weak signals</p>
-<p>3—Weak signals</p>
-<p>4—Fair signals</p>
-<p>5—Fairly good signals</p>
-<p>6—Good signals</p>
-<p>7—Moderately strong signals</p>
-<p>8—Strong signals</p>
-<p>9—Extremely strong signals</p>
-</blockquote>
-<p>现在，你的程序要读入一个信号报告的数字，然后输出对应的含义。如读到 59，则输出：	<br>
- <code>	Extremely strong signals, perfectly readable.	</code></p>
-</li>
-<li>
-<p><strong>输入格式</strong><br>
-一个整数，信号报告。整数的十位部分表示可辨度，个位部分表示强度。输入的整数范围是 [11,59] 内有效的数字，这个范围外的数字不可能出现在测试数据中。</p>
-</li>
-<li>
-<p><strong>输出格式</strong><br>
-一句话，表示这个信号报告的意义。按照题目中的文字，先输出表示强度的文字，跟上逗号和空格，然后是表示可辨度的文字，跟上句号。注意可辨度的句子的第一个字母是小写的。注意这里的标点符号都是英文的。</p>
-</li>
-<li>
-<p><strong>输入样例</strong><br>
- 33</p>
-</li>
-<li>
-<p><strong>输出样例</strong><br>
- Weak signals, readable with considerable difficulty.</p>
-</li>
-</ul>
-<h3 id="解题代码-2"><a class="markdownIt-Anchor" href="#解题代码-2">#</a> 解题代码</h3>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		</span><br><span class="line">		<span class="type">int</span> <span class="variable">rs</span> <span class="operator">=</span> in.nextInt();		</span><br><span class="line">		<span class="type">int</span> <span class="variable">readability</span> <span class="operator">=</span> rs / <span class="number">10</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">strength</span> <span class="operator">=</span> rs % <span class="number">10</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">switch</span>(strength)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Faint signals, barely perceptible&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Very weak signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Weak signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Fair signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Fairly good signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Good signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Moderately strong signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">8</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Strong signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">9</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;Extremely strong signals&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">switch</span>(readability)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, unreadable.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, barely readable, occasional words distinguishable.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, readable with considerable difficulty.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, readable with practically no difficulty.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">				System.out.print(<span class="string">&quot;, perfectly readable.&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机科学</category>
-        <category>Java</category>
-        <category>零基础学Java语言-浙江大学-翁恺</category>
+        <category>course-1</category>
       </categories>
   </entry>
   <entry>
     <title>Markdown 语法</title>
-    <url>/2023/04/01/linux/base/01.%20Markdown/Markdown/</url>
+    <url>/2023/04/01/linux/base/01.Markdown/Markdown/</url>
     <content><![CDATA[<h1 id="markdown语法"><a class="markdownIt-Anchor" href="#markdown语法">#</a> markdown 语法</h1>
 <h2 id="标题"><a class="markdownIt-Anchor" href="#标题">#</a> 标题</h2>
 <h3 id="一级标题"><a class="markdownIt-Anchor" href="#一级标题">#</a> 一级标题</h3>
@@ -526,13 +524,18 @@ grape</p>
 <li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> 打豆豆</label></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>base</category>
+        <category>01.Markerdown</category>
+      </categories>
       <tags>
         <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
     <title>VMware虚拟机</title>
-    <url>/2023/04/01/linux/base/02.%20CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    <url>/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
     <content><![CDATA[<h1 id="虚拟机的安装"><a class="markdownIt-Anchor" href="#虚拟机的安装">#</a> 虚拟机的安装</h1>
 <h2 id="虚拟机典型推荐安装"><a class="markdownIt-Anchor" href="#虚拟机典型推荐安装">#</a> 虚拟机典型推荐安装</h2>
 <h3 id="机选择典型推荐点击下一步"><a class="markdownIt-Anchor" href="#机选择典型推荐点击下一步">#</a> 机，选择典型推荐，点击下一步</h3>
@@ -570,13 +573,18 @@ grape</p>
 <h3 id="桥接模式"><a class="markdownIt-Anchor" href="#桥接模式">#</a> 桥接模式</h3>
 <p>将物理机网络和虚拟机额网络做一个搭桥</p>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>base</category>
+        <category>02.CentOS系统安装</category>
+      </categories>
       <tags>
         <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/01.%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/01.%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D/</url>
+    <title>111</title>
+    <url>/2023/04/01/linux/lnmp%20build/01.%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/01.%20%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h1 id="架构介绍"><a class="markdownIt-Anchor" href="#架构介绍">#</a> 架构介绍</h1>
 <h2 id="架构相关名词"><a class="markdownIt-Anchor" href="#架构相关名词">#</a> 架构相关名词</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">项目：独立的一个网站，或者独立的一个app应用 </span><br><span class="line">架构：用来维护或者运行一个项目的一组服务器 </span><br><span class="line">集群：为解决某个特定问题将多台计算机组合起来形成的单个系统（避免单点故障）</span><br><span class="line">高可用：当一台服务器不可用，另一台服务器自动接管，保证业务不down机 </span><br><span class="line">负载均衡：将用户的请求，分摊到多个操作单元上执行,为了解决服务器压力不均衡的问题</span><br></pre></td></tr></table></figure>
@@ -648,10 +656,15 @@ grape</p>
 </tbody>
 </table>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>lnmp架构</category>
+        <category>01.环境准备</category>
+      </categories>
   </entry>
   <entry>
     <title>rsync数据备份</title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/02.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</url>
+    <url>/2023/04/01/linux/lnmp%20build/02.rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</url>
     <content><![CDATA[<h1 id="rsync数据备份"><a class="markdownIt-Anchor" href="#rsync数据备份">#</a> rsync 数据备份</h1>
 <h2 id="环境准备"><a class="markdownIt-Anchor" href="#环境准备">#</a> 环境准备</h2>
 <table>
@@ -771,133 +784,18 @@ grape</p>
 <h2 id="rsync选项"><a class="markdownIt-Anchor" href="#rsync选项">#</a> rsync 选项</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-a：归档模式传输, 等于-tropgDl </span><br><span class="line">-v：显示同步过程 </span><br><span class="line">-z：压缩，提高传输效率 </span><br><span class="line">============================== </span><br><span class="line">-t：time 保持文件的时间信息 </span><br><span class="line">-r：拷贝目录时，递归拷贝 </span><br><span class="line">-o：owner 保持文件的属主信息 </span><br><span class="line">-g：group 保持文件的属组信息 </span><br><span class="line">-p：perm 保持文件的权限信息 </span><br><span class="line">-D：device 保持设备文件的信息 </span><br><span class="line">-l：<span class="built_in">link</span> 保留软链接</span><br><span class="line">==============================</span><br><span class="line">-P：显示进度 </span><br><span class="line">-L：保留软链接指向的目标文件 </span><br><span class="line">--exclude=PATTERN 指定排除不需要传输的文件模式 </span><br><span class="line">--exclude-from=file 指定排除文件 </span><br><span class="line">--bwlimit=1 限速传输 </span><br><span class="line">--partial 断点续传 </span><br><span class="line">--delete 决定数据是否要同步 <span class="built_in">rm</span> </span><br><span class="line">--password-file= 指定密码文件</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>lnmp架构</category>
+        <category>02.rsync数据备份</category>
+      </categories>
       <tags>
         <tag>rsync</tag>
       </tags>
   </entry>
   <entry>
-    <title>NFS共享存储</title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/03.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</url>
-    <content><![CDATA[<h1 id="nfs共享存储"><a class="markdownIt-Anchor" href="#nfs共享存储">#</a> NFS 共享存储</h1>
-<h2 id="环境准备"><a class="markdownIt-Anchor" href="#环境准备">#</a> 环境准备</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">主机名</th>
-<th style="text-align:center">WanIP</th>
-<th style="text-align:center">LanIP</th>
-<th style="text-align:center">角色</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">web01</td>
-<td style="text-align:center">10.0.0.7</td>
-<td style="text-align:center">172.16.1.7</td>
-<td style="text-align:center">网站服务（nfs 客户端）</td>
-</tr>
-<tr>
-<td style="text-align:center">web02</td>
-<td style="text-align:center">10.0.0.8</td>
-<td style="text-align:center">172.16.1.8</td>
-<td style="text-align:center">网站服务（nfs 客户端）</td>
-</tr>
-<tr>
-<td style="text-align:center">nfs</td>
-<td style="text-align:center">10.0.0.31</td>
-<td style="text-align:center">172.16.1.31</td>
-<td style="text-align:center">共享存储（nfs 服务端）</td>
-</tr>
-</tbody>
-</table>
-<h2 id="nfs概述"><a class="markdownIt-Anchor" href="#nfs概述">#</a> NFS 概述</h2>
-<p><code>NFS（Network File System）</code> 通过网络来做文件存储</p>
-<p><code>NFS</code>  用于企业集群架构中 *,* 如果是大型网站 *,* 会用到更复杂的分布式文件系统 <code>FastDFS</code> , <code>glusterfs</code> , <code>HDFS</code></p>
-<blockquote>
-<p><strong>为什么使用共享存储？</strong></p>
-<ul>
-<li>
-<p>实现多台服务器之间数据共享</p>
-</li>
-<li>
-<p>实现多台服务器之间数据一致</p>
-</li>
-</ul>
-</blockquote>
-<h2 id="nfs工作原理"><a class="markdownIt-Anchor" href="#nfs工作原理">#</a> NFS 工作原理</h2>
-<p><img data-src="https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220518160108133.png" alt="image-20220518160108133"></p>
-<p>1. 用户进程访问 NFS 客户端，使用不同的函数对数据进行处理</p>
-<p>2.NFS 客户端通过 TCP/IP 的方式传递给 NFS 服务端</p>
-<p>3.NFS 服务端接收到请求后，会先调用 portmap 进程进行端口映射</p>
-<p>4.nfsd 进程用于判断 NFS 客户端是否拥有权限连接 NFS 服务端</p>
-<p>5.Rpc.mount 进程判断客户端是否有对应的权限进行验证</p>
-<p>6.idmap 进程实现用户映射和压缩</p>
-<p>7. 最后 NFS 服务端会将对应请求的函数转换为本地能识别的命令，传递至内核，由内核驱动硬件</p>
-<p><font color='red'><strong>注意: rpc 是一个远程过程调用，那么使用 nfs 必须有 rpc 服务</strong></font></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装apache、php</span></span><br><span class="line">yum install -y httpd php</span><br><span class="line"></span><br><span class="line"><span class="comment">#httpd站点目录</span></span><br><span class="line">/var/www/html</span><br><span class="line"></span><br><span class="line"><span class="comment">#启动服务</span></span><br><span class="line">systemctl start httpd</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改属主、属组</span></span><br><span class="line"><span class="built_in">chown</span> -R apache.apache /var/www/html/</span><br></pre></td></tr></table></figure>
-<h2 id="安装部署nfs服务端"><a class="markdownIt-Anchor" href="#安装部署nfs服务端">#</a> 安装部署 NFS 服务端</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#C5 C6安装nfs服务 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># yum install -y nfs rpcbind</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#C7安装nfs服务 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># yum install -y nfs-utils</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#配置NFS服务端 NFS配置文件的位置 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># ll /etc/exports </span></span><br><span class="line">-rw-r--r--. 1 root root 0 Jun 7 2013 /etc/exports</span><br><span class="line">[root@nfs ~]<span class="comment"># vim /etc/exports </span></span><br><span class="line"><span class="comment">#共享目录、允许访问NFS服务端的网段 (可读可写,同步,任何用户都映射成nfs的匿名用户) </span></span><br><span class="line">/data 172.16.1.0/24(rw,<span class="built_in">sync</span>,all_squash)</span><br><span class="line"></span><br><span class="line"><span class="comment">#创建共享目录 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># mkdir /data</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#修改共享目录的属主和属组为nfs的匿名用户 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># chown nfsnobody:nfsnobody /data</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#启动服务 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># systemctl start nfs</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#加入开机自启 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># systemctl enable nfs</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#检查进程 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># ps -ef|grep [n]fs</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#检测配置文件是否生效 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># cat /var/lib/nfs/etab</span></span><br><span class="line">/data	172.16.1.0/24(rw,<span class="built_in">sync</span>,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid=65534,anongid=65534,sec=sys,rw,secure,root_squash,all_squash)</span><br></pre></td></tr></table></figure>
-<h2 id="nfs配置详解"><a class="markdownIt-Anchor" href="#nfs配置详解">#</a> NFS 配置详解</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">nfs 共享参数</th>
-<th style="text-align:center">参数作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">rw*</td>
-<td style="text-align:center">客户端针对服务端的共享目录有可读，可写权限</td>
-</tr>
-<tr>
-<td style="text-align:center">ro</td>
-<td style="text-align:center">客户端针对服务端的共享目录只读权限</td>
-</tr>
-<tr>
-<td style="text-align:center">root_squash</td>
-<td style="text-align:center">客户端必须是以 root 身份写入共享目录文件时，到服务端才能以 nfs 的系统用户写入（不常用）</td>
-</tr>
-<tr>
-<td style="text-align:center">no_root_squash</td>
-<td style="text-align:center">客户端以 root 身份连接服务端，也会以 nfs 服务器的 root 用户来操作共享目录（不常用）</td>
-</tr>
-<tr>
-<td style="text-align:center">all_squash*</td>
-<td style="text-align:center">无论 NFS 客户端用什么用户访问共享目录，到服务端都是 nfs 的系统用户权限（常用）</td>
-</tr>
-<tr>
-<td style="text-align:center">no_all_squash</td>
-<td style="text-align:center">无论 NFS 客户端使用什么账户访问，都不会变成 nfs 系统用户的身份（不常用）</td>
-</tr>
-<tr>
-<td style="text-align:center">sync*</td>
-<td style="text-align:center">同时将数据写入到内存与硬盘中，保证不丢失数据</td>
-</tr>
-<tr>
-<td style="text-align:center">async</td>
-<td style="text-align:center">优先将数据保存到内存，然后再写入硬盘；这样效率更高，但可能会丢失数据</td>
-</tr>
-<tr>
-<td style="text-align:center">anonuid*</td>
-<td style="text-align:center">配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统</td>
-</tr>
-<tr>
-<td style="text-align:center">anongid*</td>
-<td style="text-align:center">配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统</td>
-</tr>
-</tbody>
-</table>
-<h2 id="客户端操作"><a class="markdownIt-Anchor" href="#客户端操作">#</a> 客户端操作</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1.安装nfs </span></span><br><span class="line">[root@web01 ~]<span class="comment"># yum install -y nfs-utils </span></span><br><span class="line">[root@web02 ~]<span class="comment"># yum install -y nfs-utils </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#2.查看哪些目录可以挂载 </span></span><br><span class="line">[root@web01 ~]<span class="comment"># showmount -e 172.16.1.31 </span></span><br><span class="line">[root@web02 ~]<span class="comment"># showmount -e 172.16.1.31 </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#3.挂载共享目录 </span></span><br><span class="line">[root@web01 ~]<span class="comment"># mount -t nfs 172.16.1.31:/data /opt </span></span><br><span class="line">[root@web02 ~]<span class="comment"># mount -t nfs 172.16.1.31:/data /opt</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看nfs配置文件是否生效</span></span><br><span class="line"><span class="built_in">cat</span> /var/lib/nfs/etab</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>NFS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ssh远程管理</title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/04.%20SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/</url>
+    <url>/2023/04/01/linux/lnmp%20build/04.SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<h1 id="ssh远程管理"><a class="markdownIt-Anchor" href="#ssh远程管理">#</a> ssh 远程管理</h1>
 <h2 id="远程连接"><a class="markdownIt-Anchor" href="#远程连接">#</a> 远程连接</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Linux：</span><br><span class="line">	- ssh 端口：22 加密传输数据 </span><br><span class="line">	- telnet 端口：23 明文传输数据 </span><br><span class="line">Windows： </span><br><span class="line">	- rdp 端口：3389 remote desktop protocol</span><br></pre></td></tr></table></figure>
@@ -959,13 +857,18 @@ grape</p>
 <h2 id="免交互推送公钥"><a class="markdownIt-Anchor" href="#免交互推送公钥">#</a> 免交互推送公钥</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#不循环的写法</span></span><br><span class="line"><span class="comment">#!/bin/bash </span></span><br><span class="line"><span class="built_in">ls</span> -l ~/.ssh/id_rsa &amp;&gt;/dev/null || ssh-keygen -t rsa -P <span class="string">&#x27;&#x27;</span> -f ~/.ssh/id_rsa &amp;&gt;/dev/null ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.1.31 </span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.1.41 </span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.1.5 </span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.1.7 </span><br><span class="line">ssh-copy-id -i ~/.ssh/id_rsa.pub root@172.16.1.8</span><br><span class="line"></span><br><span class="line"><span class="comment">#循环的写法</span></span><br><span class="line"><span class="comment">#!/bin/bash </span></span><br><span class="line"><span class="built_in">ls</span> -l ~/.ssh/id_rsa &amp;&gt;/dev/null || ssh-keygen -t rsa -P <span class="string">&#x27;&#x27;</span> -f ~/.ssh/id_rsa &amp;&gt;/dev/null</span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> `<span class="built_in">cat</span> /root/1.txt`;<span class="keyword">do</span> </span><br><span class="line">	ssh-copy-id -i ~/.ssh/id_rsa.pub root@<span class="variable">$n</span> </span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#解决密码交互问题</span></span><br><span class="line">1）使用expect解决 </span><br><span class="line">[root@m01 ~]<span class="comment"># yum install -y expect</span></span><br><span class="line"><span class="comment">#!/usr/bin/expect </span></span><br><span class="line"><span class="built_in">set</span> ip 172.16.1.31 </span><br><span class="line"><span class="built_in">set</span> pass 1 </span><br><span class="line"><span class="built_in">set</span> <span class="built_in">timeout</span> 30 </span><br><span class="line"></span><br><span class="line">spawn ssh-keygen</span><br><span class="line">expect &#123;</span><br><span class="line">	<span class="string">&quot;id_rsa):&quot;</span> &#123;send <span class="string">&quot;\r&quot;</span>; exp_continue&#125; </span><br><span class="line">	<span class="string">&quot;passphrase):&quot;</span> &#123;send <span class="string">&quot;\r&quot;</span>; exp_continue&#125; </span><br><span class="line">	<span class="string">&quot;again:&quot;</span> &#123;send <span class="string">&quot;\r&quot;</span>&#125; </span><br><span class="line">&#125;</span><br><span class="line">expect eof</span><br><span class="line"></span><br><span class="line">spawn ssh-copy-id -i /root/.ssh/id_rsa.pub root@<span class="variable">$ip</span></span><br><span class="line">expect &#123;</span><br><span class="line">	<span class="string">&quot;(yes/no)&quot;</span> &#123;send <span class="string">&quot;yes\r&quot;</span>; exp_continue&#125; </span><br><span class="line">	<span class="string">&quot;password:&quot;</span> &#123;send <span class="string">&quot;<span class="variable">$pass</span>\r&quot;</span>&#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#expect &quot;root@*&quot; &#123;send &quot;df -h\r&quot;&#125; </span></span><br><span class="line"><span class="comment">#expect &quot;root@*&quot; &#123;send &quot;exit\r&quot;&#125;</span></span><br><span class="line">expect eof</span><br><span class="line"></span><br><span class="line">2）使用sshpass解决</span><br><span class="line">[root@m01 ~]<span class="comment"># yum install -y sshpass</span></span><br><span class="line">-p：指定密码</span><br><span class="line">-f：从文件中取密码</span><br><span class="line">-e：从环境变量中取密码</span><br><span class="line">-P：设置密码提示</span><br><span class="line"><span class="comment">#ssh不需要输入yes的选项</span></span><br><span class="line">[root@m01 ~]<span class="comment"># ssh -o &#x27;StrictHostKeyChecking no&#x27; root@172.16.1.7 </span></span><br><span class="line">[root@m01 ~]<span class="comment"># sshpass -p 1 ssh-copy-id -o &#x27;StrictHostKeyChecking no&#x27; -i ~/.ssh/id_rsa.pub root@172.16.1.8</span></span><br><span class="line">[root@m01 ~]<span class="comment"># cat send_public_key.sh</span></span><br><span class="line"><span class="comment">#!/bin/bash </span></span><br><span class="line"><span class="built_in">ls</span> -l ~/.ssh/id_rsa &amp;&gt;/dev/null || ssh-keygen -t rsa -P <span class="string">&#x27;&#x27;</span> -f ~/.ssh/id_rsa &amp;&gt;/dev/null</span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> `<span class="built_in">cat</span> /root/1.txt`;<span class="keyword">do</span> </span><br><span class="line">	shpass -p 1 ssh-copy-id -o <span class="string">&#x27;StrictHostKeyChecking no&#x27;</span> -i ~/.ssh/id_rsa.pub root@<span class="variable">$ip</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">[root@m01 ~]<span class="comment"># cat /root/1.txt</span></span><br><span class="line">172.16.1.31 </span><br><span class="line">172.16.1.41</span><br><span class="line">172.16.1.5 </span><br><span class="line">172.16.1.7 </span><br><span class="line">172.16.1.8</span><br><span class="line"></span><br><span class="line"><span class="comment">#每台机器密码不一致的情况</span></span><br><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="built_in">ls</span> -l ~/.ssh/id_rsa &amp;&gt;/dev/null || ssh-keygen -t rsa -P <span class="string">&#x27;&#x27;</span> -f ~/.ssh/id_rsa &amp;&gt;/dev/null</span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> `<span class="built_in">cat</span> /root/1.txt`;<span class="keyword">do</span> </span><br><span class="line">	pass=`<span class="built_in">echo</span> <span class="variable">$n</span>|awk -F <span class="string">&#x27;:&#x27;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>` </span><br><span class="line">	ip=`<span class="built_in">echo</span> <span class="variable">$n</span>|awk -F <span class="string">&#x27;:&#x27;</span> <span class="string">&#x27;&#123;print $1&#125;&#x27;</span>` </span><br><span class="line">	sshpass -p <span class="variable">$pass</span> ssh-copy-id -o <span class="string">&#x27;StrictHostKeyChecking no&#x27;</span> -i ~/.ssh/id_rsa.pub root@<span class="variable">$ip</span> </span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">[root@m01 ~]<span class="comment"># cat /root/1.txt</span></span><br><span class="line">172.16.1.31:1 </span><br><span class="line">172.16.1.41:2 </span><br><span class="line">172.16.1.5:3 </span><br><span class="line">172.16.1.7:4 </span><br><span class="line">172.16.1.8:111</span><br><span class="line"></span><br><span class="line"><span class="comment">#优化后不使用判断的脚本</span></span><br><span class="line"><span class="comment">#!/bin/bash </span></span><br><span class="line">. /etc/init.d/functions</span><br><span class="line"><span class="built_in">ls</span> -l ~/.ssh/id_rsa &amp;&gt;/dev/null || ssh-keygen -t rsa -P <span class="string">&#x27;&#x27;</span> -f ~/.ssh/id_rsa &amp;&gt;/dev/null</span><br><span class="line"><span class="keyword">for</span> n <span class="keyword">in</span> `<span class="built_in">cat</span> /root/1.txt`;<span class="keyword">do</span></span><br><span class="line">	pass=`<span class="built_in">echo</span> <span class="variable">$n</span>|awk -F <span class="string">&#x27;:&#x27;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>`</span><br><span class="line">	ip=`<span class="built_in">echo</span> <span class="variable">$n</span>|awk -F <span class="string">&#x27;:&#x27;</span> <span class="string">&#x27;&#123;print $1&#125;&#x27;</span>`</span><br><span class="line">	sshpass -p <span class="variable">$pass</span> ssh-copy-id -o <span class="string">&#x27;StrictHostKeyChecking no&#x27;</span> -i ~/.ssh/id_rsa.pub root@<span class="variable">$ip</span> &amp;&gt;/dev/null &amp;&amp; \</span><br><span class="line">	action <span class="string">&quot;<span class="variable">$ip</span> send public key &quot;</span> /bin/true || \</span><br><span class="line">	action <span class="string">&quot;<span class="variable">$ip</span> send public key &quot;</span> /bin/false</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>lnmp架构</category>
+        <category>04.SSh连接</category>
+      </categories>
       <tags>
         <tag>ssh</tag>
       </tags>
   </entry>
   <entry>
     <title>http协议介绍</title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/05.%20http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/</url>
+    <url>/2023/04/01/linux/lnmp%20build/05.http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/</url>
     <content><![CDATA[<h1 id="http协议介绍"><a class="markdownIt-Anchor" href="#http协议介绍">#</a> http 协议介绍</h1>
 <p>HTTP 全称：Hyper Text Transfer Protocol 中文名：超文本传输协议</p>
 <blockquote>
@@ -1229,18 +1132,148 @@ grape</p>
 <p>1. 提升了网站访问速度</p>
 <p>2. 减少后端服务器的压力</p>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>lnmp架构</category>
+        <category>05.http协议</category>
+      </categories>
       <tags>
         <tag>http</tag>
       </tags>
   </entry>
   <entry>
     <title>111</title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/06.%20Nginx%E6%9C%8D%E5%8A%A1/2/</url>
+    <url>/2023/04/01/linux/lnmp%20build/06.%20Nginx%E6%9C%8D%E5%8A%A1/2/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>111</title>
-    <url>/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/07.%20Ansible%E8%87%AA%E5%8A%A8%E5%8C%96/3/</url>
+    <url>/2023/04/01/linux/lnmp%20build/07.%20Ansible%E8%87%AA%E5%8A%A8%E5%8C%96/3/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>NFS共享存储</title>
+    <url>/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</url>
+    <content><![CDATA[<h1 id="nfs共享存储"><a class="markdownIt-Anchor" href="#nfs共享存储">#</a> NFS 共享存储</h1>
+<h2 id="环境准备"><a class="markdownIt-Anchor" href="#环境准备">#</a> 环境准备</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">主机名</th>
+<th style="text-align:center">WanIP</th>
+<th style="text-align:center">LanIP</th>
+<th style="text-align:center">角色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">web01</td>
+<td style="text-align:center">10.0.0.7</td>
+<td style="text-align:center">172.16.1.7</td>
+<td style="text-align:center">网站服务（nfs 客户端）</td>
+</tr>
+<tr>
+<td style="text-align:center">web02</td>
+<td style="text-align:center">10.0.0.8</td>
+<td style="text-align:center">172.16.1.8</td>
+<td style="text-align:center">网站服务（nfs 客户端）</td>
+</tr>
+<tr>
+<td style="text-align:center">nfs</td>
+<td style="text-align:center">10.0.0.31</td>
+<td style="text-align:center">172.16.1.31</td>
+<td style="text-align:center">共享存储（nfs 服务端）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nfs概述"><a class="markdownIt-Anchor" href="#nfs概述">#</a> NFS 概述</h2>
+<p><code>NFS（Network File System）</code> 通过网络来做文件存储</p>
+<p><code>NFS</code>  用于企业集群架构中 *,* 如果是大型网站 *,* 会用到更复杂的分布式文件系统 <code>FastDFS</code> , <code>glusterfs</code> , <code>HDFS</code></p>
+<blockquote>
+<p><strong>为什么使用共享存储？</strong></p>
+<ul>
+<li>
+<p>实现多台服务器之间数据共享</p>
+</li>
+<li>
+<p>实现多台服务器之间数据一致</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="nfs工作原理"><a class="markdownIt-Anchor" href="#nfs工作原理">#</a> NFS 工作原理</h2>
+<p><img data-src="https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220518160108133.png" alt="image-20220518160108133"></p>
+<p>1. 用户进程访问 NFS 客户端，使用不同的函数对数据进行处理</p>
+<p>2.NFS 客户端通过 TCP/IP 的方式传递给 NFS 服务端</p>
+<p>3.NFS 服务端接收到请求后，会先调用 portmap 进程进行端口映射</p>
+<p>4.nfsd 进程用于判断 NFS 客户端是否拥有权限连接 NFS 服务端</p>
+<p>5.Rpc.mount 进程判断客户端是否有对应的权限进行验证</p>
+<p>6.idmap 进程实现用户映射和压缩</p>
+<p>7. 最后 NFS 服务端会将对应请求的函数转换为本地能识别的命令，传递至内核，由内核驱动硬件</p>
+<p><font color='red'><strong>注意: rpc 是一个远程过程调用，那么使用 nfs 必须有 rpc 服务</strong></font></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装apache、php</span></span><br><span class="line">yum install -y httpd php</span><br><span class="line"></span><br><span class="line"><span class="comment">#httpd站点目录</span></span><br><span class="line">/var/www/html</span><br><span class="line"></span><br><span class="line"><span class="comment">#启动服务</span></span><br><span class="line">systemctl start httpd</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改属主、属组</span></span><br><span class="line"><span class="built_in">chown</span> -R apache.apache /var/www/html/</span><br></pre></td></tr></table></figure>
+<h2 id="安装部署nfs服务端"><a class="markdownIt-Anchor" href="#安装部署nfs服务端">#</a> 安装部署 NFS 服务端</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#C5 C6安装nfs服务 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># yum install -y nfs rpcbind</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#C7安装nfs服务 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># yum install -y nfs-utils</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#配置NFS服务端 NFS配置文件的位置 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># ll /etc/exports </span></span><br><span class="line">-rw-r--r--. 1 root root 0 Jun 7 2013 /etc/exports</span><br><span class="line">[root@nfs ~]<span class="comment"># vim /etc/exports </span></span><br><span class="line"><span class="comment">#共享目录、允许访问NFS服务端的网段 (可读可写,同步,任何用户都映射成nfs的匿名用户) </span></span><br><span class="line">/data 172.16.1.0/24(rw,<span class="built_in">sync</span>,all_squash)</span><br><span class="line"></span><br><span class="line"><span class="comment">#创建共享目录 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># mkdir /data</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#修改共享目录的属主和属组为nfs的匿名用户 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># chown nfsnobody:nfsnobody /data</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#启动服务 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># systemctl start nfs</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#加入开机自启 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># systemctl enable nfs</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#检查进程 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># ps -ef|grep [n]fs</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#检测配置文件是否生效 </span></span><br><span class="line">[root@nfs ~]<span class="comment"># cat /var/lib/nfs/etab</span></span><br><span class="line">/data	172.16.1.0/24(rw,<span class="built_in">sync</span>,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid=65534,anongid=65534,sec=sys,rw,secure,root_squash,all_squash)</span><br></pre></td></tr></table></figure>
+<h2 id="nfs配置详解"><a class="markdownIt-Anchor" href="#nfs配置详解">#</a> NFS 配置详解</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">nfs 共享参数</th>
+<th style="text-align:center">参数作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rw*</td>
+<td style="text-align:center">客户端针对服务端的共享目录有可读，可写权限</td>
+</tr>
+<tr>
+<td style="text-align:center">ro</td>
+<td style="text-align:center">客户端针对服务端的共享目录只读权限</td>
+</tr>
+<tr>
+<td style="text-align:center">root_squash</td>
+<td style="text-align:center">客户端必须是以 root 身份写入共享目录文件时，到服务端才能以 nfs 的系统用户写入（不常用）</td>
+</tr>
+<tr>
+<td style="text-align:center">no_root_squash</td>
+<td style="text-align:center">客户端以 root 身份连接服务端，也会以 nfs 服务器的 root 用户来操作共享目录（不常用）</td>
+</tr>
+<tr>
+<td style="text-align:center">all_squash*</td>
+<td style="text-align:center">无论 NFS 客户端用什么用户访问共享目录，到服务端都是 nfs 的系统用户权限（常用）</td>
+</tr>
+<tr>
+<td style="text-align:center">no_all_squash</td>
+<td style="text-align:center">无论 NFS 客户端使用什么账户访问，都不会变成 nfs 系统用户的身份（不常用）</td>
+</tr>
+<tr>
+<td style="text-align:center">sync*</td>
+<td style="text-align:center">同时将数据写入到内存与硬盘中，保证不丢失数据</td>
+</tr>
+<tr>
+<td style="text-align:center">async</td>
+<td style="text-align:center">优先将数据保存到内存，然后再写入硬盘；这样效率更高，但可能会丢失数据</td>
+</tr>
+<tr>
+<td style="text-align:center">anonuid*</td>
+<td style="text-align:center">配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统</td>
+</tr>
+<tr>
+<td style="text-align:center">anongid*</td>
+<td style="text-align:center">配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统</td>
+</tr>
+</tbody>
+</table>
+<h2 id="客户端操作"><a class="markdownIt-Anchor" href="#客户端操作">#</a> 客户端操作</h2>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1.安装nfs </span></span><br><span class="line">[root@web01 ~]<span class="comment"># yum install -y nfs-utils </span></span><br><span class="line">[root@web02 ~]<span class="comment"># yum install -y nfs-utils </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#2.查看哪些目录可以挂载 </span></span><br><span class="line">[root@web01 ~]<span class="comment"># showmount -e 172.16.1.31 </span></span><br><span class="line">[root@web02 ~]<span class="comment"># showmount -e 172.16.1.31 </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#3.挂载共享目录 </span></span><br><span class="line">[root@web01 ~]<span class="comment"># mount -t nfs 172.16.1.31:/data /opt </span></span><br><span class="line">[root@web02 ~]<span class="comment"># mount -t nfs 172.16.1.31:/data /opt</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#查看nfs配置文件是否生效</span></span><br><span class="line"><span class="built_in">cat</span> /var/lib/nfs/etab</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>lnmp架构</category>
+        <category>03.NFS共享存储</category>
+      </categories>
+      <tags>
+        <tag>NFS</tag>
+      </tags>
   </entry>
 </search>

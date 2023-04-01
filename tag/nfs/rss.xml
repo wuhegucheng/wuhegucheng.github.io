@@ -10,13 +10,13 @@
         <category>markdown</category>
         <category>虚拟机</category>
         <category>rsync</category>
-        <category>NFS</category>
         <category>ssh</category>
         <category>http</category>
+        <category>NFS</category>
         <item>
-            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/03.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</guid>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</guid>
             <title>NFS共享存储</title>
-            <link>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/03.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</link>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</link>
             <category>NFS</category>
             <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;nfs共享存储&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs共享存储&#34;&gt;#&lt;/a&gt; NFS 共享存储&lt;/h1&gt;

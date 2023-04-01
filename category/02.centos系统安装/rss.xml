@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>今天也请继续加油 • Posts by &#34;02.centos系统安装&#34; category</title>
+        <link>http://wuhegucheng.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
+        <category>markdown</category>
+        <category>虚拟机</category>
+        <category>rsync</category>
+        <category>ssh</category>
+        <category>http</category>
+        <category>NFS</category>
+        <item>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+            <title>VMware虚拟机</title>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+            <category>虚拟机</category>
+            <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;虚拟机的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的安装&#34;&gt;#&lt;/a&gt; 虚拟机的安装&lt;/h1&gt;
+&lt;h2 id=&#34;虚拟机典型推荐安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机典型推荐安装&#34;&gt;#&lt;/a&gt; 虚拟机典型推荐安装&lt;/h2&gt;
+&lt;h3 id=&#34;机选择典型推荐点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机选择典型推荐点击下一步&#34;&gt;#&lt;/a&gt; 机，选择典型推荐，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;2-选择稍后安装操作系统点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择稍后安装操作系统点击下一步&#34;&gt;#&lt;/a&gt; 2 选择稍后安装操作系统，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;#&lt;/a&gt; 3 客户操作系统选择 linux，版本选择 centOS7 64 位，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;#&lt;/a&gt; 4 修改虚拟机名称，修改安装位置，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;封成多个文件点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封成多个文件点击下一步&#34;&gt;#&lt;/a&gt; 封成多个文件，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;6-点击完成安装虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-点击完成安装虚拟机&#34;&gt;#&lt;/a&gt; 6 点击完成安装虚拟机&lt;/h3&gt;
+&lt;h3 id=&#34;7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;#&lt;/a&gt; 7 在 CD/DVD 里设置，勾选启动时连接，勾选使用 ISO 映像文件&lt;/h3&gt;
+&lt;h2 id=&#34;虚拟机安装设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机安装设置&#34;&gt;#&lt;/a&gt; 虚拟机安装设置&lt;/h2&gt;
+&lt;h3 id=&#34;1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;#&lt;/a&gt; 1 开启虚拟机后，选择 Install CentOS7，回车进入下一步&lt;/h3&gt;
+&lt;h3 id=&#34;2-选择语言后-点击继续&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择语言后-点击继续&#34;&gt;#&lt;/a&gt; 2 选择语言后， 点击继续&lt;/h3&gt;
+&lt;h3 id=&#34;3-选择亚洲时区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-选择亚洲时区&#34;&gt;#&lt;/a&gt; 3 选择亚洲时区&lt;/h3&gt;
+&lt;p&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;4-软件选择最小化安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-软件选择最小化安装&#34;&gt;#&lt;/a&gt; 4 软件选择最小化安装&lt;/h3&gt;
+&lt;h3 id=&#34;5-取消勾选-kdump&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-取消勾选-kdump&#34;&gt;#&lt;/a&gt; 5 取消勾选 kdump&lt;/h3&gt;
+&lt;h3 id=&#34;6-内存分区选择我要分配分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-内存分区选择我要分配分区&#34;&gt;#&lt;/a&gt; 6 内存分区选择我要分配分区&lt;/h3&gt;
+&lt;h3 id=&#34;选择标准分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择标准分区&#34;&gt;#&lt;/a&gt; 选择标准分区&lt;/h3&gt;
+&lt;h3 id=&#34;开机启动文件-boot分配500m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开机启动文件-boot分配500m&#34;&gt;#&lt;/a&gt; 开机启动文件 /boot 分配 500M&lt;/h3&gt;
+&lt;h3 id=&#34;swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;#&lt;/a&gt; swap（虚拟内存），真实内存的 1~2 倍，配置 1024M&lt;/h3&gt;
+&lt;h3 id=&#34;剩下的内存全部给根&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#剩下的内存全部给根&#34;&gt;#&lt;/a&gt; 剩下的内存全部给 /(根)&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;物理机&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;swap &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;云主机&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/(剩下的给根)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;服务器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data 数据 70~80%&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/(剩下的给根)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;7-配置网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-配置网络&#34;&gt;#&lt;/a&gt; 7 配置网络&lt;/h3&gt;
+&lt;h3 id=&#34;配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;#&lt;/a&gt; 配置网卡名称，IP 地址，子网掩码，网关，DNS 服务&lt;/h3&gt;
+&lt;h3 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
+&lt;h3 id=&#34;8-配置完成后-点击开始安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-配置完成后-点击开始安装&#34;&gt;#&lt;/a&gt; 8 配置完成后，， 点击开始安装&lt;/h3&gt;
+&lt;h3 id=&#34;9-设置root密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-设置root密码&#34;&gt;#&lt;/a&gt; 9 设置 root 密码&lt;/h3&gt;
+&lt;h3 id=&#34;-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
+&lt;h3 id=&#34;11-完成登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-完成登录&#34;&gt;#&lt;/a&gt; 11 完成登录&lt;/h3&gt;
+&lt;h2 id=&#34;网络的3种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络的3种模式&#34;&gt;#&lt;/a&gt; 网络的 3 种模式&lt;/h2&gt;
+&lt;h3 id=&#34;nat模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nat模式&#34;&gt;#&lt;/a&gt; NAT 模式&lt;/h3&gt;
+&lt;p&gt;物理机 IP 的地址转化成多个虚拟机的 IP 地址&lt;/p&gt;
+&lt;h3 id=&#34;仅主机模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#仅主机模式&#34;&gt;#&lt;/a&gt; 仅主机模式&lt;/h3&gt;
+&lt;p&gt;虚拟机之间可以相互通信但是不能上外网&lt;/p&gt;
+&lt;h3 id=&#34;桥接模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#桥接模式&#34;&gt;#&lt;/a&gt; 桥接模式&lt;/h3&gt;
+&lt;p&gt;将物理机网络和虚拟机额网络做一个搭桥&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

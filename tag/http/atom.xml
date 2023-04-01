@@ -7,13 +7,13 @@
     <category term="markdown" />
     <category term="虚拟机" />
     <category term="rsync" />
-    <category term="NFS" />
     <category term="ssh" />
     <category term="http" />
+    <category term="NFS" />
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/05.%20http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/</id>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/05.http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/</id>
         <title>http协议介绍</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%E6%9E%B6%E6%9E%84/05.%20http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/"/>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/05.http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/"/>
         <content type="html">&lt;h1 id=&#34;http协议介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#http协议介绍&#34;&gt;#&lt;/a&gt; http 协议介绍&lt;/h1&gt;
 &lt;p&gt;HTTP 全称：Hyper Text Transfer Protocol 中文名：超文本传输协议&lt;/p&gt;
 &lt;blockquote&gt;
