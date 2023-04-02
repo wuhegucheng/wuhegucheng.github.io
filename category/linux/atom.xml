@@ -4,56 +4,12 @@
     <title>今天也请继续加油 • Posts by &#34;linux&#34; category</title>
     <link href="http://wuhegucheng.github.io" />
     <updated>2023-04-01T08:46:15.000Z</updated>
-    <category term="虚拟机" />
     <category term="markdown" />
-    <category term="NFS" />
     <category term="rsync" />
+    <category term="虚拟机" />
+    <category term="NFS" />
     <category term="ssh" />
     <category term="http" />
-    <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
-        <title>VMware虚拟机</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-        <content type="html">&lt;h1 id=&#34;虚拟机的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的安装&#34;&gt;#&lt;/a&gt; 虚拟机的安装&lt;/h1&gt;
-&lt;h2 id=&#34;虚拟机典型推荐安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机典型推荐安装&#34;&gt;#&lt;/a&gt; 虚拟机典型推荐安装&lt;/h2&gt;
-&lt;h3 id=&#34;机选择典型推荐点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机选择典型推荐点击下一步&#34;&gt;#&lt;/a&gt; 机，选择典型推荐，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;2-选择稍后安装操作系统点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择稍后安装操作系统点击下一步&#34;&gt;#&lt;/a&gt; 2 选择稍后安装操作系统，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;#&lt;/a&gt; 3 客户操作系统选择 linux，版本选择 centOS7 64 位，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;#&lt;/a&gt; 4 修改虚拟机名称，修改安装位置，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;封成多个文件点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封成多个文件点击下一步&#34;&gt;#&lt;/a&gt; 封成多个文件，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;6-点击完成安装虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-点击完成安装虚拟机&#34;&gt;#&lt;/a&gt; 6 点击完成安装虚拟机&lt;/h3&gt;
-&lt;h3 id=&#34;7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;#&lt;/a&gt; 7 在 CD/DVD 里设置，勾选启动时连接，勾选使用 ISO 映像文件&lt;/h3&gt;
-&lt;h2 id=&#34;虚拟机安装设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机安装设置&#34;&gt;#&lt;/a&gt; 虚拟机安装设置&lt;/h2&gt;
-&lt;h3 id=&#34;1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;#&lt;/a&gt; 1 开启虚拟机后，选择 Install CentOS7，回车进入下一步&lt;/h3&gt;
-&lt;h3 id=&#34;2-选择语言后-点击继续&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择语言后-点击继续&#34;&gt;#&lt;/a&gt; 2 选择语言后， 点击继续&lt;/h3&gt;
-&lt;h3 id=&#34;3-选择亚洲时区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-选择亚洲时区&#34;&gt;#&lt;/a&gt; 3 选择亚洲时区&lt;/h3&gt;
-&lt;p&gt;!&lt;/p&gt;
-&lt;h3 id=&#34;4-软件选择最小化安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-软件选择最小化安装&#34;&gt;#&lt;/a&gt; 4 软件选择最小化安装&lt;/h3&gt;
-&lt;h3 id=&#34;5-取消勾选-kdump&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-取消勾选-kdump&#34;&gt;#&lt;/a&gt; 5 取消勾选 kdump&lt;/h3&gt;
-&lt;h3 id=&#34;6-内存分区选择我要分配分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-内存分区选择我要分配分区&#34;&gt;#&lt;/a&gt; 6 内存分区选择我要分配分区&lt;/h3&gt;
-&lt;h3 id=&#34;选择标准分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择标准分区&#34;&gt;#&lt;/a&gt; 选择标准分区&lt;/h3&gt;
-&lt;h3 id=&#34;开机启动文件-boot分配500m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开机启动文件-boot分配500m&#34;&gt;#&lt;/a&gt; 开机启动文件 /boot 分配 500M&lt;/h3&gt;
-&lt;h3 id=&#34;swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;#&lt;/a&gt; swap（虚拟内存），真实内存的 1~2 倍，配置 1024M&lt;/h3&gt;
-&lt;h3 id=&#34;剩下的内存全部给根&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#剩下的内存全部给根&#34;&gt;#&lt;/a&gt; 剩下的内存全部给 /(根)&lt;/h3&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;物理机&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;swap &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;云主机&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/(剩下的给根)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;服务器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data 数据 70~80%&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/(剩下的给根)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;7-配置网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-配置网络&#34;&gt;#&lt;/a&gt; 7 配置网络&lt;/h3&gt;
-&lt;h3 id=&#34;配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;#&lt;/a&gt; 配置网卡名称，IP 地址，子网掩码，网关，DNS 服务&lt;/h3&gt;
-&lt;h3 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
-&lt;h3 id=&#34;8-配置完成后-点击开始安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-配置完成后-点击开始安装&#34;&gt;#&lt;/a&gt; 8 配置完成后，， 点击开始安装&lt;/h3&gt;
-&lt;h3 id=&#34;9-设置root密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-设置root密码&#34;&gt;#&lt;/a&gt; 9 设置 root 密码&lt;/h3&gt;
-&lt;h3 id=&#34;-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
-&lt;h3 id=&#34;11-完成登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-完成登录&#34;&gt;#&lt;/a&gt; 11 完成登录&lt;/h3&gt;
-&lt;h2 id=&#34;网络的3种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络的3种模式&#34;&gt;#&lt;/a&gt; 网络的 3 种模式&lt;/h2&gt;
-&lt;h3 id=&#34;nat模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nat模式&#34;&gt;#&lt;/a&gt; NAT 模式&lt;/h3&gt;
-&lt;p&gt;物理机 IP 的地址转化成多个虚拟机的 IP 地址&lt;/p&gt;
-&lt;h3 id=&#34;仅主机模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#仅主机模式&#34;&gt;#&lt;/a&gt; 仅主机模式&lt;/h3&gt;
-&lt;p&gt;虚拟机之间可以相互通信但是不能上外网&lt;/p&gt;
-&lt;h3 id=&#34;桥接模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#桥接模式&#34;&gt;#&lt;/a&gt; 桥接模式&lt;/h3&gt;
-&lt;p&gt;将物理机网络和虚拟机额网络做一个搭桥&lt;/p&gt;
-</content>
-        <category term="虚拟机" />
-        <updated>2023-04-01T08:46:15.000Z</updated>
-    </entry>
     <entry>
         <id>http://wuhegucheng.github.io/2023/04/01/linux/base/01.Markdown/Markdown/</id>
         <title>Markdown 语法</title>
@@ -242,126 +198,6 @@
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</id>
-        <title>NFS共享存储</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/"/>
-        <content type="html">&lt;h1 id=&#34;nfs共享存储&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs共享存储&#34;&gt;#&lt;/a&gt; NFS 共享存储&lt;/h1&gt;
-&lt;h2 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;主机名&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;WanIP&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;LanIP&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;角色&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;web01&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.7&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.7&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;网站服务（nfs 客户端）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;web02&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.8&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.8&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;网站服务（nfs 客户端）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;nfs&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.31&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.31&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;共享存储（nfs 服务端）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;nfs概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs概述&#34;&gt;#&lt;/a&gt; NFS 概述&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;NFS（Network File System）&lt;/code&gt; 通过网络来做文件存储&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;NFS&lt;/code&gt;  用于企业集群架构中 *,* 如果是大型网站 *,* 会用到更复杂的分布式文件系统 &lt;code&gt;FastDFS&lt;/code&gt; , &lt;code&gt;glusterfs&lt;/code&gt; , &lt;code&gt;HDFS&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;为什么使用共享存储？&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;实现多台服务器之间数据共享&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;实现多台服务器之间数据一致&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;nfs工作原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs工作原理&#34;&gt;#&lt;/a&gt; NFS 工作原理&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220518160108133.png&#34; alt=&#34;image-20220518160108133&#34;&gt;&lt;/p&gt;
-&lt;p&gt;1. 用户进程访问 NFS 客户端，使用不同的函数对数据进行处理&lt;/p&gt;
-&lt;p&gt;2.NFS 客户端通过 TCP/IP 的方式传递给 NFS 服务端&lt;/p&gt;
-&lt;p&gt;3.NFS 服务端接收到请求后，会先调用 portmap 进程进行端口映射&lt;/p&gt;
-&lt;p&gt;4.nfsd 进程用于判断 NFS 客户端是否拥有权限连接 NFS 服务端&lt;/p&gt;
-&lt;p&gt;5.Rpc.mount 进程判断客户端是否有对应的权限进行验证&lt;/p&gt;
-&lt;p&gt;6.idmap 进程实现用户映射和压缩&lt;/p&gt;
-&lt;p&gt;7. 最后 NFS 服务端会将对应请求的函数转换为本地能识别的命令，传递至内核，由内核驱动硬件&lt;/p&gt;
-&lt;p&gt;&lt;font color=&#39;red&#39;&gt;&lt;strong&gt;注意: rpc 是一个远程过程调用，那么使用 nfs 必须有 rpc 服务&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#安装apache、php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum install -y httpd php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#httpd站点目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/var/www/html&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#启动服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl start httpd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改属主、属组&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;chown&lt;/span&gt; -R apache.apache /var/www/html/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;安装部署nfs服务端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装部署nfs服务端&#34;&gt;#&lt;/a&gt; 安装部署 NFS 服务端&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#C5 C6安装nfs服务 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs rpcbind&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#C7安装nfs服务 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs-utils&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#配置NFS服务端 NFS配置文件的位置 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# ll /etc/exports &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-rw-r--r--. 1 root root 0 Jun 7 2013 /etc/exports&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# vim /etc/exports &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#共享目录、允许访问NFS服务端的网段 (可读可写,同步,任何用户都映射成nfs的匿名用户) &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data 172.16.1.0/24(rw,&lt;span class=&#34;built_in&#34;&gt;sync&lt;/span&gt;,all_squash)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#创建共享目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# mkdir /data&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改共享目录的属主和属组为nfs的匿名用户 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# chown nfsnobody:nfsnobody /data&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#启动服务 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# systemctl start nfs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#加入开机自启 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# systemctl enable nfs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#检查进程 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# ps -ef|grep [n]fs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#检测配置文件是否生效 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# cat /var/lib/nfs/etab&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data	172.16.1.0/24(rw,&lt;span class=&#34;built_in&#34;&gt;sync&lt;/span&gt;,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid=65534,anongid=65534,sec=sys,rw,secure,root_squash,all_squash)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;nfs配置详解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs配置详解&#34;&gt;#&lt;/a&gt; NFS 配置详解&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;nfs 共享参数&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;参数作用&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;rw*&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;客户端针对服务端的共享目录有可读，可写权限&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;ro&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;客户端针对服务端的共享目录只读权限&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;root_squash&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;客户端必须是以 root 身份写入共享目录文件时，到服务端才能以 nfs 的系统用户写入（不常用）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;no_root_squash&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;客户端以 root 身份连接服务端，也会以 nfs 服务器的 root 用户来操作共享目录（不常用）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;all_squash*&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;无论 NFS 客户端用什么用户访问共享目录，到服务端都是 nfs 的系统用户权限（常用）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;no_all_squash&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;无论 NFS 客户端使用什么账户访问，都不会变成 nfs 系统用户的身份（不常用）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;sync*&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;同时将数据写入到内存与硬盘中，保证不丢失数据&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;async&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;优先将数据保存到内存，然后再写入硬盘；这样效率更高，但可能会丢失数据&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;anonuid*&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;anongid*&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;客户端操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#客户端操作&#34;&gt;#&lt;/a&gt; 客户端操作&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#1.安装nfs &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web01 ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs-utils &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web02 ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs-utils &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#2.查看哪些目录可以挂载 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web01 ~]&lt;span class=&#34;comment&#34;&gt;# showmount -e 172.16.1.31 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web02 ~]&lt;span class=&#34;comment&#34;&gt;# showmount -e 172.16.1.31 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#3.挂载共享目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web01 ~]&lt;span class=&#34;comment&#34;&gt;# mount -t nfs 172.16.1.31:/data /opt &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web02 ~]&lt;span class=&#34;comment&#34;&gt;# mount -t nfs 172.16.1.31:/data /opt&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看nfs配置文件是否生效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; /var/lib/nfs/etab&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-        <category term="NFS" />
-        <updated>2023-04-01T08:46:15.000Z</updated>
-    </entry>
-    <entry>
         <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/02.rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/</id>
         <title>rsync数据备份</title>
         <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/02.rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/"/>
@@ -485,6 +321,170 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-a：归档模式传输, 等于-tropgDl &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-v：显示同步过程 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-z：压缩，提高传输效率 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;============================== &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-t：time 保持文件的时间信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-r：拷贝目录时，递归拷贝 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-o：owner 保持文件的属主信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-g：group 保持文件的属组信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-p：perm 保持文件的权限信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-D：device 保持设备文件的信息 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-l：&lt;span class=&#34;built_in&#34;&gt;link&lt;/span&gt; 保留软链接&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;==============================&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-P：显示进度 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-L：保留软链接指向的目标文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--exclude=PATTERN 指定排除不需要传输的文件模式 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--exclude-from=file 指定排除文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--bwlimit=1 限速传输 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--partial 断点续传 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--delete 决定数据是否要同步 &lt;span class=&#34;built_in&#34;&gt;rm&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--password-file= 指定密码文件&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
         <category term="rsync" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
+        <title>VMware虚拟机</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+        <content type="html">&lt;h1 id=&#34;虚拟机的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的安装&#34;&gt;#&lt;/a&gt; 虚拟机的安装&lt;/h1&gt;
+&lt;h2 id=&#34;虚拟机典型推荐安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机典型推荐安装&#34;&gt;#&lt;/a&gt; 虚拟机典型推荐安装&lt;/h2&gt;
+&lt;h3 id=&#34;机选择典型推荐点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机选择典型推荐点击下一步&#34;&gt;#&lt;/a&gt; 机，选择典型推荐，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;2-选择稍后安装操作系统点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择稍后安装操作系统点击下一步&#34;&gt;#&lt;/a&gt; 2 选择稍后安装操作系统，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;#&lt;/a&gt; 3 客户操作系统选择 linux，版本选择 centOS7 64 位，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;#&lt;/a&gt; 4 修改虚拟机名称，修改安装位置，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;封成多个文件点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封成多个文件点击下一步&#34;&gt;#&lt;/a&gt; 封成多个文件，点击下一步&lt;/h3&gt;
+&lt;h3 id=&#34;6-点击完成安装虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-点击完成安装虚拟机&#34;&gt;#&lt;/a&gt; 6 点击完成安装虚拟机&lt;/h3&gt;
+&lt;h3 id=&#34;7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;#&lt;/a&gt; 7 在 CD/DVD 里设置，勾选启动时连接，勾选使用 ISO 映像文件&lt;/h3&gt;
+&lt;h2 id=&#34;虚拟机安装设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机安装设置&#34;&gt;#&lt;/a&gt; 虚拟机安装设置&lt;/h2&gt;
+&lt;h3 id=&#34;1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;#&lt;/a&gt; 1 开启虚拟机后，选择 Install CentOS7，回车进入下一步&lt;/h3&gt;
+&lt;h3 id=&#34;2-选择语言后-点击继续&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择语言后-点击继续&#34;&gt;#&lt;/a&gt; 2 选择语言后， 点击继续&lt;/h3&gt;
+&lt;h3 id=&#34;3-选择亚洲时区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-选择亚洲时区&#34;&gt;#&lt;/a&gt; 3 选择亚洲时区&lt;/h3&gt;
+&lt;p&gt;!&lt;/p&gt;
+&lt;h3 id=&#34;4-软件选择最小化安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-软件选择最小化安装&#34;&gt;#&lt;/a&gt; 4 软件选择最小化安装&lt;/h3&gt;
+&lt;h3 id=&#34;5-取消勾选-kdump&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-取消勾选-kdump&#34;&gt;#&lt;/a&gt; 5 取消勾选 kdump&lt;/h3&gt;
+&lt;h3 id=&#34;6-内存分区选择我要分配分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-内存分区选择我要分配分区&#34;&gt;#&lt;/a&gt; 6 内存分区选择我要分配分区&lt;/h3&gt;
+&lt;h3 id=&#34;选择标准分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择标准分区&#34;&gt;#&lt;/a&gt; 选择标准分区&lt;/h3&gt;
+&lt;h3 id=&#34;开机启动文件-boot分配500m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开机启动文件-boot分配500m&#34;&gt;#&lt;/a&gt; 开机启动文件 /boot 分配 500M&lt;/h3&gt;
+&lt;h3 id=&#34;swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;#&lt;/a&gt; swap（虚拟内存），真实内存的 1~2 倍，配置 1024M&lt;/h3&gt;
+&lt;h3 id=&#34;剩下的内存全部给根&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#剩下的内存全部给根&#34;&gt;#&lt;/a&gt; 剩下的内存全部给 /(根)&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;物理机&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;swap &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;云主机&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/(剩下的给根)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;服务器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/boot 500~1024m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data 数据 70~80%&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/(剩下的给根)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;7-配置网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-配置网络&#34;&gt;#&lt;/a&gt; 7 配置网络&lt;/h3&gt;
+&lt;h3 id=&#34;配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;#&lt;/a&gt; 配置网卡名称，IP 地址，子网掩码，网关，DNS 服务&lt;/h3&gt;
+&lt;h3 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
+&lt;h3 id=&#34;8-配置完成后-点击开始安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-配置完成后-点击开始安装&#34;&gt;#&lt;/a&gt; 8 配置完成后，， 点击开始安装&lt;/h3&gt;
+&lt;h3 id=&#34;9-设置root密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-设置root密码&#34;&gt;#&lt;/a&gt; 9 设置 root 密码&lt;/h3&gt;
+&lt;h3 id=&#34;-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
+&lt;h3 id=&#34;11-完成登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-完成登录&#34;&gt;#&lt;/a&gt; 11 完成登录&lt;/h3&gt;
+&lt;h2 id=&#34;网络的3种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络的3种模式&#34;&gt;#&lt;/a&gt; 网络的 3 种模式&lt;/h2&gt;
+&lt;h3 id=&#34;nat模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nat模式&#34;&gt;#&lt;/a&gt; NAT 模式&lt;/h3&gt;
+&lt;p&gt;物理机 IP 的地址转化成多个虚拟机的 IP 地址&lt;/p&gt;
+&lt;h3 id=&#34;仅主机模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#仅主机模式&#34;&gt;#&lt;/a&gt; 仅主机模式&lt;/h3&gt;
+&lt;p&gt;虚拟机之间可以相互通信但是不能上外网&lt;/p&gt;
+&lt;h3 id=&#34;桥接模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#桥接模式&#34;&gt;#&lt;/a&gt; 桥接模式&lt;/h3&gt;
+&lt;p&gt;将物理机网络和虚拟机额网络做一个搭桥&lt;/p&gt;
+</content>
+        <category term="虚拟机" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/</id>
+        <title>NFS共享存储</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/"/>
+        <content type="html">&lt;h1 id=&#34;nfs共享存储&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs共享存储&#34;&gt;#&lt;/a&gt; NFS 共享存储&lt;/h1&gt;
+&lt;h2 id=&#34;环境准备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境准备&#34;&gt;#&lt;/a&gt; 环境准备&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;主机名&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;WanIP&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;LanIP&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;角色&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;web01&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;网站服务（nfs 客户端）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;web02&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;网站服务（nfs 客户端）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;nfs&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10.0.0.31&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;172.16.1.31&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;共享存储（nfs 服务端）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;nfs概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs概述&#34;&gt;#&lt;/a&gt; NFS 概述&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;NFS（Network File System）&lt;/code&gt; 通过网络来做文件存储&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;NFS&lt;/code&gt;  用于企业集群架构中 *,* 如果是大型网站 *,* 会用到更复杂的分布式文件系统 &lt;code&gt;FastDFS&lt;/code&gt; , &lt;code&gt;glusterfs&lt;/code&gt; , &lt;code&gt;HDFS&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;为什么使用共享存储？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;实现多台服务器之间数据共享&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现多台服务器之间数据一致&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;nfs工作原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs工作原理&#34;&gt;#&lt;/a&gt; NFS 工作原理&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/image-20220518160108133.png&#34; alt=&#34;image-20220518160108133&#34;&gt;&lt;/p&gt;
+&lt;p&gt;1. 用户进程访问 NFS 客户端，使用不同的函数对数据进行处理&lt;/p&gt;
+&lt;p&gt;2.NFS 客户端通过 TCP/IP 的方式传递给 NFS 服务端&lt;/p&gt;
+&lt;p&gt;3.NFS 服务端接收到请求后，会先调用 portmap 进程进行端口映射&lt;/p&gt;
+&lt;p&gt;4.nfsd 进程用于判断 NFS 客户端是否拥有权限连接 NFS 服务端&lt;/p&gt;
+&lt;p&gt;5.Rpc.mount 进程判断客户端是否有对应的权限进行验证&lt;/p&gt;
+&lt;p&gt;6.idmap 进程实现用户映射和压缩&lt;/p&gt;
+&lt;p&gt;7. 最后 NFS 服务端会将对应请求的函数转换为本地能识别的命令，传递至内核，由内核驱动硬件&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#39;red&#39;&gt;&lt;strong&gt;注意: rpc 是一个远程过程调用，那么使用 nfs 必须有 rpc 服务&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#安装apache、php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum install -y httpd php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#httpd站点目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/var/www/html&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#启动服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl start httpd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改属主、属组&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;chown&lt;/span&gt; -R apache.apache /var/www/html/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;安装部署nfs服务端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装部署nfs服务端&#34;&gt;#&lt;/a&gt; 安装部署 NFS 服务端&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#C5 C6安装nfs服务 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs rpcbind&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#C7安装nfs服务 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs-utils&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#配置NFS服务端 NFS配置文件的位置 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# ll /etc/exports &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-rw-r--r--. 1 root root 0 Jun 7 2013 /etc/exports&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# vim /etc/exports &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#共享目录、允许访问NFS服务端的网段 (可读可写,同步,任何用户都映射成nfs的匿名用户) &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data 172.16.1.0/24(rw,&lt;span class=&#34;built_in&#34;&gt;sync&lt;/span&gt;,all_squash)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#创建共享目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# mkdir /data&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改共享目录的属主和属组为nfs的匿名用户 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# chown nfsnobody:nfsnobody /data&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#启动服务 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# systemctl start nfs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#加入开机自启 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# systemctl enable nfs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#检查进程 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# ps -ef|grep [n]fs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#检测配置文件是否生效 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@nfs ~]&lt;span class=&#34;comment&#34;&gt;# cat /var/lib/nfs/etab&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/data	172.16.1.0/24(rw,&lt;span class=&#34;built_in&#34;&gt;sync&lt;/span&gt;,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid=65534,anongid=65534,sec=sys,rw,secure,root_squash,all_squash)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;nfs配置详解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nfs配置详解&#34;&gt;#&lt;/a&gt; NFS 配置详解&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;nfs 共享参数&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;参数作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;rw*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;客户端针对服务端的共享目录有可读，可写权限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;ro&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;客户端针对服务端的共享目录只读权限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;root_squash&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;客户端必须是以 root 身份写入共享目录文件时，到服务端才能以 nfs 的系统用户写入（不常用）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;no_root_squash&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;客户端以 root 身份连接服务端，也会以 nfs 服务器的 root 用户来操作共享目录（不常用）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;all_squash*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;无论 NFS 客户端用什么用户访问共享目录，到服务端都是 nfs 的系统用户权限（常用）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;no_all_squash&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;无论 NFS 客户端使用什么账户访问，都不会变成 nfs 系统用户的身份（不常用）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;sync*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;同时将数据写入到内存与硬盘中，保证不丢失数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;async&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;优先将数据保存到内存，然后再写入硬盘；这样效率更高，但可能会丢失数据&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;anonuid*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;anongid*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;配置 all_squash 使用，指定 NFS 的用户 UID, 必须存在系统&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;客户端操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#客户端操作&#34;&gt;#&lt;/a&gt; 客户端操作&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#1.安装nfs &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web01 ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs-utils &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web02 ~]&lt;span class=&#34;comment&#34;&gt;# yum install -y nfs-utils &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#2.查看哪些目录可以挂载 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web01 ~]&lt;span class=&#34;comment&#34;&gt;# showmount -e 172.16.1.31 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web02 ~]&lt;span class=&#34;comment&#34;&gt;# showmount -e 172.16.1.31 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#3.挂载共享目录 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web01 ~]&lt;span class=&#34;comment&#34;&gt;# mount -t nfs 172.16.1.31:/data /opt &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@web02 ~]&lt;span class=&#34;comment&#34;&gt;# mount -t nfs 172.16.1.31:/data /opt&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看nfs配置文件是否生效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cat&lt;/span&gt; /var/lib/nfs/etab&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="NFS" />
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
     <entry>

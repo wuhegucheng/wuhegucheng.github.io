@@ -2279,6 +2279,12 @@ main >.inner {
 .social .item.music i {
   color: #e60026;
 }
+.social .item.kugou::before {
+  background-color: #e60026;
+}
+.social .item.kugou i {
+  color: #e60026;
+}
 .social .item.weibo::before {
   background-color: #ea716e;
 }
