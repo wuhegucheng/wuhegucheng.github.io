@@ -590,6 +590,12 @@ details summary::before {
 .i-cloud-music:before {
   content: "\e76a";
 }
+.icon-kugou:before {
+  content: "\e635";
+}
+.i-kugou:before {
+  content: "\e635";
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -2277,12 +2283,6 @@ main >.inner {
   background-color: #e60026;
 }
 .social .item.music i {
-  color: #e60026;
-}
-.social .item.kugou::before {
-  background-color: #e60026;
-}
-.social .item.kugou i {
   color: #e60026;
 }
 .social .item.weibo::before {
