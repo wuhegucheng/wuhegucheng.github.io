@@ -7,11 +7,11 @@
         <language>zh-CN</language>
         <pubDate>Mon, 13 Apr 2020 19:12:45 +0800</pubDate>
         <lastBuildDate>Mon, 13 Apr 2020 19:12:45 +0800</lastBuildDate>
+        <category>rsync</category>
         <category>markdown</category>
         <category>虚拟机</category>
-        <category>rsync</category>
-        <category>ssh</category>
         <category>NFS</category>
+        <category>ssh</category>
         <category>http</category>
         <item>
             <guid isPermalink="true">http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/</guid>
