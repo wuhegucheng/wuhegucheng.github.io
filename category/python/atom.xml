@@ -6,9 +6,9 @@
     <updated>2020-04-13T11:12:45.000Z</updated>
     <category term="markdown" />
     <category term="虚拟机" />
-    <category term="NFS" />
     <category term="rsync" />
     <category term="ssh" />
+    <category term="NFS" />
     <category term="http" />
     <entry>
         <id>http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/</id>
