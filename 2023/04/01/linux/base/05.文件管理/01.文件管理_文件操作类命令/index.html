@@ -1,0 +1,600 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="今天也请继续加油" href="http://wuhegucheng.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="mkdir,touch,mv,tree,cp" />
+
+
+<link rel="canonical" href="http://wuhegucheng.github.io/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/01.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%91%BD%E4%BB%A4/">
+
+
+
+  <title>
+文件操作类命令 |
+五河古城的Blog = 今天也请继续加油 = “你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">文件操作类命令
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-04-01 16:46:15">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-04-01T16:46:15+08:00">2023-04-01</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">五河古城的Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2845%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2861%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2848%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2858%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2877%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2875%29.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://wuhegucheng.github.io/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/01.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%91%BD%E4%BB%A4/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/love.jpg">
+    <meta itemprop="name" content="五河古城">
+    <meta itemprop="description" content="“你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="今天也请继续加油">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="文件管理"><a class="markdownIt-Anchor" href="#文件管理">#</a> 文件管理</h1>
+<h2 id="目录创建mkdir"><a class="markdownIt-Anchor" href="#目录创建mkdir">#</a> 目录创建 <code>mkdir</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#语法</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">mkdir</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span> 目录名 </pre></td></tr><tr><td data-num="3"></td><td><pre>创建目录 <span class="token punctuation">[</span>选项可有可无，可以有多个<span class="token punctuation">]</span> 目录名字，可以有多个</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">#选项</span></pre></td></tr><tr><td data-num="5"></td><td><pre>-p：递归创建目录，如果目录已存在，则不创建，并且不报错</pre></td></tr><tr><td data-num="6"></td><td><pre>-v：打印目录的创建过程</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">#示例</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir dir1</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir /home/ob/dir1 /home/ob/dir2</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir -v /home/ob/&#123;dir3,dir4&#125;	</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir -pv /home/ob/dir5/dir6</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir -pv /home/&#123;ob/&#123;diu,but&#125;,boy&#125;</span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">#报错 1</span></pre></td></tr><tr><td data-num="15"></td><td><pre>没有这样的文件或目录，不能创建/d/wyk/dsb/250</pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir /d/wyk/dsb/250</span></pre></td></tr><tr><td data-num="17"></td><td><pre>mkdir: cannot create directory ‘/d/wyk/dsb/250’: No such <span class="token function">file</span> or directory</pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token comment">#报错 2</span></pre></td></tr><tr><td data-num="19"></td><td><pre>目录不能创建，zls文件已存在 </pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir zls </span></pre></td></tr><tr><td data-num="21"></td><td><pre>mkdir: cannot create directory ‘zls’: File exists</pre></td></tr><tr><td data-num="22"></td><td><pre></pre></td></tr><tr><td data-num="23"></td><td><pre>ps：使用mkdir创建目录，它的上一级目录必须存在，才能创建</pre></td></tr><tr><td data-num="24"></td><td><pre></pre></td></tr><tr><td data-num="25"></td><td><pre><span class="token comment">#练习：一条命令创建出以下目录</span></pre></td></tr><tr><td data-num="26"></td><td><pre>/home/zls</pre></td></tr><tr><td data-num="27"></td><td><pre>/home/zls/test1</pre></td></tr><tr><td data-num="28"></td><td><pre>/home/zls/test2</pre></td></tr><tr><td data-num="29"></td><td><pre>/home/oldboy</pre></td></tr><tr><td data-num="30"></td><td><pre>/home/oldboy/test1</pre></td></tr><tr><td data-num="31"></td><td><pre>/tmp/oldboy</pre></td></tr><tr><td data-num="32"></td><td><pre>/tmp/oldgirl</pre></td></tr><tr><td data-num="33"></td><td><pre>/root/test/test1</pre></td></tr><tr><td data-num="34"></td><td><pre>/root/test/test2</pre></td></tr><tr><td data-num="35"></td><td><pre>/root/abc</pre></td></tr><tr><td data-num="36"></td><td><pre>/backup</pre></td></tr><tr><td data-num="37"></td><td><pre></pre></td></tr><tr><td data-num="38"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mkdir -pv /&#123;home/&#123;zls/&#123;test1,test2&#125;,oldboy/test1&#125;,tmp/&#123;oldboy,oldgirl&#125;,root/&#123;test/&#123;test1,test2&#125;,abc&#125;,bachup&#125;</span></pre></td></tr></table></figure><h2 id="文件创建-touch"><a class="markdownIt-Anchor" href="#文件创建-touch">#</a> 文件创建 <code> touch</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#语法</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">touch</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span> 文件名</pre></td></tr><tr><td data-num="3"></td><td><pre>touch命令 <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 文件名，可以有多个</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># touch file  // 文件已存在修改时间戳</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># touch file2 file3</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># touch /home/od/file4 file5</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># touch file &#123;a,b,c&#125;  //&#123;&#125; 集合，等价 touch a b c</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># touch file&#123;1..10&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># touch file&#123;a..z&#125;</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre>ps1：touch想要创建文件，该文件的上级目录必须存在</pre></td></tr><tr><td data-num="13"></td><td><pre>ps2：<span class="token punctuation">&#123;</span>a<span class="token punctuation">..</span>z<span class="token punctuation">&#125;</span>根据ASCII表进行创建</pre></td></tr></table></figure><h2 id="文件移动mv"><a class="markdownIt-Anchor" href="#文件移动mv">#</a> 文件移动 <code>mv</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mv file1 file2    // 原地移动相当于改名</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mv file1 /tmp/    // 移动文件至 tmp 目录</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mv /tmp/file1 ./  // 移动 tmp 目录的文件至当前目录</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># mv dir//tmp/     // 移动目录至 /tmp 目录下</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">#移动多个文件至同一个目录</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">touch</span> file<span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">3</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token function">mv</span> file1 file2 file3 /opt/</pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">#移动多个目录至同一个目录</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token function">mkdir</span> dir<span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">3</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token function">mv</span> dir1/ dir2/ dir3/ /opt</pre></td></tr></table></figure><h2 id="显示目录结构tree"><a class="markdownIt-Anchor" href="#显示目录结构tree">#</a> 显示目录结构 <code>tree</code></h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#修改 yum 源</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">rm</span> <span class="token parameter variable">-fr</span> /etc/yum.repos.d/*</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token function">curl</span> <span class="token parameter variable">-o</span> /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token function">curl</span> <span class="token parameter variable">-o</span> /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">#安装 tree 命令</span></pre></td></tr><tr><td data-num="6"></td><td><pre>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> tree</pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">#选项</span></pre></td></tr><tr><td data-num="9"></td><td><pre>-L：显示目录树的层级</pre></td></tr><tr><td data-num="10"></td><td><pre>-d：只查看目录</pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">[</span>root@client ~<span class="token punctuation">]</span><span class="token comment"># tree /home/ob/  // 显示当前目录下的结构</span></pre></td></tr><tr><td data-num="12"></td><td><pre>/home/ob/</pre></td></tr><tr><td data-num="13"></td><td><pre>├──	dir1</pre></td></tr><tr><td data-num="14"></td><td><pre>├──	dir2</pre></td></tr><tr><td data-num="15"></td><td><pre>├──	dir3</pre></td></tr><tr><td data-num="16"></td><td><pre>├──	dir4</pre></td></tr><tr><td data-num="17"></td><td><pre>├──	dir5</pre></td></tr><tr><td data-num="18"></td><td><pre>│    └──dir6</pre></td></tr><tr><td data-num="19"></td><td><pre>└──	dir7</pre></td></tr></table></figure><h2 id="文件复制cp"><a class="markdownIt-Anchor" href="#文件复制cp">#</a> 文件复制 <code>cp</code></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:center">保持文件属性</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:center">递归复制，复制目录及目录下的所有文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:center">相当于 - rp，既可以拷贝目录，又可以保持文件属性</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:center">提示是否覆盖（cp 命令默认使用 &quot;cp -i&quot;）</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:center">显示拷贝的过程</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#语法 </span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">cp</span> <span class="token punctuation">[</span>option<span class="token punctuation">]</span> 源文件 目标文件</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>ps：默认只能拷贝文件</pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">#示例</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp file /tmp/file_copy</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">#不修改名称</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp name /tmp/name</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp file /tmp/</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment">#-p 保持原文件属性</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -p /abc/oldboy.txt .</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -p file /tmp/file_p</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">#-r 复制目录使用，递归复制</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -r /etc/ /tmp/</span></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -r /tmp /root/</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token comment">#拷贝多个文件至一个目录</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -rv /etc/hosts /etc/hostname /tmp</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -rv /etc/&#123;hosts,hosts.bak&#125; /tmp</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token comment">#-a 拷贝目录，保持目录属性 </span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -a /abc /root/</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token comment">#-i 提示是否覆盖</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -i /abc/oldboy.txt /tmp/zhujiao </span></pre></td></tr><tr><td data-num="24"></td><td><pre>cp: overwrite ‘/tmp/zhujiao’?</pre></td></tr><tr><td data-num="25"></td><td><pre><span class="token comment">#-v 显示拷贝过程</span></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cp -av /etc /tmp/</span></pre></td></tr><tr><td data-num="27"></td><td><pre></pre></td></tr><tr><td data-num="28"></td><td><pre><span class="token comment">#避免提示的两种方式</span></pre></td></tr><tr><td data-num="29"></td><td><pre><span class="token number">1</span>.使用转义符：让转义符后面的内容还原成原始状态</pre></td></tr><tr><td data-num="30"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># \cp -a /etc /tmp/ </span></pre></td></tr><tr><td data-num="31"></td><td><pre><span class="token number">2</span>.使用命令的绝对路径 </pre></td></tr><tr><td data-num="32"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># /bin/cp -a /etc /tmp/</span></pre></td></tr><tr><td data-num="33"></td><td><pre><span class="token comment">#查看命令所在位置</span></pre></td></tr><tr><td data-num="34"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># which cp</span></pre></td></tr><tr><td data-num="35"></td><td><pre></pre></td></tr><tr><td data-num="36"></td><td><pre>ps：当拷贝文件有多个源文件的情况下，最后一个必须是目录，不能是普通文件，也不能不存在</pre></td></tr></table></figure><h2 id="删除命令rm"><a class="markdownIt-Anchor" href="#删除命令rm">#</a> 删除命令 <code>rm</code></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:center">提示是否删除（rm 命令默认使用 &quot;rm -i&quot;）</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:center">递归删除</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:center">强制删除 force</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:center">只能删除空目录</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#语法 </span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">rm</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span> 文件名</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>ps：默认只能删除普通文件</pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">#示例</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm /tmp/ooo </span></pre></td></tr><tr><td data-num="8"></td><td><pre>rm: remove regular empty <span class="token function">file</span> ‘/tmp/ooo’?</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment">#-f 删除文件不提示</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm -f file.txt</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm -fr ./*</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">#-f 删除不包括隐藏文件</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># mkdir /home/dir10</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># touch /home/dir10/&#123;file2,file3,.file4&#125;</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm -f /home/dir10/*</span></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># ls /home/dir10/ -a</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token punctuation">..</span>.	.file4</pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token comment">#-r 递归删除</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm -r /root/abc/ </span></pre></td></tr><tr><td data-num="20"></td><td><pre>rm: descend into directory ‘/root/abc/’? y </pre></td></tr><tr><td data-num="21"></td><td><pre>rm: remove regular <span class="token function">file</span> ‘/root/abc/oldboy.txt’? y </pre></td></tr><tr><td data-num="22"></td><td><pre>rm: remove directory ‘/root/abc/’? y</pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token comment">#-rf 递归删除不提示（慎用）</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm -rf dir/</span></pre></td></tr><tr><td data-num="25"></td><td><pre></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token comment">#报错</span></pre></td></tr><tr><td data-num="27"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rm /root/abc/ </span></pre></td></tr><tr><td data-num="28"></td><td><pre>rm: cannot remove ‘/root/abc/’: Is a directory </pre></td></tr><tr><td data-num="29"></td><td><pre>/root/abc是一个目录，rm不能直接删除目录</pre></td></tr></table></figure>
+      <div class="tags">
+          <a href="/tags/mkdir/" rel="tag"><i class="ic i-tag"></i> mkdir</a>
+          <a href="/tags/touch/" rel="tag"><i class="ic i-tag"></i> touch</a>
+          <a href="/tags/mv/" rel="tag"><i class="ic i-tag"></i> mv</a>
+          <a href="/tags/tree/" rel="tag"><i class="ic i-tag"></i> tree</a>
+          <a href="/tags/cp/" rel="tag"><i class="ic i-tag"></i> cp</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-04-06 19:55:10" itemprop="dateModified" datetime="2023-04-06T19:55:10+08:00">2023-04-06</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="五河古城 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="五河古城 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>五河古城 <i class="ic i-at"><em>@</em></i>今天也请继续加油
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://wuhegucheng.github.io/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/01.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%B1%BB%E5%91%BD%E4%BB%A4/" title="文件操作类命令">http://wuhegucheng.github.io/2023/04/01/linux/base/05.文件管理/01.文件管理_文件操作类命令/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/03.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%89%E5%89%91%E5%AE%A2_grep/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2875%29.jpg" title="文件三剑客">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>文件三剑客</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2023/04/01/linux/base/04.Linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/01.%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2839%29.jpg" title="目录管理">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>目录管理</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text"> 文件管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E5%88%9B%E5%BB%BAmkdir"><span class="toc-number">1.1.</span> <span class="toc-text"> 目录创建 mkdir</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%88%9B%E5%BB%BA-touch"><span class="toc-number">1.2.</span> <span class="toc-text"> 文件创建  touch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%A7%BB%E5%8A%A8mv"><span class="toc-number">1.3.</span> <span class="toc-text"> 文件移动 mv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84tree"><span class="toc-number">1.4.</span> <span class="toc-text"> 显示目录结构 tree</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%A4%8D%E5%88%B6cp"><span class="toc-number">1.5.</span> <span class="toc-text"> 文件复制 cp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%91%BD%E4%BB%A4rm"><span class="toc-number">1.6.</span> <span class="toc-text"> 删除命令 rm</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="五河古城"
+      data-src="/images/love.jpg">
+  <p class="name" itemprop="name">五河古城</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">33</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">12</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">51</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d1aGVndWNoZW5n" title="https:&#x2F;&#x2F;github.com&#x2F;wuhegucheng"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS8zNS0yMS04NC05LTk3" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;35-21-84-9-97"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tL20vdXNlcj9pZD0xMzE5ODM1NTgw" title="https:&#x2F;&#x2F;music.163.com&#x2F;m&#x2F;user?id&#x3D;1319835580"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vdS83NTIxNTI1MDY5" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7521525069"><i class="ic i-weibo"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/03.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%89%E5%89%91%E5%AE%A2_grep/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2023/04/01/linux/base/04.Linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/01.%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Python/course-1/" title="分类于 course-1">course-1</a>
+</div>
+
+    <span><a href="/2020/04/13/python/course-1/week-2/" title="第2周 判断">第2周 判断</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/02.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E6%9F%A5%E7%9C%8B%E7%B1%BB%E5%91%BD%E4%BB%A4/" title="文件查看类命令">文件查看类命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/03.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%861/" title="用户组管理1">用户组管理1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/02.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%862/" title="用户管理1">用户管理1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/06.%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/02.%E7%B3%BB%E7%BB%9F%E9%93%BE%E6%8E%A5%E6%96%87%E4%BB%B6/" title="系统链接文件">系统链接文件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/05-http%E5%8D%8F%E8%AE%AE/" title="分类于 05.http协议">05.http协议</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/05.http%E5%8D%8F%E8%AE%AE/01.%20http%E5%8D%8F%E8%AE%AE/" title="http协议介绍">http协议介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/01-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/" title="分类于 01.环境准备">01.环境准备</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/01.%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/01.%20%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D/" title="111">111</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/07.%20Ansible%E8%87%AA%E5%8A%A8%E5%8C%96/3/" title="111">111</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Python/course-1/" title="分类于 course-1">course-1</a>
+</div>
+
+    <span><a href="/2020/04/12/python/course-1/week-1/" title="第1周 计算">第1周 计算</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/04.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E5%AD%97%E7%AC%A6%E5%A4%84%E7%90%86%E7%B1%BB%E5%91%BD%E4%BB%A4.md/" title="字符处理类命令">字符处理类命令</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">五河古城 @ 五河古城的Blog</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/04/01/linux/base/05.文件管理/01.文件管理_文件操作类命令/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

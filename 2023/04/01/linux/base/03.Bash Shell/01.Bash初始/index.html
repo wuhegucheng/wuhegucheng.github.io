@@ -1,0 +1,559 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="今天也请继续加油" href="http://wuhegucheng.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Bash,命令提示符" />
+
+
+<link rel="canonical" href="http://wuhegucheng.github.io/2023/04/01/linux/base/03.Bash%20Shell/01.Bash%E5%88%9D%E5%A7%8B/">
+
+
+
+  <title>
+Bash Shell |
+五河古城的Blog = 今天也请继续加油 = “你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Bash Shell
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-04-01 16:46:15">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-04-01T16:46:15+08:00">2023-04-01</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">五河古城的Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2840%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2843%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2870%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2875%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2828%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2865%29.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://wuhegucheng.github.io/2023/04/01/linux/base/03.Bash%20Shell/01.Bash%E5%88%9D%E5%A7%8B/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/love.jpg">
+    <meta itemprop="name" content="五河古城">
+    <meta itemprop="description" content="“你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="今天也请继续加油">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="bash-shell"><a class="markdownIt-Anchor" href="#bash-shell">#</a> Bash Shell</h1>
+<p><code>Bash Shell</code>  是 Linux 的命令解释器，主要复杂用户程序与内核系统进行交互操作的一种接口，将用户输入的命令翻译给内核，由内核驱动硬件，最终将处理后的结果输出值 <code>Bash Shell</code>  屏幕中终端</p>
+<p><img data-src="https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213559585.png" alt="image-20220320213559585"></p>
+<h2 id="bash的作用"><a class="markdownIt-Anchor" href="#bash的作用">#</a> Bash 的作用</h2>
+<p>1）文件管理</p>
+<p>2）权限管理</p>
+<p>3）用户管理</p>
+<p>4）磁盘管理</p>
+<p>5）网络管理</p>
+<p>6）软件管理</p>
+<p>7）应用管理</p>
+<h2 id="如何使用bash"><a class="markdownIt-Anchor" href="#如何使用bash">#</a> 如何使用 bash</h2>
+<ul>
+<li>执行命令
+<ul>
+<li>效率低，适合平时简单的工作</li>
+</ul>
+</li>
+<li>执行脚本
+<ul>
+<li>效率高，适合比较复杂繁琐的工作</li>
+</ul>
+</li>
+</ul>
+<p>创建 100 个用户，单纯输入命令需要 100 次，而使用 shell 脚本则可以轻松解决</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">[</span>root@web	~<span class="token punctuation">]</span><span class="token comment">#	cat	useradd.sh</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">#!/usr/bin/bash</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">#批量创建脚本</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">100</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">do</span></pre></td></tr><tr><td data-num="6"></td><td><pre>	<span class="token function">useradd</span>	alice-<span class="token variable">$i</span></pre></td></tr><tr><td data-num="7"></td><td><pre>	<span class="token builtin class-name">echo</span> <span class="token string">"alice-<span class="token variable">$i</span>"</span>	is	create	ok<span class="token punctuation">..</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">done</span></pre></td></tr></table></figure><h2 id="命令提示符"><a class="markdownIt-Anchor" href="#命令提示符">#</a> 命令提示符</h2>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">[</span>root@huanglong ~<span class="token punctuation">]</span><span class="token comment"># </span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">[</span><span class="token punctuation">]</span>：没有任何作用，只是为了分割 </pre></td></tr><tr><td data-num="3"></td><td><pre>root：当前登录系统的用户 </pre></td></tr><tr><td data-num="4"></td><td><pre>@：没有任何作用，为了分割用户和主机名 </pre></td></tr><tr><td data-num="5"></td><td><pre>localhost：当前短格式的主机名 </pre></td></tr><tr><td data-num="6"></td><td><pre>~：当前所在的工作目录 </pre></td></tr><tr><td data-num="7"></td><td><pre>~特殊意义：任何系统的用户，都有自己的家目录，当前登录用户的家目录 </pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>超级管理员用户的家目录是：/root </pre></td></tr><tr><td data-num="10"></td><td><pre>普通用户的家目录是：/home/用户名 </pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token comment">#：超级管理员的提示符</span></pre></td></tr><tr><td data-num="12"></td><td><pre>$：普通用户的提示符</pre></td></tr></table></figure><p><img data-src="https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213853972.png" alt="image-20220320213853972"></p>
+<p>PS1 的常用参数以及含义</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">\</span>d ：代表日期，格式为weekday month date，例如：<span class="token string">"Mon Aug 1"</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">\</span>H ：完整的主机名称</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">\</span>h ：仅取主机名中的第一个名字</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">\</span>t ：显示时间为24小时格式，如：HH：MM：SS</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">\</span>T ：显示时间为12小时格式</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">\</span>A ：显示时间为24小时格式：HH：MM</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">\</span>u ：当前用户的账号名称</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">\</span>v ：<span class="token environment constant">BASH</span>的版本信息</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">\</span>w ：完整的工作目录名称</pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">\</span>W ：利用basename取得工作目录名称，只显示最后一个目录名</pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">\</span># ：下达的第几个命令</pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">\</span>$ ：提示字符，如果是root用户，提示符为 <span class="token comment"># ，普通用户则为 $</span></pre></td></tr><tr><td data-num="13"></td><td><pre>　　</pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">#颜色</span></pre></td></tr><tr><td data-num="15"></td><td><pre>字体/背景</pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token number">30</span>  <span class="token number">40</span> 黑色</pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token number">31</span>  <span class="token number">41</span> 红色</pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token number">32</span>  <span class="token number">42</span> 绿色</pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token number">33</span>  <span class="token number">43</span> 黄色</pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token number">34</span>  <span class="token number">44</span> 蓝色</pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token number">35</span>  <span class="token number">45</span> 紫红色</pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token number">36</span>  <span class="token number">46</span> 青蓝色</pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token number">37</span>  <span class="token number">47</span> 白色</pre></td></tr><tr><td data-num="24"></td><td><pre></pre></td></tr><tr><td data-num="25"></td><td><pre><span class="token comment">#修改配置文件.bashrc</span></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token assign-left variable"><span class="token environment constant">PS1</span></span><span class="token operator">=</span><span class="token string">"\[<span class="token entity" title="\e">\e</span>[37;40m\][\[<span class="token entity" title="\e">\e</span>[32;40m\]\u\[<span class="token entity" title="\e">\e</span>[37;40m\]@\[<span class="token entity" title="\e">\e</span>[35;40m\]\h\[<span class="token entity" title="\e">\e</span>[0m\] \ [<span class="token entity" title="\e">\e</span>[36;40m\]\w\[<span class="token entity" title="\e">\e</span>[0m\]]<span class="token entity" title="\\">\\</span>$ "</span></pre></td></tr><tr><td data-num="27"></td><td><pre></pre></td></tr><tr><td data-num="28"></td><td><pre><span class="token comment">#修改主机名的命令 </span></pre></td></tr><tr><td data-num="29"></td><td><pre>hostnamectl set-hostname 主机名</pre></td></tr><tr><td data-num="30"></td><td><pre></pre></td></tr><tr><td data-num="31"></td><td><pre><span class="token function">vim</span> /etc/profiel.d/<span class="token environment constant">PS1</span>.sh</pre></td></tr><tr><td data-num="32"></td><td><pre><span class="token function-name function">_set_prompt</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="33"></td><td><pre>        <span class="token assign-left variable">_last_exit_code</span><span class="token operator">=</span><span class="token variable">$?</span> <span class="token comment"># Must come first!</span></pre></td></tr><tr><td data-num="34"></td><td><pre>        <span class="token assign-left variable">C_EC</span><span class="token operator">=</span><span class="token string">'\[\e[1;37m\]'</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">printf</span> <span class="token string">'%3s'</span> $<span class="token punctuation">&#123;</span>_last_exit_code<span class="token punctuation">&#125;</span><span class="token variable">)</span></span><span class="token string">'\[\e[0m\]'</span></pre></td></tr><tr><td data-num="35"></td><td><pre> </pre></td></tr><tr><td data-num="36"></td><td><pre>        <span class="token comment">#todo: set encoding to UTF-8 !</span></pre></td></tr><tr><td data-num="37"></td><td><pre>        <span class="token assign-left variable">FancyX</span><span class="token operator">=</span><span class="token string">'\342\234\227'</span>      <span class="token comment"># ✗ ✘</span></pre></td></tr><tr><td data-num="38"></td><td><pre>        <span class="token assign-left variable">Checkmark</span><span class="token operator">=</span><span class="token string">'\342\234\223'</span>   <span class="token comment"># ✓ ✔</span></pre></td></tr><tr><td data-num="39"></td><td><pre>        <span class="token assign-left variable">C_Fail</span><span class="token operator">=</span><span class="token string">'\[\e[1;31m\]'</span><span class="token variable">$&#123;FancyX&#125;</span><span class="token string">'\[\e[0m\]'</span></pre></td></tr><tr><td data-num="40"></td><td><pre>        <span class="token assign-left variable">C_Ok</span><span class="token operator">=</span><span class="token string">'\[\e[32m\]'</span><span class="token variable">$&#123;Checkmark&#125;</span><span class="token string">'\[\e[0m\]'</span></pre></td></tr><tr><td data-num="41"></td><td><pre>        <span class="token assign-left variable">C_Time</span><span class="token operator">=</span><span class="token string">'\[\e[2;37m\]'</span>'<span class="token punctuation">\</span>t<span class="token string">''</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'</pre></td></tr><tr><td data-num="42"></td><td><pre> </pre></td></tr><tr><td data-num="43"></td><td><pre>        C_NormalUser='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">;</span>33m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">''</span><span class="token punctuation">\</span>u<span class="token string">''</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'</pre></td></tr><tr><td data-num="44"></td><td><pre>        C_RootUser='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span>35m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">''</span><span class="token punctuation">\</span>u<span class="token string">''</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'</pre></td></tr><tr><td data-num="45"></td><td><pre> </pre></td></tr><tr><td data-num="46"></td><td><pre>        if [ $(uname -s) == "Darwin" ]; then</pre></td></tr><tr><td data-num="47"></td><td><pre>                _ip_addr=$(ipconfig getifaddr $(netstat -nr | awk '</span><span class="token punctuation">&#123;</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$1</span> ~/default/<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> print <span class="token variable">$6</span><span class="token punctuation">&#125;</span> <span class="token punctuation">&#125;</span><span class="token string">'))</pre></td></tr><tr><td data-num="48"></td><td><pre>        elif [ $(uname -s) == "Linux" ]; then</pre></td></tr><tr><td data-num="49"></td><td><pre>                # may print $(NF-2)</pre></td></tr><tr><td data-num="50"></td><td><pre>                #_ip_addr=$(ip route | awk '</span>/ src / <span class="token punctuation">&#123;</span>print <span class="token variable">$NF</span><span class="token punctuation">&#125;</span><span class="token string">' | head -1 )</pre></td></tr><tr><td data-num="51"></td><td><pre>                _ip_addr=$(ip route | grep -oP '</span><span class="token punctuation">(</span>?<span class="token operator">&lt;=</span>src <span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span>-9.<span class="token punctuation">]</span>+<span class="token string">' | tail -1 )</pre></td></tr><tr><td data-num="52"></td><td><pre>        fi</pre></td></tr><tr><td data-num="53"></td><td><pre> </pre></td></tr><tr><td data-num="54"></td><td><pre>        C_Host='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span>33m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'$(hostname -A | awk '</span><span class="token punctuation">&#123;</span>print <span class="token variable">$1</span><span class="token punctuation">&#125;</span><span class="token string">')'</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">','</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">;</span>32m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'$&#123;_ip_addr:-\h&#125;'</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'</pre></td></tr><tr><td data-num="55"></td><td><pre>        C_Pwd='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>36m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">''</span><span class="token punctuation">\</span>w<span class="token string">''</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'</pre></td></tr><tr><td data-num="56"></td><td><pre>        C_Marker='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">;</span>37m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">''</span><span class="token punctuation">\</span><span class="token string">$''</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'</pre></td></tr><tr><td data-num="57"></td><td><pre> </pre></td></tr><tr><td data-num="58"></td><td><pre>        git diff --exit-code --quiet HEAD >/dev/null 2>&amp;1</pre></td></tr><tr><td data-num="59"></td><td><pre>        _git_diff_exit_code=$?</pre></td></tr><tr><td data-num="60"></td><td><pre>        if [ $&#123;_git_diff_exit_code&#125; -eq 1 ]; then</pre></td></tr><tr><td data-num="61"></td><td><pre>                C_Marker='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>101m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'*'</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'" $&#123;C_Marker&#125;"</pre></td></tr><tr><td data-num="62"></td><td><pre>        elif [ $&#123;_git_diff_exit_code&#125; -eq 0 ]; then</pre></td></tr><tr><td data-num="63"></td><td><pre>                C_Marker='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>102m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'='</span><span class="token punctuation">\</span><span class="token punctuation">[</span><span class="token punctuation">\</span>e<span class="token punctuation">[</span>0m<span class="token punctuation">\</span><span class="token punctuation">]</span><span class="token string">'" $&#123;C_Marker&#125;"</pre></td></tr><tr><td data-num="64"></td><td><pre>        fi</pre></td></tr><tr><td data-num="65"></td><td><pre> </pre></td></tr><tr><td data-num="66"></td><td><pre> </pre></td></tr><tr><td data-num="67"></td><td><pre>        # Add a bright white exit status for the last command</pre></td></tr><tr><td data-num="68"></td><td><pre>        PS1="$C_EC "</pre></td></tr><tr><td data-num="69"></td><td><pre> </pre></td></tr><tr><td data-num="70"></td><td><pre>        # If it was successful, print a green check mark.</pre></td></tr><tr><td data-num="71"></td><td><pre>        # Otherwise, print a red X.</pre></td></tr><tr><td data-num="72"></td><td><pre>        if [[ $&#123;_last_exit_code&#125; -eq 0 ]]; then</pre></td></tr><tr><td data-num="73"></td><td><pre>                PS1+="$C_Ok "</pre></td></tr><tr><td data-num="74"></td><td><pre>        else</pre></td></tr><tr><td data-num="75"></td><td><pre>                PS1+="$C_Fail "</pre></td></tr><tr><td data-num="76"></td><td><pre>        fi</pre></td></tr><tr><td data-num="77"></td><td><pre> </pre></td></tr><tr><td data-num="78"></td><td><pre>        # print HH:ii:ss</pre></td></tr><tr><td data-num="79"></td><td><pre>        PS1+="$C_Time "</pre></td></tr><tr><td data-num="80"></td><td><pre> </pre></td></tr><tr><td data-num="81"></td><td><pre>        # If root, just print the host in red. Otherwise,</pre></td></tr><tr><td data-num="82"></td><td><pre>        # print the current user and host in green.</pre></td></tr><tr><td data-num="83"></td><td><pre>        if [[ $EUID -eq 0 ]]; then</pre></td></tr><tr><td data-num="84"></td><td><pre>                PS1+="$&#123;C_RootUser&#125;@$&#123;C_Host&#125;:"</pre></td></tr><tr><td data-num="85"></td><td><pre>        else</pre></td></tr><tr><td data-num="86"></td><td><pre>                PS1+="$&#123;C_NormalUser&#125;@$&#123;C_Host&#125;:"</pre></td></tr><tr><td data-num="87"></td><td><pre>        fi</pre></td></tr><tr><td data-num="88"></td><td><pre> </pre></td></tr><tr><td data-num="89"></td><td><pre>        # Print the working directory and prompt marker</pre></td></tr><tr><td data-num="90"></td><td><pre>        PS1+="$C_Pwd $C_Marker "</pre></td></tr><tr><td data-num="91"></td><td><pre>&#125;</pre></td></tr><tr><td data-num="92"></td><td><pre>PROMPT_COMMAND='</span>_set_prompt'</pre></td></tr></table></figure>
+      <div class="tags">
+          <a href="/tags/Bash/" rel="tag"><i class="ic i-tag"></i> Bash</a>
+          <a href="/tags/%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6/" rel="tag"><i class="ic i-tag"></i> 命令提示符</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-04-06 19:45:31" itemprop="dateModified" datetime="2023-04-06T19:45:31+08:00">2023-04-06</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="五河古城 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="五河古城 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>五河古城 <i class="ic i-at"><em>@</em></i>今天也请继续加油
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://wuhegucheng.github.io/2023/04/01/linux/base/03.Bash%20Shell/01.Bash%E5%88%9D%E5%A7%8B/" title="Bash Shell">http://wuhegucheng.github.io/2023/04/01/linux/base/03.Bash Shell/01.Bash初始/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/04/01/linux/base/03.Bash%20Shell/02.Bash%E7%89%B9%E6%80%A7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2858%29.jpg" title="Bash特性">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Bash特性</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2866%29.jpg" title="虚拟机的快照、克隆">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>虚拟机的快照、克隆</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#bash-shell"><span class="toc-number">1.</span> <span class="toc-text"> Bash Shell</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#bash%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text"> Bash 的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8bash"><span class="toc-number">1.2.</span> <span class="toc-text"> 如何使用 bash</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6"><span class="toc-number">1.3.</span> <span class="toc-text"> 命令提示符</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="五河古城"
+      data-src="/images/love.jpg">
+  <p class="name" itemprop="name">五河古城</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">33</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">12</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">51</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d1aGVndWNoZW5n" title="https:&#x2F;&#x2F;github.com&#x2F;wuhegucheng"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS8zNS0yMS04NC05LTk3" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;35-21-84-9-97"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tL20vdXNlcj9pZD0xMzE5ODM1NTgw" title="https:&#x2F;&#x2F;music.163.com&#x2F;m&#x2F;user?id&#x3D;1319835580"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vdS83NTIxNTI1MDY5" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7521525069"><i class="ic i-weibo"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2023/04/01/linux/base/03.Bash%20Shell/02.Bash%E7%89%B9%E6%80%A7/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/03.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%89%E5%89%91%E5%AE%A2_grep/" title="文件三剑客">文件三剑客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Python/course-1/" title="分类于 course-1">course-1</a>
+</div>
+
+    <span><a href="/2020/04/13/python/course-1/week-2/" title="第2周 判断">第2周 判断</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/01-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/" title="分类于 01.环境准备">01.环境准备</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/01.%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/01.%20%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D/" title="111">111</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/04.Linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/01.%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" title="目录管理">目录管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/02.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%862/" title="用户管理1">用户管理1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/02-rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/" title="分类于 02.rsync数据备份">02.rsync数据备份</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/02.rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/" title="rsync数据备份">rsync数据备份</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/3/" title="111">111</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/07.%20Ansible%E8%87%AA%E5%8A%A8%E5%8C%96/3/" title="111">111</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/07.Vim%E7%BC%96%E8%BE%91%E5%99%A8/01.vim%E7%BC%96%E8%BE%91%E5%99%A8/" title="vim编辑器">vim编辑器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/04.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%862/" title="用户组管理2">用户组管理2</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">五河古城 @ 五河古城的Blog</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/04/01/linux/base/03.Bash Shell/01.Bash初始/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

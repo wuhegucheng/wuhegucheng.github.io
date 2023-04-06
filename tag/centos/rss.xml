@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>今天也请继续加油 • Posts by &#34;centos&#34; tag</title>
+        <link>http://wuhegucheng.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
+        <category>markdown</category>
+        <category>CentOS</category>
+        <category>虚拟机</category>
+        <category>网卡</category>
+        <category>网络模式</category>
+        <category>Xshell</category>
+        <category>虚拟机快照</category>
+        <category>虚拟机克隆</category>
+        <category>GUI图形化</category>
+        <category>Bash</category>
+        <category>命令提示符</category>
+        <category>命令快捷键</category>
+        <category>目录</category>
+        <category>路径</category>
+        <category>mkdir</category>
+        <category>touch</category>
+        <category>mv</category>
+        <category>tree</category>
+        <category>cp</category>
+        <category>grep</category>
+        <category>awk</category>
+        <category>which</category>
+        <category>文件属性</category>
+        <category>sort</category>
+        <category>uniq</category>
+        <category>cut</category>
+        <category>wc</category>
+        <category>rz</category>
+        <category>sz</category>
+        <category>wget</category>
+        <category>文件类型</category>
+        <category>block</category>
+        <category>inode</category>
+        <category>软链接</category>
+        <category>元数据</category>
+        <category>vim</category>
+        <category>用户</category>
+        <category>cat</category>
+        <category>more</category>
+        <category>less</category>
+        <category>head</category>
+        <category>tail</category>
+        <category>用户组</category>
+        <category>shell环境变量</category>
+        <category>系统变量</category>
+        <category>切换用户</category>
+        <category>sudo</category>
+        <category>NFS</category>
+        <category>rsync</category>
+        <category>ssh</category>
+        <category>http</category>
+        <item>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/02.CentOS%E5%AE%89%E8%A3%85/</guid>
+            <title>CentOS安装</title>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/02.CentOS%E5%AE%89%E8%A3%85/</link>
+            <category>CentOS</category>
+            <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;centos安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#centos安装&#34;&gt;#&lt;/a&gt; CentOS 安装&lt;/h1&gt;
+&lt;p&gt;打开 CD/DVD 光驱 -&amp;gt; 使用 ISO 映像文件 -&amp;gt; 浏览（找到 iso 文件位置）-&amp;gt; 勾选 &amp;quot;启动时连接&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232308150.png&#34; alt=&#34;image-20220318232308150&#34;&gt;&lt;/p&gt;
+&lt;p&gt;开启虚拟机&lt;/p&gt;
+&lt;p&gt;呼出鼠标：Ctrl + Alt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;red&#34;&gt;Install CentOS 7 安装 CentOS7 系统 (推荐)&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test this media &amp;amp; install CentOS 7 先测试镜像，然后再安装 CentOS7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;救援模式（修复系统，忘记密码，修改密码）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232455160.png&#34; alt=&#34;image-20220318232455160&#34;&gt;&lt;/p&gt;
+&lt;p&gt;选择英文 -&amp;gt; continue&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232552218.png&#34; alt=&#34;image-20220318232552218&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232702066.png&#34; alt=&#34;image-20220318232702066&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设置时区 DATE &amp;amp; TIME：Asia Shanghai&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232643123.png&#34; alt=&#34;image-20220318232643123&#34;&gt;&lt;/p&gt;
+&lt;p&gt;关闭 KDUMP 功能&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232737541.png&#34; alt=&#34;image-20220318232737541&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232751920.png&#34; alt=&#34;image-20220318232751920&#34;&gt;&lt;/p&gt;
+&lt;p&gt;磁盘分区&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232813349.png&#34; alt=&#34;image-20220318232813349&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232949907.png&#34; alt=&#34;image-20220318232949907&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/：根分区 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/boot：系统启动文件存放分区 500M &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;swap：虚拟内存分区 1024M 真实内存的1~2倍 最高8G&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233029577.png&#34; alt=&#34;image-20220318233029577&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233052284.png&#34; alt=&#34;image-20220318233052284&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233115380.png&#34; alt=&#34;image-20220318233115380&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233129826.png&#34; alt=&#34;image-20220318233129826&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233146258.png&#34; alt=&#34;image-20220318233146258&#34;&gt;&lt;/p&gt;
+&lt;p&gt;网络配置&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233203911.png&#34; alt=&#34;image-20220318233203911&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;DHCP：动态获取 IP 地址，地址有租期，租期到了，会更改 IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Address：IP 地址（计算机之间进行通信的手机号）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NetMask：子网掩码，划分网段，区分网段，决定计算机之间的网络是否可以正常通信&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS：域名解析服务器&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233247528.png&#34; alt=&#34;image-20220318233247528&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233444931.png&#34; alt=&#34;image-20220318233444931&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设置密码&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233512767.png&#34; alt=&#34;image-20220318233512767&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

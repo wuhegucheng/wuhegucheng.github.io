@@ -1,4 +1,160 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="今天也请继续加油" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="今天也请继续加油" type="application/atom+xml"><link rel="alternate" type="application/json" title="今天也请继续加油" href="http://wuhegucheng.github.io/feed.json"/><link rel="preconnect" href="https://lf9-cdn-tos.bytecdntp.com"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="dns-prefetch" href="https://unpkg.com"/><link rel="stylesheet" href="//fonts.geekzu.org/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.1"><script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.js"></script><link rel="stylesheet" href="/css/twikoo.css?v=0.2.1"><script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.nocss.min.js"></script><link rel="canonical" href="http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/"><title>第2周 判断 - </title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">第2周 判断</h1><div class="meta"><span class="item" title="创建时间：2020-04-13 19:12:45"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2020-04-13T19:12:45+08:00">2020-04-13</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>4.6k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>4 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">五河古城的Blog</a></li></ul><ul class="right" id="rightNav"><li class="item theme" @click="changeThemeByBtn"><i class="ic" :class="{'i-sun': !themeStatus,'i-moon': themeStatus}"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2832%29.jpg"></li><li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2858%29.jpg"></li><li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2867%29.jpg"></li><li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2875%29.jpg"></li><li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2848%29.jpg"></li><li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2851%29.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/Python/" itemprop="item" rel="index" title="分类于Python"><span itemprop="name">Python<meta itemprop="position" content="0"/></span></a></span><i class="ic i-angle-right"></i><span itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/Python/course-1/" itemprop="item" rel="index" title="分类于course-1"><span itemprop="name">course-1<meta itemprop="position" content="1"/></span></a></span><i class="ic i-angle-right"></i></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/love.jpg"/><meta itemprop="name" content="五河古城"/><meta itemprop="description" content="“你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。, "/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="今天也请继续加油"/></span><div class="body md" itemprop="articleBody"><p>:::note info<br>
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="今天也请继续加油" href="http://wuhegucheng.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/">
+
+
+
+  <title>
+第2周 判断 - course-1 - Python |
+五河古城的Blog = 今天也请继续加油 = “你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">第2周 判断
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2020-04-13 19:12:45">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-04-13T19:12:45+08:00">2020-04-13</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">五河古城的Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2865%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2834%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2849%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2837%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2833%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2858%29.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Python/" itemprop="item" rel="index" title="分类于 Python"><span itemprop="name">Python</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Python/course-1/" itemprop="item" rel="index" title="分类于 course-1"><span itemprop="name">course-1</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/love.jpg">
+    <meta itemprop="name" content="五河古城">
+    <meta itemprop="description" content="“你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="今天也请继续加油">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>:::note info<br>
  以下为个人学习笔记和习题整理<br>
 课程：零基础学 Java 语言 - 浙江大学 - 翁恺 @ 中国大学 MOOC<br>
 <span class="exturl" data-url="aHR0cHM6Ly93d3cuaWNvdXJzZTE2My5vcmcvY291cnNlL1pKVS0xMDAxNTQxMDAx">https://www.icourse163.org/course/ZJU-1001541001</span><br>
@@ -161,51 +317,370 @@ grape</p>
 </li>
 </ul>
 <h3 id="解题代码-2"><a class="markdownIt-Anchor" href="#解题代码-2">#</a> 解题代码</h3>
-<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span></span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>		<span class="token class-name">Scanner</span> in <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>		</pre></td></tr><tr><td data-num="8"></td><td><pre>		<span class="token keyword">int</span> rs <span class="token operator">=</span> in<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>		</pre></td></tr><tr><td data-num="9"></td><td><pre>		<span class="token keyword">int</span> readability <span class="token operator">=</span> rs <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>		<span class="token keyword">int</span> strength <span class="token operator">=</span> rs <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>		</pre></td></tr><tr><td data-num="12"></td><td><pre>		<span class="token keyword">switch</span><span class="token punctuation">(</span>strength<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>		<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="15"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Faint signals, barely perceptible"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="18"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Very weak signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="21"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Weak signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="24"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Fair signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">5</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="27"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Fairly good signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="28"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">6</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="30"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Good signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">7</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="33"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Moderately strong signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="34"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">8</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="36"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Strong signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="37"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="38"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">9</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="39"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Extremely strong signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="40"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="41"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="42"></td><td><pre>		</pre></td></tr><tr><td data-num="43"></td><td><pre>		<span class="token keyword">switch</span><span class="token punctuation">(</span>readability<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="44"></td><td><pre>		<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="45"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="46"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", unreadable."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="47"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="48"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="49"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", barely readable, occasional words distinguishable."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="50"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="51"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="52"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", readable with considerable difficulty."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="53"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="54"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="55"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", readable with practically no difficulty."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="56"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="57"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">5</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="58"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", perfectly readable."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="59"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="60"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="61"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="62"></td><td><pre></pre></td></tr><tr><td data-num="63"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure></div><footer><div class="meta"><span class="icon"><i class="ic i-eye"></i></span><span>此文章已被阅读次数:</span><span class="waline-pageview-count" id="twikoo_visitors" data-path="2020/04/13/python/course-1/week-2/">正在加载...</span><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于</span><time title="修改时间：2023-04-01 19:14:37" itemprop="dateModified" datetime="2023-04-01T19:14:37+08:00">2023-04-01</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/assets/wechatpay.png" alt="五河古城 微信支付"/><p>微信支付</p></div><div><img data-src="/assets/alipay.png" alt="五河古城 支付宝"/><p>支付宝</p></div><div><img data-src="/assets/paypal.png" alt="五河古城 贝宝"/><p>贝宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>五河古城<i class="ic i-at"><em>@</em></i>今天也请继续加油</li><li class="link"><strong>本文链接：</strong><a href="http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/" title="第2周 判断">http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2020/04/12/python/course-1/week-1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2843%29.jpg" title="第1周 计算"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>course-1</span><h3>第1周 计算</h3></a></div><div class="item right"><a href="/2023/03/29/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2848%29.jpg" title="Hello World"><span class="type">下一篇</span><span class="category"><i class="ic i-flag"></i>undefined</span><h3>Hello World</h3></a></div></div><div class="wrap" id="tcomments"></div><script type="text/javascript" data-pjax="data-pjax">setTimeout(function () {
-    twikoo.init({
-        envId: 'https://heox.vercel.app/',
-        el: '#tcomments',
-        region: 'vercel'
-    })
-}, 1000)</script></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text"> 课堂笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97"><span class="toc-number">1.1.</span> <span class="toc-text"> 关系运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5-if-else"><span class="toc-number">1.2.</span> <span class="toc-text"> 判断语句 if else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%88%86%E6%94%AF-switch-case"><span class="toc-number">1.3.</span> <span class="toc-text"> 多路分支 switch case</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E6%B5%8B%E9%AA%8C"><span class="toc-number">2.</span> <span class="toc-text"> 小测验</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 编程题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE1-%E6%97%B6%E9%97%B4%E6%8D%A2%E7%AE%975%E5%88%86"><span class="toc-number">3.1.</span> <span class="toc-text"> 题目 1. 时间换算（5 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E4%BB%A3%E7%A0%81"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 解题代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE2-%E4%BF%A1%E5%8F%B7%E6%8A%A5%E5%91%8A5%E5%88%86"><span class="toc-number">3.2.</span> <span class="toc-text"> 题目 2. 信号报告（5 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E4%BB%A3%E7%A0%81-2"><span class="toc-number">3.2.1.</span> <span class="toc-text"> 解题代码</span></a></li></ol></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li ><a href="/2020/04/12/python/course-1/week-1/" rel="bookmark" title="第1周 计算">第1周 计算</a></li><li  class="active"><a href="/2020/04/13/python/course-1/week-2/" rel="bookmark" title="第2周 判断">第2周 判断</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="五河古城" data-src="/assets/love.jpg"/><p class="name" itemprop="name">五河古城</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">13</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">12</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">6</span><span class="name">标签</span></a></div></nav><div class="social"><a href="https://github.com/wuhegucheng" title="https:&#x2F;&#x2F;github.com&#x2F;wuhegucheng" class="item github" rel="noopener" target="_blank"><i class="ic i-github"></i></a><a href="https://twitter.com/yourname" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname" class="item twitter" rel="noopener" target="_blank"><i class="ic i-twitter"></i></a><a href="https://www.zhihu.com/people/35-21-84-9-97" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;35-21-84-9-97" class="item zhihu" rel="noopener" target="_blank"><i class="ic i-zhihu"></i></a><a href="https://music.163.com/m/user?id=1319835580" title="https:&#x2F;&#x2F;music.163.com&#x2F;m&#x2F;user?id&#x3D;1319835580" class="item music" rel="noopener" target="_blank"><i class="ic i-cloud-music"></i></a><a href="https://weibo.com/u/7521525069" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7521525069" class="item weibo" rel="noopener" target="_blank"><i class="ic i-weibo"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于本站</a></li><li class="item"><a href="/admiration/" rel="section"><i class="ic i-coffee"></i>赞赏博主</a></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2023/03/29/hello-world/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2020/04/12/python/course-1/week-1/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/Linux/" title="分类于Linux">Linux</a><i class="ic i-angle-right"></i><a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于lnmp架构">lnmp架构</a><i class="ic i-angle-right"></i><a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/04-SSh%E8%BF%9E%E6%8E%A5/" title="分类于04.SSh连接">04.SSh连接</a><i class="ic i-angle-right"></i></div><span><a href="/2023/04/01/linux/lnmp%20build/04.SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/">ssh远程管理</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Linux/" title="分类于Linux">Linux</a><i class="ic i-angle-right"></i><a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于lnmp架构">lnmp架构</a><i class="ic i-angle-right"></i><a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/03-NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/" title="分类于03.NFS共享存储">03.NFS共享存储</a><i class="ic i-angle-right"></i></div><span><a href="/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/">NFS共享存储</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/04/01/linux/lnmp%20build/07.%20Ansible%E8%87%AA%E5%8A%A8%E5%8C%96/3/">111</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Linux/" title="分类于Linux">Linux</a><i class="ic i-angle-right"></i><a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于lnmp架构">lnmp架构</a><i class="ic i-angle-right"></i><a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/01-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/" title="分类于01.环境准备">01.环境准备</a><i class="ic i-angle-right"></i></div><span><a href="/2023/04/01/linux/lnmp%20build/01.%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/01.%20%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D/">111</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Linux/" title="分类于Linux">Linux</a><i class="ic i-angle-right"></i><a href="/categories/Linux/base/" title="分类于base">base</a><i class="ic i-angle-right"></i><a href="/categories/Linux/base/02-CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" title="分类于02.CentOS系统安装">02.CentOS系统安装</a><i class="ic i-angle-right"></i></div><span><a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/">VMware虚拟机</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/04/01/linux/lnmp%20build/06.%20Nginx%E6%9C%8D%E5%8A%A1/2/">111</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Python/" title="分类于Python">Python</a><i class="ic i-angle-right"></i><a href="/categories/Python/course-1/" title="分类于course-1">course-1</a><i class="ic i-angle-right"></i></div><span><a href="/2020/04/12/python/course-1/week-1/">第1周 计算</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/03/29/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">辛苦大佬帮我看看</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Python/" title="分类于Python">Python</a><i class="ic i-angle-right"></i><a href="/categories/Python/course-1/" title="分类于course-1">course-1</a><i class="ic i-angle-right"></i></div><span><a href="/2020/04/13/python/course-1/week-2/">第2周 判断</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/Linux/" title="分类于Linux">Linux</a><i class="ic i-angle-right"></i><a href="/categories/Linux/base/" title="分类于base">base</a><i class="ic i-angle-right"></i><a href="/categories/Linux/base/01-Markerdown/" title="分类于01.Markerdown">01.Markerdown</a><i class="ic i-angle-right"></i></div><span><a href="/2023/04/01/linux/base/01.Markdown/Markdown/">Markdown 语法</a></span></li></ul></div><div class="rpost pjax"><h2>最新评论</h2><ul class="leancloud-recent-comment" id="new-comment"><li class="item" v-for="com in coms"><a v-bind:href="com.href" data-pjax-state="data-pjax-state"><span class="breadcrumb">{{com.nick}}@{{com.time}}</span><span>{{com.text}}<br/></span></a></li></ul></div></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2023</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">五河古城 @ 五河古城的Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">37k 字</span><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">34 分钟</span></div><div class="powered-by">基于 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & Theme.<a href="https://github.com/zkz098/hexo-theme-shokaX/" rel="noopener" target="_blank">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript" >var LOCAL = {path: "2020/04/13/python/course-1/week-2/",  favicon: {show: '（●´3｀●）やれやれだぜ',hide: '(´Д｀)大変だ！'   },
-   search: {placeholder: "文章搜索",empty: "关于 「 ${query} 」，什么也没搜到",stats: "${time} ms 内找到 ${hits} 条结果"   },valine: true,fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',outime: true,template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,ignores : [
-  function(uri) {
-      return uri.includes('#');
-  },
-  function(uri) {
-      return new RegExp(LOCAL.path+"$").test(uri);
-  }]
-};</script><script src="https://polyfill.alicdn.com/polyfill.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/pace/1.0.2/pace.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script src="https://unpkg.com/whatwg-fetch@3.4.0/dist/fetch.umd.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/animejs/3.2.0/anime.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/algoliasearch/4.12.1/algoliasearch-lite.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/instantsearch.js/4.39.0/instantsearch.production.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/lozad.js/1.16.0/lozad.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/quicklink/2.2.0/quicklink.umd.min.js"></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/??jquery/3.5.1/jquery.min.js,fancybox/3.5.7/jquery.fancybox.min.js,justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" async></script><script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-6-M/KaTeX/0.12.0/contrib/copy-tex.min.js" async></script><script src="https://unpkg.com/frappe-charts@1.5.0/dist/frappe-charts.min.iife.js"></script><script src="/js/app.js?v=0.2.1"></script><script>(function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "true");</script><script data-pjax type="module">
-            let comments = []
-           twikoo.getRecentComments({
-           envId: "https://heox.vercel.app/",
-           pageSize: 10
-           }).then(function (res) {
-                res.forEach(function (item) {
-                    let cText = item.commentText
-                    if (item.commentText.length > 50) {
-                        cText = item.commentText.substring(0,50)+'...'
-                    }
-                    const siteLink = item.url + "#" + item.id
-                    comments.push({
-                        href: siteLink,
-                        nick: item.nick,
-                        time: item.relativeTime,
-                        text: cText
-                    })
-                });
-                Vue.createApp({
-                  data() {
-                      return {
-                          coms: comments
-                      }
-                  }
-                  }).mount('#new-comment')
-            }).catch(function (err) {
-                console.error(err)
-            })
-        </script></body></html>
+<figure class="highlight java"><figcaption data-lang="java"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Scanner</span></span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>		<span class="token class-name">Scanner</span> in <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>		</pre></td></tr><tr><td data-num="8"></td><td><pre>		<span class="token keyword">int</span> rs <span class="token operator">=</span> in<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>		</pre></td></tr><tr><td data-num="9"></td><td><pre>		<span class="token keyword">int</span> readability <span class="token operator">=</span> rs <span class="token operator">/</span> <span class="token number">10</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>		<span class="token keyword">int</span> strength <span class="token operator">=</span> rs <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>		</pre></td></tr><tr><td data-num="12"></td><td><pre>		<span class="token keyword">switch</span><span class="token punctuation">(</span>strength<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>		<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="15"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Faint signals, barely perceptible"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="18"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Very weak signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="21"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Weak signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="24"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Fair signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">5</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="27"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Fairly good signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="28"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">6</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="30"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Good signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">7</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="33"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Moderately strong signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="34"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">8</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="36"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Strong signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="37"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="38"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">9</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="39"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Extremely strong signals"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="40"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="41"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="42"></td><td><pre>		</pre></td></tr><tr><td data-num="43"></td><td><pre>		<span class="token keyword">switch</span><span class="token punctuation">(</span>readability<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="44"></td><td><pre>		<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="45"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="46"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", unreadable."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="47"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="48"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="49"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", barely readable, occasional words distinguishable."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="50"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="51"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="52"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", readable with considerable difficulty."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="53"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="54"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="55"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", readable with practically no difficulty."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="56"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="57"></td><td><pre>			<span class="token keyword">case</span> <span class="token number">5</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="58"></td><td><pre>				<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">", perfectly readable."</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="59"></td><td><pre>			<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="60"></td><td><pre>		<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="61"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="62"></td><td><pre></pre></td></tr><tr><td data-num="63"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-04-01 19:14:37" itemprop="dateModified" datetime="2023-04-01T19:14:37+08:00">2023-04-01</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="五河古城 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="五河古城 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>五河古城 <i class="ic i-at"><em>@</em></i>今天也请继续加油
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/" title="第2周 判断">http://wuhegucheng.github.io/2020/04/13/python/course-1/week-2/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2020/04/12/python/course-1/week-1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2846%29.jpg" title="第1周 计算">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> course-1</span>
+  <h3>第1周 计算</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2023/03/29/hello-world/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2847%29.jpg" title="Hello World">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Hello World</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text"> 课堂笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97"><span class="toc-number">1.1.</span> <span class="toc-text"> 关系运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5-if-else"><span class="toc-number">1.2.</span> <span class="toc-text"> 判断语句 if else</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%88%86%E6%94%AF-switch-case"><span class="toc-number">1.3.</span> <span class="toc-text"> 多路分支 switch case</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E6%B5%8B%E9%AA%8C"><span class="toc-number">2.</span> <span class="toc-text"> 小测验</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%96%E7%A8%8B%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 编程题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE1-%E6%97%B6%E9%97%B4%E6%8D%A2%E7%AE%975%E5%88%86"><span class="toc-number">3.1.</span> <span class="toc-text"> 题目 1. 时间换算（5 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E4%BB%A3%E7%A0%81"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 解题代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE2-%E4%BF%A1%E5%8F%B7%E6%8A%A5%E5%91%8A5%E5%88%86"><span class="toc-number">3.2.</span> <span class="toc-text"> 题目 2. 信号报告（5 分）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E4%BB%A3%E7%A0%81-2"><span class="toc-number">3.2.1.</span> <span class="toc-text"> 解题代码</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2020/04/12/python/course-1/week-1/" rel="bookmark" title="第1周 计算">第1周 计算</a></li><li class="active"><a href="/2020/04/13/python/course-1/week-2/" rel="bookmark" title="第2周 判断">第2周 判断</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="五河古城"
+      data-src="/images/love.jpg">
+  <p class="name" itemprop="name">五河古城</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">33</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">12</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">51</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d1aGVndWNoZW5n" title="https:&#x2F;&#x2F;github.com&#x2F;wuhegucheng"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS8zNS0yMS04NC05LTk3" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;35-21-84-9-97"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tL20vdXNlcj9pZD0xMzE5ODM1NTgw" title="https:&#x2F;&#x2F;music.163.com&#x2F;m&#x2F;user?id&#x3D;1319835580"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vdS83NTIxNTI1MDY5" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7521525069"><i class="ic i-weibo"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2020/04/12/python/course-1/week-1/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2023/03/29/hello-world/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/02.CentOS%E5%AE%89%E8%A3%85/" title="CentOS安装">CentOS安装</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/03.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%89%E5%89%91%E5%AE%A2_grep/" title="文件三剑客">文件三剑客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/07.Vim%E7%BC%96%E8%BE%91%E5%99%A8/01.vim%E7%BC%96%E8%BE%91%E5%99%A8/" title="vim编辑器">vim编辑器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/03.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%861/" title="用户组管理1">用户组管理1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/03/29/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/04.Linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/01.%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" title="目录管理">目录管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/" title="Xshell的使用">Xshell的使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/02.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%862/" title="用户管理1">用户管理1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Python/course-1/" title="分类于 course-1">course-1</a>
+</div>
+
+    <span><a href="/2020/04/12/python/course-1/week-1/" title="第1周 计算">第1周 计算</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/" title="虚拟机的快照、克隆">虚拟机的快照、克隆</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">五河古城 @ 五河古城的Blog</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2020/04/13/python/course-1/week-2/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

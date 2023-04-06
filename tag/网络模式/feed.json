@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "今天也请继续加油 • All posts by \"网络模式\" tag",
+    "description": "",
+    "home_page_url": "http://wuhegucheng.github.io",
+    "items": [
+        {
+            "id": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/",
+            "url": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/",
+            "title": "虚拟机网络",
+            "date_published": "2023-04-01T08:46:15.000Z",
+            "content_html": "<h1 id=\"虚拟机网络\"><a class=\"markdownIt-Anchor\" href=\"#虚拟机网络\">#</a> 虚拟机网络</h1>\n<h2 id=\"网卡配置\"><a class=\"markdownIt-Anchor\" href=\"#网卡配置\">#</a> 网卡配置</h2>\n<p>静态 <code>IP</code> ，不使用 <code>DHCP</code></p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>静态IP，不使用DHCP</pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token comment\">#IP 地址</span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>Address：10.0.0.100</pre></td></tr><tr><td data-num=\"4\"></td><td><pre><span class=\"token comment\">#子网掩码</span></pre></td></tr><tr><td data-num=\"5\"></td><td><pre>Netmask：255.255.255.0（24位）</pre></td></tr><tr><td data-num=\"6\"></td><td><pre><span class=\"token comment\">#网关</span></pre></td></tr><tr><td data-num=\"7\"></td><td><pre>Gateway：10.0.0.2</pre></td></tr></table></figure><h2 id=\"虚拟机网络模式\"><a class=\"markdownIt-Anchor\" href=\"#虚拟机网络模式\">#</a> 虚拟机网络模式</h2>\n<ul>\n<li>\n<p>桥接模式</p>\n<ul>\n<li>物理机网络与虚拟机网络共享</li>\n<li>物理机与虚拟机需要在同一个网段</li>\n<li>可用地址 0-255（除 0、1、2：网关、255）</li>\n<li>耗费 IP（IP 不能冲突）</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211342799.png\" alt=\"image-20220320211342799\"></p>\n</li>\n<li>\n<p>NAT 模式</p>\n<ul>\n<li>路由器将一个公有地址转换为多个私有地址（NAT 动态网络地址转换）</li>\n<li><code>DHCP</code> ：动态获取 <code>IP</code>  地址</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211622639.png\" alt=\"image-20220320211622639\"></p>\n</li>\n<li>\n<p>仅主机模式</p>\n<ul>\n<li>虚拟机之间相互通信，无法上外网（局域网）</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211651398.png\" alt=\"image-20220320211651398\"></p>\n</li>\n</ul>\n<p>虚拟机配置 NAT 上网</p>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204811328.png\" alt=\"image-20220320204811328\"></p>\n<p>打开虚拟网络编辑器</p>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204841949.png\" alt=\"image-20220320204841949\"></p>\n<p>检测服务器与外网是否可以正常通信</p>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token function\">ping</span> 命令（打电话） </pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token function\">ping</span> www.baidu.com</pre></td></tr></table></figure>",
+            "tags": [
+                "虚拟机",
+                "网卡",
+                "网络模式"
+            ]
+        }
+    ]
+}

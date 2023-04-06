@@ -1,0 +1,576 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="今天也请继续加油" href="http://wuhegucheng.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="今天也请继续加油" href="http://wuhegucheng.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="用户组,sudo" />
+
+
+<link rel="canonical" href="http://wuhegucheng.github.io/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/04.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%862/">
+
+
+
+  <title>
+用户组管理2 |
+五河古城的Blog = 今天也请继续加油 = “你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">用户组管理2
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-04-01 16:46:15">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-04-01T16:46:15+08:00">2023-04-01</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">五河古城的Blog</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2849%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2861%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2877%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2863%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2870%29.jpg"></li>
+          <li class="item" data-background-image="https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/blog/blog/wallpaper/1%20%2865%29.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://wuhegucheng.github.io/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/04.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%862/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/love.jpg">
+    <meta itemprop="name" content="五河古城">
+    <meta itemprop="description" content="“你知道吗？咱俩都挺过分的”“怎么过分了”“你过分美丽，我过分着迷”。, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="今天也请继续加油">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="用户组管理"><a class="markdownIt-Anchor" href="#用户组管理">#</a> 用户组管理</h1>
+<blockquote>
+<p>什么是 <code>sudo</code> ？</p>
+<ul>
+<li><code>sudo</code>  就是普通用户可以提权，执行 root 用户可以执行的命令</li>
+</ul>
+<p>为什么要用到 <code>sudo</code> ？</p>
+<ul>
+<li>如果在公司中，入职后，领导给运维的用户时普通用户，但是有些命令只能 root 执行</li>
+</ul>
+</blockquote>
+<h3 id="sudo如何使用"><a class="markdownIt-Anchor" href="#sudo如何使用">#</a>  <code>sudo</code>  如何使用</h3>
+<ul>
+<li>
+<p>1. 系统的超级管理员（root）需要做 <code>sudo</code>  的配置（发一个兵符给指定的普通用户）</p>
+</li>
+<li>
+<p>2. 普通用户只需要在，执行的命令之前，加上 <code>sudo</code>  即可</p>
+</li>
+</ul>
+<p>配置文件 <code>/etc/sudoers</code></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token number">99</span> <span class="token comment">## Allow root to run any commands anywhere </span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token number">100</span> root	<span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	ALL</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token number">1</span>.用户名</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token number">2</span>.主机名</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token number">3</span>.角色名</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token number">4</span>.命令名</pre></td></tr></table></figure><h3 id="编辑权限visudo"><a class="markdownIt-Anchor" href="#编辑权限visudo">#</a> 编辑权限 <code>visudo</code></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:center">检查语法</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#python 用户提权</span></pre></td></tr><tr><td data-num="2"></td><td><pre>python	<span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	ALL</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># sudo passwd roger1</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">[</span>sudo<span class="token punctuation">]</span> password <span class="token keyword">for</span> python:</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">#普通用户无需输入密码</span></pre></td></tr><tr><td data-num="6"></td><td><pre>python	<span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	NOPASSWD:ALL</pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">#主机别名</span></pre></td></tr><tr><td data-num="9"></td><td><pre>Host_Alias    FILESERVERS <span class="token operator">=</span> fs1, fs2</pre></td></tr><tr><td data-num="10"></td><td><pre>python	<span class="token assign-left variable">FILESERVERS</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	NOPASSWD:ALL</pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">#角色别名</span></pre></td></tr><tr><td data-num="13"></td><td><pre>Cmnd_Alias SOFTWARE <span class="token operator">=</span> /bin/rpm, /usr/bin/up2date, /usr/bin/yum</pre></td></tr><tr><td data-num="14"></td><td><pre>python	<span class="token assign-left variable">FILESERVERS</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	NOPASSWD:Cmnd_Alias SOFTWARE</pre></td></tr><tr><td data-num="15"></td><td><pre></pre></td></tr><tr><td data-num="16"></td><td><pre>Cmnd_Alias SOFTWARE <span class="token operator">=</span> ！/bin/rpm, <span class="token operator">!</span>/usr/bin/up2date</pre></td></tr><tr><td data-num="17"></td><td><pre>python	<span class="token assign-left variable">FILESERVERS</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	NOPASSWD:Cmnd_Alias SOFTWARE</pre></td></tr><tr><td data-num="18"></td><td><pre></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">#用户组提权</span></pre></td></tr><tr><td data-num="20"></td><td><pre>%wheel	<span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	ALL</pre></td></tr><tr><td data-num="21"></td><td><pre>%wheel	<span class="token assign-left variable">ALL</span><span class="token operator">=</span><span class="token punctuation">(</span>ALL<span class="token punctuation">)</span>	NOPASSWD:ALL</pre></td></tr><tr><td data-num="22"></td><td><pre></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token comment">#主要用 usermod 给用户提权，把用户加到有权限的组里</span></pre></td></tr><tr><td data-num="24"></td><td><pre><span class="token function">usermod</span> 用户名 <span class="token parameter variable">-G</span> 提权组</pre></td></tr><tr><td data-num="25"></td><td><pre></pre></td></tr><tr><td data-num="26"></td><td><pre><span class="token comment">#报错 </span></pre></td></tr><tr><td data-num="27"></td><td><pre><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># sudo ll </span></pre></td></tr><tr><td data-num="28"></td><td><pre>sudo: ll: <span class="token builtin class-name">command</span> not found </pre></td></tr><tr><td data-num="29"></td><td><pre>原因：ll是别名，不是系统命令，sudo不走别名，只认识系统命令</pre></td></tr></table></figure><h3 id="vardbsudo"><a class="markdownIt-Anchor" href="#vardbsudo">#</a> /var/db/sudo</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#密码过期文件</span></pre></td></tr><tr><td data-num="2"></td><td><pre>/var/db/sudo/lectured</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>通过Atime检验是否过期</pre></td></tr></table></figure><h3 id="sudo执行流程"><a class="markdownIt-Anchor" href="#sudo执行流程">#</a>  <code>sudo</code>  执行流程</h3>
+<p><img data-src="https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_devops/15613875305374.jpg" alt="15613875305374"></p>
+<h4 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h4>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token number">1</span>.会修改visudo，添加用户提权 </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token number">2</span>.给用户免密执行sudo的权限 </pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token number">3</span>.自定义用户的可执行命令，和不可执行命令 </pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token number">4</span>.给组分配提权的权限 </pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token number">5</span>.提权不用修改visudo，只需要加入wheel组，即可</pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>注意：除非企业中有要求，哪些命令需要用，哪些不能使用</pre></td></tr></table></figure>
+      <div class="tags">
+          <a href="/tags/%E7%94%A8%E6%88%B7%E7%BB%84/" rel="tag"><i class="ic i-tag"></i> 用户组</a>
+          <a href="/tags/sudo/" rel="tag"><i class="ic i-tag"></i> sudo</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-04-06 20:29:05" itemprop="dateModified" datetime="2023-04-06T20:29:05+08:00">2023-04-06</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="五河古城 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="五河古城 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>五河古城 <i class="ic i-at"><em>@</em></i>今天也请继续加油
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://wuhegucheng.github.io/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/04.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%862/" title="用户组管理2">http://wuhegucheng.github.io/2023/04/01/linux/base/08.用户管理/04.用户组管理2/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2857%29.jpg" title="NFS共享存储">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 03.NFS共享存储</span>
+  <h3>NFS共享存储</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/03.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%861/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;zxcvmnb.oss-cn-shanghai.aliyuncs.com&#x2F;blog&#x2F;blog&#x2F;wallpaper&#x2F;1%20%2875%29.jpg" title="用户组管理1">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>用户组管理1</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text"> 用户组管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#sudo%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8"><span class="toc-number">1.0.1.</span> <span class="toc-text">  sudo  如何使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E6%9D%83%E9%99%90visudo"><span class="toc-number">1.0.2.</span> <span class="toc-text"> 编辑权限 visudo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vardbsudo"><span class="toc-number">1.0.3.</span> <span class="toc-text"> &#x2F;var&#x2F;db&#x2F;sudo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sudo%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-number">1.0.4.</span> <span class="toc-text">  sudo  执行流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.0.4.1.</span> <span class="toc-text"> 总结</span></a></li></ol></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="五河古城"
+      data-src="/images/love.jpg">
+  <p class="name" itemprop="name">五河古城</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">33</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">12</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">51</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3d1aGVndWNoZW5n" title="https:&#x2F;&#x2F;github.com&#x2F;wuhegucheng"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS8zNS0yMS04NC05LTk3" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;35-21-84-9-97"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tL20vdXNlcj9pZD0xMzE5ODM1NTgw" title="https:&#x2F;&#x2F;music.163.com&#x2F;m&#x2F;user?id&#x3D;1319835580"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vdS83NTIxNTI1MDY5" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7521525069"><i class="ic i-weibo"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>links</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/03.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%861/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/03.Bash%20Shell/02.Bash%E7%89%B9%E6%80%A7/" title="Bash特性">Bash特性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/02.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%862/" title="用户管理1">用户管理1</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/" title="虚拟机的快照、克隆">虚拟机的快照、克隆</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python/" title="分类于 Python">Python</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Python/course-1/" title="分类于 course-1">course-1</a>
+</div>
+
+    <span><a href="/2020/04/12/python/course-1/week-1/" title="第1周 计算">第1周 计算</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/03/29/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/02-rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/" title="分类于 02.rsync数据备份">02.rsync数据备份</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/02.rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/01.%20rsync%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD/" title="rsync数据备份">rsync数据备份</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/04-SSh%E8%BF%9E%E6%8E%A5/" title="分类于 04.SSh连接">04.SSh连接</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/04.SSH%E8%BF%9E%E6%8E%A5/01.%20ssh%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86/" title="ssh远程管理">ssh远程管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/03.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%89%E5%89%91%E5%AE%A2_grep/" title="文件三剑客">文件三剑客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/01/linux/base/04.Linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/01.%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86/" title="目录管理">目录管理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Linux/" title="分类于 Linux">Linux</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/" title="分类于 lnmp架构">lnmp架构</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Linux/lnmp%E6%9E%B6%E6%9E%84/03-NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/" title="分类于 03.NFS共享存储">03.NFS共享存储</a>
+</div>
+
+    <span><a href="/2023/04/01/linux/lnmp%20build/03.NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/01.%20NFS%E5%85%B1%E4%BA%AB%E5%AD%98%E5%82%A8/" title="NFS共享存储">NFS共享存储</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">五河古城 @ 五河古城的Blog</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/04/01/linux/base/08.用户管理/04.用户组管理2/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

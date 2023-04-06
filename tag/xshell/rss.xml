@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>今天也请继续加油 • Posts by &#34;xshell&#34; tag</title>
+        <link>http://wuhegucheng.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
+        <category>markdown</category>
+        <category>CentOS</category>
+        <category>虚拟机</category>
+        <category>网卡</category>
+        <category>网络模式</category>
+        <category>Xshell</category>
+        <category>虚拟机快照</category>
+        <category>虚拟机克隆</category>
+        <category>GUI图形化</category>
+        <category>Bash</category>
+        <category>命令提示符</category>
+        <category>命令快捷键</category>
+        <category>目录</category>
+        <category>路径</category>
+        <category>mkdir</category>
+        <category>touch</category>
+        <category>mv</category>
+        <category>tree</category>
+        <category>cp</category>
+        <category>grep</category>
+        <category>awk</category>
+        <category>which</category>
+        <category>文件属性</category>
+        <category>sort</category>
+        <category>uniq</category>
+        <category>cut</category>
+        <category>wc</category>
+        <category>rz</category>
+        <category>sz</category>
+        <category>wget</category>
+        <category>文件类型</category>
+        <category>block</category>
+        <category>inode</category>
+        <category>软链接</category>
+        <category>元数据</category>
+        <category>vim</category>
+        <category>用户</category>
+        <category>cat</category>
+        <category>more</category>
+        <category>less</category>
+        <category>head</category>
+        <category>tail</category>
+        <category>用户组</category>
+        <category>shell环境变量</category>
+        <category>系统变量</category>
+        <category>切换用户</category>
+        <category>sudo</category>
+        <category>NFS</category>
+        <category>rsync</category>
+        <category>ssh</category>
+        <category>http</category>
+        <item>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+            <title>Xshell的使用</title>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+            <category>Xshell</category>
+            <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;xshell的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell的使用&#34;&gt;#&lt;/a&gt; Xshell 的使用&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;新建会话&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建会话&#34;&gt;#&lt;/a&gt; 新建会话&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212813333.png&#34; alt=&#34;image-20220320212813333&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;设置会话属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置会话属性&#34;&gt;#&lt;/a&gt; 设置会话属性&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212929548.png&#34; alt=&#34;image-20220320212929548&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;用户身份验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#用户身份验证&#34;&gt;#&lt;/a&gt; 用户身份验证&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213002275.png&#34; alt=&#34;image-20220320213002275&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;连接虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接虚拟机&#34;&gt;#&lt;/a&gt; 连接虚拟机&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213027809.png&#34; alt=&#34;image-20220320213027809&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213043806.png&#34; alt=&#34;image-20220320213043806&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;xshell连接虚拟机排错方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell连接虚拟机排错方案&#34;&gt;#&lt;/a&gt; Xshell 连接虚拟机排错方案&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#1. 搞清楚，谁连接谁 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;检测物理机跟虚拟机之间是否能通信 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; r &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ping &lt;span class=&#34;token number&#34;&gt;10.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.100&lt;/span&gt;（虚拟机的IP） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#2. 如何查看自己本机的 IP 地址 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Linux：ip a &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows：ipconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+    </channel>
+</rss>

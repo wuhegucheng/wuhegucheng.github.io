@@ -7,36 +7,69 @@
         <language>zh-CN</language>
         <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
         <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
-        <category>rsync</category>
         <category>markdown</category>
+        <category>CentOS</category>
         <category>虚拟机</category>
+        <category>网卡</category>
+        <category>网络模式</category>
+        <category>Xshell</category>
+        <category>虚拟机快照</category>
+        <category>虚拟机克隆</category>
+        <category>GUI图形化</category>
+        <category>Bash</category>
+        <category>命令提示符</category>
+        <category>命令快捷键</category>
+        <category>目录</category>
+        <category>路径</category>
+        <category>mkdir</category>
+        <category>touch</category>
+        <category>mv</category>
+        <category>tree</category>
+        <category>cp</category>
+        <category>grep</category>
+        <category>awk</category>
+        <category>which</category>
+        <category>文件属性</category>
+        <category>sort</category>
+        <category>uniq</category>
+        <category>cut</category>
+        <category>wc</category>
+        <category>rz</category>
+        <category>sz</category>
+        <category>wget</category>
+        <category>文件类型</category>
+        <category>block</category>
+        <category>inode</category>
+        <category>软链接</category>
+        <category>元数据</category>
+        <category>vim</category>
+        <category>用户</category>
+        <category>cat</category>
+        <category>more</category>
+        <category>less</category>
+        <category>head</category>
+        <category>tail</category>
+        <category>用户组</category>
+        <category>shell环境变量</category>
+        <category>系统变量</category>
+        <category>切换用户</category>
+        <category>sudo</category>
         <category>NFS</category>
+        <category>rsync</category>
         <category>ssh</category>
         <category>http</category>
         <item>
-            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/01.Markdown/Markdown/</guid>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/01.Markdown/01.Markdown/</guid>
             <title>Markdown 语法</title>
-            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/01.Markdown/Markdown/</link>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/01.Markdown/01.Markdown/</link>
             <category>markdown</category>
             <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;markdown语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown语法&#34;&gt;#&lt;/a&gt; markdown 语法&lt;/h1&gt;
 &lt;h2 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h2&gt;
 &lt;h3 id=&#34;一级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一级标题&#34;&gt;#&lt;/a&gt; 一级标题&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;1个#+空格+文字
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;二级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二级标题&#34;&gt;#&lt;/a&gt; 二级标题&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;2个#+空格+文字
-
-以此类推
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分类&#34;&gt;#&lt;/a&gt; 分类&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;1级：1个— +空格
-
-2级：TAB+键
-
-返回上一级：一直按enter键 或shift+TAB
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;例：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;个&lt;span class=&#34;token comment&#34;&gt;#+ 空格 + 文字&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;二级标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二级标题&#34;&gt;#&lt;/a&gt; 二级标题&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;个&lt;span class=&#34;token comment&#34;&gt;#+ 空格 + 文字&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;以此类推&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分类&#34;&gt;#&lt;/a&gt; 分类&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;级：1个— +空格&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;级：TAB+键&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;返回上一级：一直按enter键 或shift+TAB&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;例：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;水果
 &lt;ul&gt;
@@ -59,16 +92,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;背景框&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#背景框&#34;&gt;#&lt;/a&gt; 背景框&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;3个反引号（TAB键上方）+回车
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;好好学习天天向上
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;表格&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表格&#34;&gt;#&lt;/a&gt; 表格&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;3个 |（竖线/管道符，回车键上方）每个竖线中间空2格
-&lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;个反引号（TAB键上方）+回车&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;好好学习天天向上&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;努力努力&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;表格&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表格&#34;&gt;#&lt;/a&gt; 表格&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;个 &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt;（竖线/管道符，回车键上方）每个竖线中间空2格&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;1&lt;/th&gt;
@@ -87,53 +112,27 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;超链接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#超链接&#34;&gt;#&lt;/a&gt; 超链接&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[ ]括号内是文字+()括号内是网址
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&#34;www.baidu.com&#34;&gt;百度&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;括号内是文字+&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;括号内是网址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;a href=&#34;www.baidu.com&#34;&gt;百度&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;!+[]+()     
-
-可插入电脑图片，也可以复制网站图片地址
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;C:%5CUsers%5CAdministrator%5CPictures%5C%E6%8A%A4%E7%9C%BC%E6%A8%A1%E5%BC%8F_20221024130216.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://i0.hdslb.com/bfs/article/7471e4d22ed196ab3bb952cf1ba124d45698fb2f.jpg@942w_656h_progressive.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;+&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;+&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;     &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;可插入电脑图片，也可以复制网站图片地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://i0.hdslb.com/bfs/article/7471e4d22ed196ab3bb952cf1ba124d45698fb2f.jpg@942w_656h_progressive.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#目录&#34;&gt;#&lt;/a&gt; 目录&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[]里面+TOC
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;里面+TOC&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h3 id=&#34;单词高亮显示&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#单词高亮显示&#34;&gt;#&lt;/a&gt; 单词高亮显示&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;文字前后+1个反引号 `
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我喜欢 &lt;code&gt;草莓&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;文字前后+1个反引号 `&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;我喜欢 &lt;code&gt;草莓&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;字体颜色&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#字体颜色&#34;&gt;#&lt;/a&gt; 字体颜色&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;font color=red(颜色、RGB颜色)&amp;gt;草莓（文字）&amp;lt;/font&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;font color=red&gt;草莓&lt;/font&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;font &lt;span class=&#34;token assign-left variable&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;red&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;颜色、RGB颜色&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;草莓（文字）&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;/font&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;font color=red&gt;草莓&lt;/font&gt;&lt;/p&gt;
 &lt;h3 id=&#34;加粗字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#加粗字体&#34;&gt;#&lt;/a&gt; 加粗字体&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;**+文字+**
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;草莓&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;**+文字+**&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;草莓&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;倾斜字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#倾斜字体&#34;&gt;#&lt;/a&gt; 倾斜字体&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;*+文字+*
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;草莓&lt;/em&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*+文字+*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;em&gt;草莓&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;加粗倾斜字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#加粗倾斜字体&#34;&gt;#&lt;/a&gt; 加粗倾斜字体&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;***+文字+***
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;草莓&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;***+文字+***&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;草莓&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;分割线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分割线&#34;&gt;#&lt;/a&gt; 分割线&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;3个-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;3&lt;/span&gt;个-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;hr&gt;
 &lt;h4 id=&#34;删除体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除体&#34;&gt;#&lt;/a&gt; 删除体&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;2个~  +文字+  ~
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;s&gt;苹果&lt;/s&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;个~  +文字+  ~&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;s&gt;苹果&lt;/s&gt;&lt;/p&gt;
 &lt;h3 id=&#34;引用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用&#34;&gt;#&lt;/a&gt; 引用&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; +空格+文字
-下一级：回车+&amp;gt;+文字
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; +空格+文字&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;下一级：回车+&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;+文字&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
 &lt;p&gt;水果&lt;/p&gt;
 &lt;p&gt;草莓&lt;/p&gt;
 &lt;blockquote&gt;
@@ -141,9 +140,7 @@
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;复选框&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#复选框&#34;&gt;#&lt;/a&gt; 复选框&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;- + 空格 + [x] + 空格
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;今日计划&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;- + 空格 + &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; + 空格&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;今日计划&lt;/p&gt;
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_0&#34; checked=&#34;true&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_0&#34;&gt; 锻炼&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&#34;task-list-item&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;cbx_1&#34; checked=&#34;true&#34; disabled=&#34;true&#34;&gt;&lt;label for=&#34;cbx_1&#34;&gt; 吃饭&lt;/label&gt;&lt;/li&gt;
@@ -152,60 +149,61 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</guid>
             <title>VMware虚拟机</title>
-            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</link>
             <category>虚拟机</category>
             <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;虚拟机的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的安装&#34;&gt;#&lt;/a&gt; 虚拟机的安装&lt;/h1&gt;
-&lt;h2 id=&#34;虚拟机典型推荐安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机典型推荐安装&#34;&gt;#&lt;/a&gt; 虚拟机典型推荐安装&lt;/h2&gt;
-&lt;h3 id=&#34;机选择典型推荐点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机选择典型推荐点击下一步&#34;&gt;#&lt;/a&gt; 机，选择典型推荐，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;2-选择稍后安装操作系统点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择稍后安装操作系统点击下一步&#34;&gt;#&lt;/a&gt; 2 选择稍后安装操作系统，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;#&lt;/a&gt; 3 客户操作系统选择 linux，版本选择 centOS7 64 位，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;#&lt;/a&gt; 4 修改虚拟机名称，修改安装位置，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;封成多个文件点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封成多个文件点击下一步&#34;&gt;#&lt;/a&gt; 封成多个文件，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;6-点击完成安装虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-点击完成安装虚拟机&#34;&gt;#&lt;/a&gt; 6 点击完成安装虚拟机&lt;/h3&gt;
-&lt;h3 id=&#34;7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;#&lt;/a&gt; 7 在 CD/DVD 里设置，勾选启动时连接，勾选使用 ISO 映像文件&lt;/h3&gt;
-&lt;h2 id=&#34;虚拟机安装设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机安装设置&#34;&gt;#&lt;/a&gt; 虚拟机安装设置&lt;/h2&gt;
-&lt;h3 id=&#34;1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;#&lt;/a&gt; 1 开启虚拟机后，选择 Install CentOS7，回车进入下一步&lt;/h3&gt;
-&lt;h3 id=&#34;2-选择语言后-点击继续&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择语言后-点击继续&#34;&gt;#&lt;/a&gt; 2 选择语言后， 点击继续&lt;/h3&gt;
-&lt;h3 id=&#34;3-选择亚洲时区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-选择亚洲时区&#34;&gt;#&lt;/a&gt; 3 选择亚洲时区&lt;/h3&gt;
-&lt;p&gt;!&lt;/p&gt;
-&lt;h3 id=&#34;4-软件选择最小化安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-软件选择最小化安装&#34;&gt;#&lt;/a&gt; 4 软件选择最小化安装&lt;/h3&gt;
-&lt;h3 id=&#34;5-取消勾选-kdump&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-取消勾选-kdump&#34;&gt;#&lt;/a&gt; 5 取消勾选 kdump&lt;/h3&gt;
-&lt;h3 id=&#34;6-内存分区选择我要分配分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-内存分区选择我要分配分区&#34;&gt;#&lt;/a&gt; 6 内存分区选择我要分配分区&lt;/h3&gt;
-&lt;h3 id=&#34;选择标准分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择标准分区&#34;&gt;#&lt;/a&gt; 选择标准分区&lt;/h3&gt;
-&lt;h3 id=&#34;开机启动文件-boot分配500m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开机启动文件-boot分配500m&#34;&gt;#&lt;/a&gt; 开机启动文件 /boot 分配 500M&lt;/h3&gt;
-&lt;h3 id=&#34;swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;#&lt;/a&gt; swap（虚拟内存），真实内存的 1~2 倍，配置 1024M&lt;/h3&gt;
-&lt;h3 id=&#34;剩下的内存全部给根&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#剩下的内存全部给根&#34;&gt;#&lt;/a&gt; 剩下的内存全部给 /(根)&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;物理机
-/boot 500~1024m
-swap 
-/
-
-云主机
-/boot 500~1024m
-/(剩下的给根)
-
-服务器
-/boot 500~1024m
-/data 数据 70~80%
-/(剩下的给根)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;7-配置网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-配置网络&#34;&gt;#&lt;/a&gt; 7 配置网络&lt;/h3&gt;
-&lt;h3 id=&#34;配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;#&lt;/a&gt; 配置网卡名称，IP 地址，子网掩码，网关，DNS 服务&lt;/h3&gt;
-&lt;h3 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
-&lt;h3 id=&#34;8-配置完成后-点击开始安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-配置完成后-点击开始安装&#34;&gt;#&lt;/a&gt; 8 配置完成后，， 点击开始安装&lt;/h3&gt;
-&lt;h3 id=&#34;9-设置root密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-设置root密码&#34;&gt;#&lt;/a&gt; 9 设置 root 密码&lt;/h3&gt;
-&lt;h3 id=&#34;-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
-&lt;h3 id=&#34;11-完成登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-完成登录&#34;&gt;#&lt;/a&gt; 11 完成登录&lt;/h3&gt;
-&lt;h2 id=&#34;网络的3种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络的3种模式&#34;&gt;#&lt;/a&gt; 网络的 3 种模式&lt;/h2&gt;
-&lt;h3 id=&#34;nat模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nat模式&#34;&gt;#&lt;/a&gt; NAT 模式&lt;/h3&gt;
-&lt;p&gt;物理机 IP 的地址转化成多个虚拟机的 IP 地址&lt;/p&gt;
-&lt;h3 id=&#34;仅主机模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#仅主机模式&#34;&gt;#&lt;/a&gt; 仅主机模式&lt;/h3&gt;
-&lt;p&gt;虚拟机之间可以相互通信但是不能上外网&lt;/p&gt;
-&lt;h3 id=&#34;桥接模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#桥接模式&#34;&gt;#&lt;/a&gt; 桥接模式&lt;/h3&gt;
-&lt;p&gt;将物理机网络和虚拟机额网络做一个搭桥&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;虚拟机的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的创建&#34;&gt;#&lt;/a&gt; 虚拟机的创建&lt;/h1&gt;
+&lt;p&gt;新建虚拟机&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220327234018941.png&#34; alt=&#34;image-20220327234018941&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;典型（推荐）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自定义&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231302176.png&#34; alt=&#34;image-20220318231302176&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装程序光盘&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装程序光盘映像文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稍后安装操作系统（推荐）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231421915.png&#34; alt=&#34;image-20220318231421915&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Linux&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CentOS 7 64 位（CentOS 64 位）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231701504.png&#34; alt=&#34;image-20220318231701504&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;命名虚拟机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保存虚拟机位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231838942.png&#34; alt=&#34;image-20220318231838942&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;磁盘容量：20G&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231920872.png&#34; alt=&#34;image-20220318231920872&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232005796.png&#34; alt=&#34;image-20220318232005796&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

@@ -4,65 +4,111 @@
     <title>今天也请继续加油 • Posts by &#34;02.centos系统安装&#34; category</title>
     <link href="http://wuhegucheng.github.io" />
     <updated>2023-04-01T08:46:15.000Z</updated>
-    <category term="rsync" />
     <category term="markdown" />
+    <category term="CentOS" />
     <category term="虚拟机" />
+    <category term="网卡" />
+    <category term="网络模式" />
+    <category term="Xshell" />
+    <category term="虚拟机快照" />
+    <category term="虚拟机克隆" />
+    <category term="GUI图形化" />
+    <category term="Bash" />
+    <category term="命令提示符" />
+    <category term="命令快捷键" />
+    <category term="目录" />
+    <category term="路径" />
+    <category term="mkdir" />
+    <category term="touch" />
+    <category term="mv" />
+    <category term="tree" />
+    <category term="cp" />
+    <category term="grep" />
+    <category term="awk" />
+    <category term="which" />
+    <category term="文件属性" />
+    <category term="sort" />
+    <category term="uniq" />
+    <category term="cut" />
+    <category term="wc" />
+    <category term="rz" />
+    <category term="sz" />
+    <category term="wget" />
+    <category term="文件类型" />
+    <category term="block" />
+    <category term="inode" />
+    <category term="软链接" />
+    <category term="元数据" />
+    <category term="vim" />
+    <category term="用户" />
+    <category term="cat" />
+    <category term="more" />
+    <category term="less" />
+    <category term="head" />
+    <category term="tail" />
+    <category term="用户组" />
+    <category term="shell环境变量" />
+    <category term="系统变量" />
+    <category term="切换用户" />
+    <category term="sudo" />
     <category term="NFS" />
+    <category term="rsync" />
     <category term="ssh" />
     <category term="http" />
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</id>
         <title>VMware虚拟机</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-        <content type="html">&lt;h1 id=&#34;虚拟机的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的安装&#34;&gt;#&lt;/a&gt; 虚拟机的安装&lt;/h1&gt;
-&lt;h2 id=&#34;虚拟机典型推荐安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机典型推荐安装&#34;&gt;#&lt;/a&gt; 虚拟机典型推荐安装&lt;/h2&gt;
-&lt;h3 id=&#34;机选择典型推荐点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#机选择典型推荐点击下一步&#34;&gt;#&lt;/a&gt; 机，选择典型推荐，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;2-选择稍后安装操作系统点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择稍后安装操作系统点击下一步&#34;&gt;#&lt;/a&gt; 2 选择稍后安装操作系统，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-客户操作系统选择-linux版本选择centos7-64位点击下一步&#34;&gt;#&lt;/a&gt; 3 客户操作系统选择 linux，版本选择 centOS7 64 位，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-修改虚拟机名称修改安装位置点击下一步&#34;&gt;#&lt;/a&gt; 4 修改虚拟机名称，修改安装位置，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;封成多个文件点击下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#封成多个文件点击下一步&#34;&gt;#&lt;/a&gt; 封成多个文件，点击下一步&lt;/h3&gt;
-&lt;h3 id=&#34;6-点击完成安装虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-点击完成安装虚拟机&#34;&gt;#&lt;/a&gt; 6 点击完成安装虚拟机&lt;/h3&gt;
-&lt;h3 id=&#34;7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-在cddvd里设置勾选启动时连接勾选使用iso映像文件&#34;&gt;#&lt;/a&gt; 7 在 CD/DVD 里设置，勾选启动时连接，勾选使用 ISO 映像文件&lt;/h3&gt;
-&lt;h2 id=&#34;虚拟机安装设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机安装设置&#34;&gt;#&lt;/a&gt; 虚拟机安装设置&lt;/h2&gt;
-&lt;h3 id=&#34;1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-开启虚拟机后选择install-centos7回车进入下一步&#34;&gt;#&lt;/a&gt; 1 开启虚拟机后，选择 Install CentOS7，回车进入下一步&lt;/h3&gt;
-&lt;h3 id=&#34;2-选择语言后-点击继续&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-选择语言后-点击继续&#34;&gt;#&lt;/a&gt; 2 选择语言后， 点击继续&lt;/h3&gt;
-&lt;h3 id=&#34;3-选择亚洲时区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-选择亚洲时区&#34;&gt;#&lt;/a&gt; 3 选择亚洲时区&lt;/h3&gt;
-&lt;p&gt;!&lt;/p&gt;
-&lt;h3 id=&#34;4-软件选择最小化安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-软件选择最小化安装&#34;&gt;#&lt;/a&gt; 4 软件选择最小化安装&lt;/h3&gt;
-&lt;h3 id=&#34;5-取消勾选-kdump&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-取消勾选-kdump&#34;&gt;#&lt;/a&gt; 5 取消勾选 kdump&lt;/h3&gt;
-&lt;h3 id=&#34;6-内存分区选择我要分配分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-内存分区选择我要分配分区&#34;&gt;#&lt;/a&gt; 6 内存分区选择我要分配分区&lt;/h3&gt;
-&lt;h3 id=&#34;选择标准分区&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择标准分区&#34;&gt;#&lt;/a&gt; 选择标准分区&lt;/h3&gt;
-&lt;h3 id=&#34;开机启动文件-boot分配500m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开机启动文件-boot分配500m&#34;&gt;#&lt;/a&gt; 开机启动文件 /boot 分配 500M&lt;/h3&gt;
-&lt;h3 id=&#34;swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#swap虚拟内存真实内存的1~2倍配置1024m&#34;&gt;#&lt;/a&gt; swap（虚拟内存），真实内存的 1~2 倍，配置 1024M&lt;/h3&gt;
-&lt;h3 id=&#34;剩下的内存全部给根&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#剩下的内存全部给根&#34;&gt;#&lt;/a&gt; 剩下的内存全部给 /(根)&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;物理机
-/boot 500~1024m
-swap 
-/
-
-云主机
-/boot 500~1024m
-/(剩下的给根)
-
-服务器
-/boot 500~1024m
-/data 数据 70~80%
-/(剩下的给根)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;7-配置网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-配置网络&#34;&gt;#&lt;/a&gt; 7 配置网络&lt;/h3&gt;
-&lt;h3 id=&#34;配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置网卡名称ip地址子网掩码网关dns服务&#34;&gt;#&lt;/a&gt; 配置网卡名称，IP 地址，子网掩码，网关，DNS 服务&lt;/h3&gt;
-&lt;h3 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
-&lt;h3 id=&#34;8-配置完成后-点击开始安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-配置完成后-点击开始安装&#34;&gt;#&lt;/a&gt; 8 配置完成后，， 点击开始安装&lt;/h3&gt;
-&lt;h3 id=&#34;9-设置root密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-设置root密码&#34;&gt;#&lt;/a&gt; 9 设置 root 密码&lt;/h3&gt;
-&lt;h3 id=&#34;-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;/h3&gt;
-&lt;h3 id=&#34;11-完成登录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-完成登录&#34;&gt;#&lt;/a&gt; 11 完成登录&lt;/h3&gt;
-&lt;h2 id=&#34;网络的3种模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络的3种模式&#34;&gt;#&lt;/a&gt; 网络的 3 种模式&lt;/h2&gt;
-&lt;h3 id=&#34;nat模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nat模式&#34;&gt;#&lt;/a&gt; NAT 模式&lt;/h3&gt;
-&lt;p&gt;物理机 IP 的地址转化成多个虚拟机的 IP 地址&lt;/p&gt;
-&lt;h3 id=&#34;仅主机模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#仅主机模式&#34;&gt;#&lt;/a&gt; 仅主机模式&lt;/h3&gt;
-&lt;p&gt;虚拟机之间可以相互通信但是不能上外网&lt;/p&gt;
-&lt;h3 id=&#34;桥接模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#桥接模式&#34;&gt;#&lt;/a&gt; 桥接模式&lt;/h3&gt;
-&lt;p&gt;将物理机网络和虚拟机额网络做一个搭桥&lt;/p&gt;
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/"/>
+        <content type="html">&lt;h1 id=&#34;虚拟机的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的创建&#34;&gt;#&lt;/a&gt; 虚拟机的创建&lt;/h1&gt;
+&lt;p&gt;新建虚拟机&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220327234018941.png&#34; alt=&#34;image-20220327234018941&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;典型（推荐）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自定义&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231302176.png&#34; alt=&#34;image-20220318231302176&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装程序光盘&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装程序光盘映像文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稍后安装操作系统（推荐）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231421915.png&#34; alt=&#34;image-20220318231421915&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Linux&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CentOS 7 64 位（CentOS 64 位）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231701504.png&#34; alt=&#34;image-20220318231701504&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;命名虚拟机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保存虚拟机位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231838942.png&#34; alt=&#34;image-20220318231838942&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;磁盘容量：20G&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231920872.png&#34; alt=&#34;image-20220318231920872&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232005796.png&#34; alt=&#34;image-20220318232005796&#34;&gt;&lt;/p&gt;
 </content>
         <category term="虚拟机" />
         <updated>2023-04-01T08:46:15.000Z</updated>

@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "今天也请继续加油 • All posts by \"wget\" tag",
+    "description": "",
+    "home_page_url": "http://wuhegucheng.github.io",
+    "items": [
+        {
+            "id": "http://wuhegucheng.github.io/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8E%E4%B8%8B%E8%BD%BD/",
+            "url": "http://wuhegucheng.github.io/2023/04/01/linux/base/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/05.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86_%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8E%E4%B8%8B%E8%BD%BD/",
+            "title": "文件上传与下载",
+            "date_published": "2023-04-01T08:46:15.000Z",
+            "content_html": "<h1 id=\"文件上传与下载\"><a class=\"markdownIt-Anchor\" href=\"#文件上传与下载\">#</a> 文件上传与下载</h1>\n<h3 id=\"上传下载\"><a class=\"markdownIt-Anchor\" href=\"#上传下载\">#</a> 上传下载</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">#安装 lrzsz </span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token punctuation\">[</span>root@localhost ~<span class=\"token punctuation\">]</span><span class=\"token comment\"># yum install -y lrzsz </span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token comment\">#如何把 windows 的文件上传到虚拟机里 </span></pre></td></tr><tr><td data-num=\"4\"></td><td><pre>rz</pre></td></tr><tr><td data-num=\"5\"></td><td><pre></pre></td></tr><tr><td data-num=\"6\"></td><td><pre><span class=\"token comment\">#如何把虚拟机的文件下载到 windows 里 </span></pre></td></tr><tr><td data-num=\"7\"></td><td><pre>sz 文件名</pre></td></tr><tr><td data-num=\"8\"></td><td><pre></pre></td></tr><tr><td data-num=\"9\"></td><td><pre><span class=\"token punctuation\">[</span>root@localhost ~<span class=\"token punctuation\">]</span><span class=\"token comment\"># sz /tmp/ooo </span></pre></td></tr><tr><td data-num=\"10\"></td><td><pre></pre></td></tr><tr><td data-num=\"11\"></td><td><pre>ps：只能虚拟机和物理机之间上传下载</pre></td></tr></table></figure><h3 id=\"wget命令\"><a class=\"markdownIt-Anchor\" href=\"#wget命令\">#</a> wget 命令</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">#安装 wget 命令 </span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre><span class=\"token punctuation\">[</span>root@localhost ~<span class=\"token punctuation\">]</span><span class=\"token comment\"># yum install -y wget </span></pre></td></tr><tr><td data-num=\"3\"></td><td><pre><span class=\"token function\">wget</span> 下载地址 </pre></td></tr><tr><td data-num=\"4\"></td><td><pre>-O：指定下载的位置和文件的名字 </pre></td></tr><tr><td data-num=\"5\"></td><td><pre></pre></td></tr><tr><td data-num=\"6\"></td><td><pre><span class=\"token comment\">#将阿里云的 centos-7.repo 下载到 /etc/yum.repos.d/ 并改名为 CentOS-Base.repo</span></pre></td></tr><tr><td data-num=\"7\"></td><td><pre><span class=\"token function\">wget</span> http://mirrors.aliyun.com/repo/Centos-7.repo</pre></td></tr><tr><td data-num=\"8\"></td><td><pre><span class=\"token function\">wget</span> <span class=\"token parameter variable\">-O</span> /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7</pre></td></tr><tr><td data-num=\"9\"></td><td><pre>.repo</pre></td></tr></table></figure>",
+            "tags": [
+                "rz",
+                "sz",
+                "wget"
+            ]
+        }
+    ]
+}

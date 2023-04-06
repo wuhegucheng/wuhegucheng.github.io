@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://wuhegucheng.github.io</id>
+    <title>今天也请继续加油 • Posts by &#34;虚拟机快照&#34; tag</title>
+    <link href="http://wuhegucheng.github.io" />
+    <updated>2023-04-01T08:46:15.000Z</updated>
+    <category term="markdown" />
+    <category term="CentOS" />
+    <category term="虚拟机" />
+    <category term="网卡" />
+    <category term="网络模式" />
+    <category term="Xshell" />
+    <category term="虚拟机快照" />
+    <category term="虚拟机克隆" />
+    <category term="GUI图形化" />
+    <category term="Bash" />
+    <category term="命令提示符" />
+    <category term="命令快捷键" />
+    <category term="目录" />
+    <category term="路径" />
+    <category term="mkdir" />
+    <category term="touch" />
+    <category term="mv" />
+    <category term="tree" />
+    <category term="cp" />
+    <category term="grep" />
+    <category term="awk" />
+    <category term="which" />
+    <category term="文件属性" />
+    <category term="sort" />
+    <category term="uniq" />
+    <category term="cut" />
+    <category term="wc" />
+    <category term="rz" />
+    <category term="sz" />
+    <category term="wget" />
+    <category term="文件类型" />
+    <category term="block" />
+    <category term="inode" />
+    <category term="软链接" />
+    <category term="元数据" />
+    <category term="vim" />
+    <category term="用户" />
+    <category term="cat" />
+    <category term="more" />
+    <category term="less" />
+    <category term="head" />
+    <category term="tail" />
+    <category term="用户组" />
+    <category term="shell环境变量" />
+    <category term="系统变量" />
+    <category term="切换用户" />
+    <category term="sudo" />
+    <category term="NFS" />
+    <category term="rsync" />
+    <category term="ssh" />
+    <category term="http" />
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/</id>
+        <title>虚拟机的快照、克隆</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/"/>
+        <content type="html">&lt;h2 id=&#34;虚拟机的快照&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的快照&#34;&gt;#&lt;/a&gt; 虚拟机的快照&lt;/h2&gt;
+&lt;p&gt;记录虚拟机某时刻的状态，随时可以还原到记录的状态（存档，读档）&lt;/p&gt;
+&lt;p&gt;注意：快照尽量在关机状态下拍摄&lt;/p&gt;
+&lt;h2 id=&#34;虚拟机的克隆&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的克隆&#34;&gt;#&lt;/a&gt; 虚拟机的克隆&lt;/h2&gt;
+&lt;p&gt;克隆的前提条件：必须在虚拟机关机状态下，才能克隆&lt;/p&gt;
+&lt;h3 id=&#34;克隆的两种方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#克隆的两种方式&#34;&gt;#&lt;/a&gt; 克隆的两种方式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;克隆当前虚拟机状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从快 照状态克隆&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;克隆类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#克隆类型&#34;&gt;#&lt;/a&gt; 克隆类型&lt;/h3&gt;
+&lt;p&gt;创建链接克隆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;克隆速度快&lt;/li&gt;
+&lt;li&gt;占用资源少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;受到母体的影响（如果源主机被删除，则克隆主机无法使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建完整克隆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不受到母体的影响（源主机被删除，克隆机可以继续使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;克隆速度慢&lt;/li&gt;
+&lt;li&gt;占用资源多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;** 注意：** 克隆出来的虚拟机和源主机，配置一模一样，要修改 &lt;code&gt;IP&lt;/code&gt; ，并且，只能一台一台启动&lt;/p&gt;
+&lt;h2 id=&#34;gui图形化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#gui图形化&#34;&gt;#&lt;/a&gt; GUI 图形化&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#修改网卡配置文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root@db02&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# nmtui&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#重启网卡 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl restart network&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ps：改完IP需重启Xshell&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194108653.png&#34; alt=&#34;image-20230406194108653&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194124988.png&#34; alt=&#34;image-20230406194124988&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194136771.png&#34; alt=&#34;image-20230406194136771&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="虚拟机快照" />
+        <category term="虚拟机克隆" />
+        <category term="GUI图形化" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+</feed>

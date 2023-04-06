@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>今天也请继续加油 • Posts by &#34;虚拟机快照&#34; tag</title>
+        <link>http://wuhegucheng.github.io</link>
+        <description></description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+        <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
+        <category>markdown</category>
+        <category>CentOS</category>
+        <category>虚拟机</category>
+        <category>网卡</category>
+        <category>网络模式</category>
+        <category>Xshell</category>
+        <category>虚拟机快照</category>
+        <category>虚拟机克隆</category>
+        <category>GUI图形化</category>
+        <category>Bash</category>
+        <category>命令提示符</category>
+        <category>命令快捷键</category>
+        <category>目录</category>
+        <category>路径</category>
+        <category>mkdir</category>
+        <category>touch</category>
+        <category>mv</category>
+        <category>tree</category>
+        <category>cp</category>
+        <category>grep</category>
+        <category>awk</category>
+        <category>which</category>
+        <category>文件属性</category>
+        <category>sort</category>
+        <category>uniq</category>
+        <category>cut</category>
+        <category>wc</category>
+        <category>rz</category>
+        <category>sz</category>
+        <category>wget</category>
+        <category>文件类型</category>
+        <category>block</category>
+        <category>inode</category>
+        <category>软链接</category>
+        <category>元数据</category>
+        <category>vim</category>
+        <category>用户</category>
+        <category>cat</category>
+        <category>more</category>
+        <category>less</category>
+        <category>head</category>
+        <category>tail</category>
+        <category>用户组</category>
+        <category>shell环境变量</category>
+        <category>系统变量</category>
+        <category>切换用户</category>
+        <category>sudo</category>
+        <category>NFS</category>
+        <category>rsync</category>
+        <category>ssh</category>
+        <category>http</category>
+        <item>
+            <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/</guid>
+            <title>虚拟机的快照、克隆</title>
+            <link>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/</link>
+            <category>虚拟机快照</category>
+            <category>虚拟机克隆</category>
+            <category>GUI图形化</category>
+            <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;虚拟机的快照&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的快照&#34;&gt;#&lt;/a&gt; 虚拟机的快照&lt;/h2&gt;
+&lt;p&gt;记录虚拟机某时刻的状态，随时可以还原到记录的状态（存档，读档）&lt;/p&gt;
+&lt;p&gt;注意：快照尽量在关机状态下拍摄&lt;/p&gt;
+&lt;h2 id=&#34;虚拟机的克隆&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的克隆&#34;&gt;#&lt;/a&gt; 虚拟机的克隆&lt;/h2&gt;
+&lt;p&gt;克隆的前提条件：必须在虚拟机关机状态下，才能克隆&lt;/p&gt;
+&lt;h3 id=&#34;克隆的两种方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#克隆的两种方式&#34;&gt;#&lt;/a&gt; 克隆的两种方式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;克隆当前虚拟机状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从快 照状态克隆&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;克隆类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#克隆类型&#34;&gt;#&lt;/a&gt; 克隆类型&lt;/h3&gt;
+&lt;p&gt;创建链接克隆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;克隆速度快&lt;/li&gt;
+&lt;li&gt;占用资源少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;受到母体的影响（如果源主机被删除，则克隆主机无法使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建完整克隆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不受到母体的影响（源主机被删除，克隆机可以继续使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;克隆速度慢&lt;/li&gt;
+&lt;li&gt;占用资源多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;** 注意：** 克隆出来的虚拟机和源主机，配置一模一样，要修改 &lt;code&gt;IP&lt;/code&gt; ，并且，只能一台一台启动&lt;/p&gt;
+&lt;h2 id=&#34;gui图形化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#gui图形化&#34;&gt;#&lt;/a&gt; GUI 图形化&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#修改网卡配置文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root@db02&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# nmtui&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#重启网卡 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl restart network&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ps：改完IP需重启Xshell&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194108653.png&#34; alt=&#34;image-20230406194108653&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194124988.png&#34; alt=&#34;image-20230406194124988&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194136771.png&#34; alt=&#34;image-20230406194136771&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
