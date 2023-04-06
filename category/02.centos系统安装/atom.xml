@@ -56,8 +56,115 @@
     <category term="ssh" />
     <category term="http" />
     <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/02.CentOS%E5%AE%89%E8%A3%85/</id>
+        <title>CentOS安装</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/02.CentOS%E5%AE%89%E8%A3%85/"/>
+        <content type="html">&lt;h1 id=&#34;centos安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#centos安装&#34;&gt;#&lt;/a&gt; CentOS 安装&lt;/h1&gt;
+&lt;p&gt;打开 CD/DVD 光驱 -&amp;gt; 使用 ISO 映像文件 -&amp;gt; 浏览（找到 iso 文件位置）-&amp;gt; 勾选 &amp;quot;启动时连接&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232308150.png&#34; alt=&#34;image-20220318232308150&#34;&gt;&lt;/p&gt;
+&lt;p&gt;开启虚拟机&lt;/p&gt;
+&lt;p&gt;呼出鼠标：Ctrl + Alt&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;red&#34;&gt;Install CentOS 7 安装 CentOS7 系统 (推荐)&lt;/font&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test this media &amp;amp; install CentOS 7 先测试镜像，然后再安装 CentOS7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;救援模式（修复系统，忘记密码，修改密码）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232455160.png&#34; alt=&#34;image-20220318232455160&#34;&gt;&lt;/p&gt;
+&lt;p&gt;选择英文 -&amp;gt; continue&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232552218.png&#34; alt=&#34;image-20220318232552218&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232702066.png&#34; alt=&#34;image-20220318232702066&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设置时区 DATE &amp;amp; TIME：Asia Shanghai&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232643123.png&#34; alt=&#34;image-20220318232643123&#34;&gt;&lt;/p&gt;
+&lt;p&gt;关闭 KDUMP 功能&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232737541.png&#34; alt=&#34;image-20220318232737541&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232751920.png&#34; alt=&#34;image-20220318232751920&#34;&gt;&lt;/p&gt;
+&lt;p&gt;磁盘分区&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232813349.png&#34; alt=&#34;image-20220318232813349&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232949907.png&#34; alt=&#34;image-20220318232949907&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/：根分区 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/boot：系统启动文件存放分区 500M &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;swap：虚拟内存分区 1024M 真实内存的1~2倍 最高8G&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233029577.png&#34; alt=&#34;image-20220318233029577&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233052284.png&#34; alt=&#34;image-20220318233052284&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233115380.png&#34; alt=&#34;image-20220318233115380&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233129826.png&#34; alt=&#34;image-20220318233129826&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233146258.png&#34; alt=&#34;image-20220318233146258&#34;&gt;&lt;/p&gt;
+&lt;p&gt;网络配置&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233203911.png&#34; alt=&#34;image-20220318233203911&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;DHCP：动态获取 IP 地址，地址有租期，租期到了，会更改 IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Address：IP 地址（计算机之间进行通信的手机号）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NetMask：子网掩码，划分网段，区分网段，决定计算机之间的网络是否可以正常通信&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DNS：域名解析服务器&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233247528.png&#34; alt=&#34;image-20220318233247528&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233444931.png&#34; alt=&#34;image-20220318233444931&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设置密码&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318233512767.png&#34; alt=&#34;image-20220318233512767&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="CentOS" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
+        <title>虚拟机网络</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+        <content type="html">&lt;h1 id=&#34;虚拟机网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机网络&#34;&gt;#&lt;/a&gt; 虚拟机网络&lt;/h1&gt;
+&lt;h2 id=&#34;网卡配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网卡配置&#34;&gt;#&lt;/a&gt; 网卡配置&lt;/h2&gt;
+&lt;p&gt;静态 &lt;code&gt;IP&lt;/code&gt; ，不使用 &lt;code&gt;DHCP&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;静态IP，不使用DHCP&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#IP 地址&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Address：10.0.0.100&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#子网掩码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Netmask：255.255.255.0（24位）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#网关&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Gateway：10.0.0.2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;虚拟机网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机网络模式&#34;&gt;#&lt;/a&gt; 虚拟机网络模式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;桥接模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;物理机网络与虚拟机网络共享&lt;/li&gt;
+&lt;li&gt;物理机与虚拟机需要在同一个网段&lt;/li&gt;
+&lt;li&gt;可用地址 0-255（除 0、1、2：网关、255）&lt;/li&gt;
+&lt;li&gt;耗费 IP（IP 不能冲突）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211342799.png&#34; alt=&#34;image-20220320211342799&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NAT 模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;路由器将一个公有地址转换为多个私有地址（NAT 动态网络地址转换）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DHCP&lt;/code&gt; ：动态获取 &lt;code&gt;IP&lt;/code&gt;  地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211622639.png&#34; alt=&#34;image-20220320211622639&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;仅主机模式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟机之间相互通信，无法上外网（局域网）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211651398.png&#34; alt=&#34;image-20220320211651398&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;虚拟机配置 NAT 上网&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204811328.png&#34; alt=&#34;image-20220320204811328&#34;&gt;&lt;/p&gt;
+&lt;p&gt;打开虚拟网络编辑器&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204841949.png&#34; alt=&#34;image-20220320204841949&#34;&gt;&lt;/p&gt;
+&lt;p&gt;检测服务器与外网是否可以正常通信&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; 命令（打电话） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; www.baidu.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="虚拟机" />
+        <category term="网卡" />
+        <category term="网络模式" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+    <entry>
         <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</id>
-        <title>VMware虚拟机</title>
+        <title>虚拟机的创建</title>
         <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/"/>
         <content type="html">&lt;h1 id=&#34;虚拟机的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的创建&#34;&gt;#&lt;/a&gt; 虚拟机的创建&lt;/h1&gt;
 &lt;p&gt;新建虚拟机&lt;/p&gt;
@@ -111,6 +218,103 @@
 &lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232005796.png&#34; alt=&#34;image-20220318232005796&#34;&gt;&lt;/p&gt;
 </content>
         <category term="虚拟机" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+        <title>Xshell的使用</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h1 id=&#34;xshell的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell的使用&#34;&gt;#&lt;/a&gt; Xshell 的使用&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;新建会话&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建会话&#34;&gt;#&lt;/a&gt; 新建会话&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212813333.png&#34; alt=&#34;image-20220320212813333&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;设置会话属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置会话属性&#34;&gt;#&lt;/a&gt; 设置会话属性&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212929548.png&#34; alt=&#34;image-20220320212929548&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;用户身份验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#用户身份验证&#34;&gt;#&lt;/a&gt; 用户身份验证&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213002275.png&#34; alt=&#34;image-20220320213002275&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;连接虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接虚拟机&#34;&gt;#&lt;/a&gt; 连接虚拟机&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213027809.png&#34; alt=&#34;image-20220320213027809&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213043806.png&#34; alt=&#34;image-20220320213043806&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;xshell连接虚拟机排错方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell连接虚拟机排错方案&#34;&gt;#&lt;/a&gt; Xshell 连接虚拟机排错方案&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#1. 搞清楚，谁连接谁 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;检测物理机跟虚拟机之间是否能通信 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; r &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ping &lt;span class=&#34;token number&#34;&gt;10.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.100&lt;/span&gt;（虚拟机的IP） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#2. 如何查看自己本机的 IP 地址 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Linux：ip a &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows：ipconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="Xshell" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/</id>
+        <title>虚拟机的快照、克隆</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/"/>
+        <content type="html">&lt;h2 id=&#34;虚拟机的快照&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的快照&#34;&gt;#&lt;/a&gt; 虚拟机的快照&lt;/h2&gt;
+&lt;p&gt;记录虚拟机某时刻的状态，随时可以还原到记录的状态（存档，读档）&lt;/p&gt;
+&lt;p&gt;注意：快照尽量在关机状态下拍摄&lt;/p&gt;
+&lt;h2 id=&#34;虚拟机的克隆&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的克隆&#34;&gt;#&lt;/a&gt; 虚拟机的克隆&lt;/h2&gt;
+&lt;p&gt;克隆的前提条件：必须在虚拟机关机状态下，才能克隆&lt;/p&gt;
+&lt;h3 id=&#34;克隆的两种方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#克隆的两种方式&#34;&gt;#&lt;/a&gt; 克隆的两种方式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;克隆当前虚拟机状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从快 照状态克隆&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;克隆类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#克隆类型&#34;&gt;#&lt;/a&gt; 克隆类型&lt;/h3&gt;
+&lt;p&gt;创建链接克隆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;克隆速度快&lt;/li&gt;
+&lt;li&gt;占用资源少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;受到母体的影响（如果源主机被删除，则克隆主机无法使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;创建完整克隆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不受到母体的影响（源主机被删除，克隆机可以继续使用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;克隆速度慢&lt;/li&gt;
+&lt;li&gt;占用资源多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;** 注意：** 克隆出来的虚拟机和源主机，配置一模一样，要修改 &lt;code&gt;IP&lt;/code&gt; ，并且，只能一台一台启动&lt;/p&gt;
+&lt;h2 id=&#34;gui图形化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#gui图形化&#34;&gt;#&lt;/a&gt; GUI 图形化&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#修改网卡配置文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root@db02&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;~&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# nmtui&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#重启网卡 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;systemctl restart network&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ps：改完IP需重启Xshell&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194108653.png&#34; alt=&#34;image-20230406194108653&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194124988.png&#34; alt=&#34;image-20230406194124988&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://zxcvmnb.oss-cn-shanghai.aliyuncs.com/img/image-20230406194136771.png&#34; alt=&#34;image-20230406194136771&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="虚拟机快照" />
+        <category term="虚拟机克隆" />
+        <category term="GUI图形化" />
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
 </feed>
