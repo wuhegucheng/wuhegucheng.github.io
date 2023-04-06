@@ -9,13 +9,18 @@
         <lastBuildDate>Mon, 13 Apr 2020 19:12:45 +0800</lastBuildDate>
         <category>markdown</category>
         <category>虚拟机</category>
-        <category>CentOS</category>
         <category>网卡</category>
         <category>网络模式</category>
-        <category>Xshell</category>
         <category>虚拟机快照</category>
         <category>虚拟机克隆</category>
         <category>GUI图形化</category>
+        <category>CentOS</category>
+        <category>Xshell</category>
+        <category>Bash</category>
+        <category>命令提示符</category>
+        <category>命令快捷键</category>
+        <category>目录</category>
+        <category>路径</category>
         <category>mkdir</category>
         <category>touch</category>
         <category>mv</category>
@@ -37,25 +42,20 @@
         <category>rz</category>
         <category>sz</category>
         <category>wget</category>
-        <category>Bash</category>
-        <category>命令提示符</category>
-        <category>命令快捷键</category>
         <category>文件类型</category>
-        <category>目录</category>
-        <category>路径</category>
         <category>block</category>
         <category>inode</category>
         <category>软链接</category>
         <category>元数据</category>
         <category>vim</category>
+        <category>用户</category>
         <category>用户组</category>
         <category>shell环境变量</category>
         <category>系统变量</category>
         <category>切换用户</category>
-        <category>用户</category>
         <category>sudo</category>
-        <category>NFS</category>
         <category>rsync</category>
+        <category>NFS</category>
         <category>ssh</category>
         <category>http</category>
         <item>
