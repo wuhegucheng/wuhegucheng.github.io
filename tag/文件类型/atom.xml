@@ -4,30 +4,30 @@
     <title>今天也请继续加油 • Posts by &#34;文件类型&#34; tag</title>
     <link href="http://wuhegucheng.github.io" />
     <updated>2023-04-01T08:46:15.000Z</updated>
+    <category term="CentOS" />
     <category term="markdown" />
     <category term="虚拟机" />
-    <category term="网卡" />
-    <category term="网络模式" />
+    <category term="Xshell" />
     <category term="虚拟机快照" />
     <category term="虚拟机克隆" />
     <category term="GUI图形化" />
-    <category term="CentOS" />
-    <category term="Xshell" />
+    <category term="网卡" />
+    <category term="网络模式" />
     <category term="Bash" />
     <category term="命令提示符" />
     <category term="命令快捷键" />
     <category term="目录" />
     <category term="路径" />
-    <category term="mkdir" />
-    <category term="touch" />
-    <category term="mv" />
-    <category term="tree" />
-    <category term="cp" />
     <category term="cat" />
     <category term="more" />
     <category term="less" />
     <category term="head" />
     <category term="tail" />
+    <category term="mkdir" />
+    <category term="touch" />
+    <category term="mv" />
+    <category term="tree" />
+    <category term="cp" />
     <category term="grep" />
     <category term="awk" />
     <category term="which" />
@@ -44,16 +44,16 @@
     <category term="inode" />
     <category term="软链接" />
     <category term="元数据" />
-    <category term="vim" />
     <category term="用户" />
+    <category term="sudo" />
     <category term="用户组" />
     <category term="shell环境变量" />
     <category term="系统变量" />
     <category term="切换用户" />
-    <category term="sudo" />
-    <category term="rsync" />
     <category term="NFS" />
+    <category term="vim" />
     <category term="ssh" />
+    <category term="rsync" />
     <category term="http" />
     <entry>
         <id>http://wuhegucheng.github.io/2023/04/01/linux/base/06.%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/01.%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7%E5%8F%8A%E7%B1%BB%E5%9E%8B/</id>
