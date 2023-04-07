@@ -4,34 +4,48 @@
     <title>今天也请继续加油 • Posts by &#34;02.centos系统安装&#34; category</title>
     <link href="http://wuhegucheng.github.io" />
     <updated>2023-04-01T08:46:15.000Z</updated>
-    <category term="CentOS" />
+    <category term="rsync" />
+    <category term="http" />
+    <category term="ssh" />
+    <category term="NFS" />
+    <category term="Bash" />
+    <category term="命令快捷键" />
     <category term="markdown" />
+    <category term="目录" />
+    <category term="路径" />
+    <category term="用户" />
+    <category term="用户组" />
+    <category term="shell环境变量" />
+    <category term="系统变量" />
+    <category term="切换用户" />
+    <category term="sudo" />
+    <category term="文件属性" />
+    <category term="文件类型" />
+    <category term="block" />
+    <category term="inode" />
+    <category term="软链接" />
+    <category term="元数据" />
+    <category term="vim" />
     <category term="虚拟机" />
-    <category term="Xshell" />
+    <category term="CentOS" />
+    <category term="网卡" />
+    <category term="网络模式" />
     <category term="虚拟机快照" />
     <category term="虚拟机克隆" />
     <category term="GUI图形化" />
-    <category term="网卡" />
-    <category term="网络模式" />
-    <category term="Bash" />
-    <category term="命令提示符" />
-    <category term="命令快捷键" />
-    <category term="目录" />
-    <category term="路径" />
-    <category term="cat" />
-    <category term="more" />
-    <category term="less" />
-    <category term="head" />
-    <category term="tail" />
     <category term="mkdir" />
     <category term="touch" />
     <category term="mv" />
     <category term="tree" />
     <category term="cp" />
+    <category term="cat" />
+    <category term="more" />
+    <category term="less" />
+    <category term="head" />
+    <category term="tail" />
     <category term="grep" />
     <category term="awk" />
     <category term="which" />
-    <category term="文件属性" />
     <category term="sort" />
     <category term="uniq" />
     <category term="cut" />
@@ -39,22 +53,66 @@
     <category term="rz" />
     <category term="sz" />
     <category term="wget" />
-    <category term="文件类型" />
-    <category term="block" />
-    <category term="inode" />
-    <category term="软链接" />
-    <category term="元数据" />
-    <category term="用户" />
-    <category term="sudo" />
-    <category term="用户组" />
-    <category term="shell环境变量" />
-    <category term="系统变量" />
-    <category term="切换用户" />
-    <category term="NFS" />
-    <category term="vim" />
-    <category term="ssh" />
-    <category term="rsync" />
-    <category term="http" />
+    <category term="命令提示符" />
+    <category term="Xshell" />
+    <entry>
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</id>
+        <title>虚拟机的创建</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/"/>
+        <content type="html">&lt;h1 id=&#34;虚拟机的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的创建&#34;&gt;#&lt;/a&gt; 虚拟机的创建&lt;/h1&gt;
+&lt;p&gt;新建虚拟机&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220327234018941.png&#34; alt=&#34;image-20220327234018941&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;典型（推荐）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自定义&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231302176.png&#34; alt=&#34;image-20220318231302176&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装程序光盘&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装程序光盘映像文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稍后安装操作系统（推荐）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231421915.png&#34; alt=&#34;image-20220318231421915&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Linux&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CentOS 7 64 位（CentOS 64 位）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231701504.png&#34; alt=&#34;image-20220318231701504&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;命名虚拟机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保存虚拟机位置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231838942.png&#34; alt=&#34;image-20220318231838942&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;磁盘容量：20G&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231920872.png&#34; alt=&#34;image-20220318231920872&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232005796.png&#34; alt=&#34;image-20220318232005796&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="虚拟机" />
+        <updated>2023-04-01T08:46:15.000Z</updated>
+    </entry>
     <entry>
         <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/02.CentOS%E5%AE%89%E8%A3%85/</id>
         <title>CentOS安装</title>
@@ -117,96 +175,49 @@
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/</id>
-        <title>虚拟机的创建</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/01.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%9B%E5%BB%BA/"/>
-        <content type="html">&lt;h1 id=&#34;虚拟机的创建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机的创建&#34;&gt;#&lt;/a&gt; 虚拟机的创建&lt;/h1&gt;
-&lt;p&gt;新建虚拟机&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220327234018941.png&#34; alt=&#34;image-20220327234018941&#34;&gt;&lt;/p&gt;
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
+        <title>虚拟机网络</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+        <content type="html">&lt;h1 id=&#34;虚拟机网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机网络&#34;&gt;#&lt;/a&gt; 虚拟机网络&lt;/h1&gt;
+&lt;h2 id=&#34;网卡配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网卡配置&#34;&gt;#&lt;/a&gt; 网卡配置&lt;/h2&gt;
+&lt;p&gt;静态 &lt;code&gt;IP&lt;/code&gt; ，不使用 &lt;code&gt;DHCP&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;静态IP，不使用DHCP&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#IP 地址&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Address：10.0.0.100&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#子网掩码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Netmask：255.255.255.0（24位）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#网关&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Gateway：10.0.0.2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;虚拟机网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机网络模式&#34;&gt;#&lt;/a&gt; 虚拟机网络模式&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;典型（推荐）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;自定义&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231302176.png&#34; alt=&#34;image-20220318231302176&#34;&gt;&lt;/p&gt;
+&lt;p&gt;桥接模式&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;安装程序光盘&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;安装程序光盘映像文件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;稍后安装操作系统（推荐）&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;物理机网络与虚拟机网络共享&lt;/li&gt;
+&lt;li&gt;物理机与虚拟机需要在同一个网段&lt;/li&gt;
+&lt;li&gt;可用地址 0-255（除 0、1、2：网关、255）&lt;/li&gt;
+&lt;li&gt;耗费 IP（IP 不能冲突）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231421915.png&#34; alt=&#34;image-20220318231421915&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211342799.png&#34; alt=&#34;image-20220320211342799&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NAT 模式&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Linux&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;CentOS 7 64 位（CentOS 64 位）&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;路由器将一个公有地址转换为多个私有地址（NAT 动态网络地址转换）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DHCP&lt;/code&gt; ：动态获取 &lt;code&gt;IP&lt;/code&gt;  地址&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231701504.png&#34; alt=&#34;image-20220318231701504&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211622639.png&#34; alt=&#34;image-20220320211622639&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;仅主机模式&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;命名虚拟机&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;保存虚拟机位置&lt;/p&gt;
+&lt;li&gt;虚拟机之间相互通信，无法上外网（局域网）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211651398.png&#34; alt=&#34;image-20220320211651398&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231838942.png&#34; alt=&#34;image-20220318231838942&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;磁盘容量：20G&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318231920872.png&#34; alt=&#34;image-20220318231920872&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;完成&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220318232005796.png&#34; alt=&#34;image-20220318232005796&#34;&gt;&lt;/p&gt;
-</content>
+&lt;p&gt;虚拟机配置 NAT 上网&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204811328.png&#34; alt=&#34;image-20220320204811328&#34;&gt;&lt;/p&gt;
+&lt;p&gt;打开虚拟网络编辑器&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204841949.png&#34; alt=&#34;image-20220320204841949&#34;&gt;&lt;/p&gt;
+&lt;p&gt;检测服务器与外网是否可以正常通信&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; 命令（打电话） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; www.baidu.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="虚拟机" />
-        <updated>2023-04-01T08:46:15.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
-        <title>Xshell的使用</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-        <content type="html">&lt;h1 id=&#34;xshell的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell的使用&#34;&gt;#&lt;/a&gt; Xshell 的使用&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;新建会话&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建会话&#34;&gt;#&lt;/a&gt; 新建会话&lt;/h3&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212813333.png&#34; alt=&#34;image-20220320212813333&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;设置会话属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置会话属性&#34;&gt;#&lt;/a&gt; 设置会话属性&lt;/h3&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212929548.png&#34; alt=&#34;image-20220320212929548&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;用户身份验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#用户身份验证&#34;&gt;#&lt;/a&gt; 用户身份验证&lt;/h3&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213002275.png&#34; alt=&#34;image-20220320213002275&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;h3 id=&#34;连接虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接虚拟机&#34;&gt;#&lt;/a&gt; 连接虚拟机&lt;/h3&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213027809.png&#34; alt=&#34;image-20220320213027809&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213043806.png&#34; alt=&#34;image-20220320213043806&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;xshell连接虚拟机排错方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell连接虚拟机排错方案&#34;&gt;#&lt;/a&gt; Xshell 连接虚拟机排错方案&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#1. 搞清楚，谁连接谁 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;检测物理机跟虚拟机之间是否能通信 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; r &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ping &lt;span class=&#34;token number&#34;&gt;10.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.100&lt;/span&gt;（虚拟机的IP） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#2. 如何查看自己本机的 IP 地址 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Linux：ip a &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows：ipconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Xshell" />
+        <category term="网卡" />
+        <category term="网络模式" />
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
     <entry>
@@ -272,49 +283,38 @@
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
     <entry>
-        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
-        <title>虚拟机网络</title>
-        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/03.%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-        <content type="html">&lt;h1 id=&#34;虚拟机网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机网络&#34;&gt;#&lt;/a&gt; 虚拟机网络&lt;/h1&gt;
-&lt;h2 id=&#34;网卡配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网卡配置&#34;&gt;#&lt;/a&gt; 网卡配置&lt;/h2&gt;
-&lt;p&gt;静态 &lt;code&gt;IP&lt;/code&gt; ，不使用 &lt;code&gt;DHCP&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;静态IP，不使用DHCP&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#IP 地址&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Address：10.0.0.100&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#子网掩码&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Netmask：255.255.255.0（24位）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#网关&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Gateway：10.0.0.2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;虚拟机网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机网络模式&#34;&gt;#&lt;/a&gt; 虚拟机网络模式&lt;/h2&gt;
+        <id>http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+        <title>Xshell的使用</title>
+        <link rel="alternate" href="http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+        <content type="html">&lt;h1 id=&#34;xshell的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell的使用&#34;&gt;#&lt;/a&gt; Xshell 的使用&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;桥接模式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;物理机网络与虚拟机网络共享&lt;/li&gt;
-&lt;li&gt;物理机与虚拟机需要在同一个网段&lt;/li&gt;
-&lt;li&gt;可用地址 0-255（除 0、1、2：网关、255）&lt;/li&gt;
-&lt;li&gt;耗费 IP（IP 不能冲突）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211342799.png&#34; alt=&#34;image-20220320211342799&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;新建会话&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建会话&#34;&gt;#&lt;/a&gt; 新建会话&lt;/h3&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212813333.png&#34; alt=&#34;image-20220320212813333&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;NAT 模式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;路由器将一个公有地址转换为多个私有地址（NAT 动态网络地址转换）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DHCP&lt;/code&gt; ：动态获取 &lt;code&gt;IP&lt;/code&gt;  地址&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211622639.png&#34; alt=&#34;image-20220320211622639&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;设置会话属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设置会话属性&#34;&gt;#&lt;/a&gt; 设置会话属性&lt;/h3&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212929548.png&#34; alt=&#34;image-20220320212929548&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;仅主机模式&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;虚拟机之间相互通信，无法上外网（局域网）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320211651398.png&#34; alt=&#34;image-20220320211651398&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;用户身份验证&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#用户身份验证&#34;&gt;#&lt;/a&gt; 用户身份验证&lt;/h3&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;虚拟机配置 NAT 上网&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204811328.png&#34; alt=&#34;image-20220320204811328&#34;&gt;&lt;/p&gt;
-&lt;p&gt;打开虚拟网络编辑器&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320204841949.png&#34; alt=&#34;image-20220320204841949&#34;&gt;&lt;/p&gt;
-&lt;p&gt;检测服务器与外网是否可以正常通信&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; 命令（打电话） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ping&lt;/span&gt; www.baidu.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="虚拟机" />
-        <category term="网卡" />
-        <category term="网络模式" />
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213002275.png&#34; alt=&#34;image-20220320213002275&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;连接虚拟机&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#连接虚拟机&#34;&gt;#&lt;/a&gt; 连接虚拟机&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213027809.png&#34; alt=&#34;image-20220320213027809&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213043806.png&#34; alt=&#34;image-20220320213043806&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;xshell连接虚拟机排错方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#xshell连接虚拟机排错方案&#34;&gt;#&lt;/a&gt; Xshell 连接虚拟机排错方案&lt;/h2&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#1. 搞清楚，谁连接谁 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;检测物理机跟虚拟机之间是否能通信 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; r &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;ping &lt;span class=&#34;token number&#34;&gt;10.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.0&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;.100&lt;/span&gt;（虚拟机的IP） &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#2. 如何查看自己本机的 IP 地址 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Linux：ip a &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;windows：ipconfig&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="Xshell" />
         <updated>2023-04-01T08:46:15.000Z</updated>
     </entry>
 </feed>

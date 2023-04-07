@@ -7,34 +7,48 @@
         <language>zh-CN</language>
         <pubDate>Sat, 01 Apr 2023 16:46:15 +0800</pubDate>
         <lastBuildDate>Sat, 01 Apr 2023 16:46:15 +0800</lastBuildDate>
-        <category>CentOS</category>
+        <category>rsync</category>
+        <category>http</category>
+        <category>ssh</category>
+        <category>NFS</category>
+        <category>Bash</category>
+        <category>命令快捷键</category>
         <category>markdown</category>
+        <category>目录</category>
+        <category>路径</category>
+        <category>用户</category>
+        <category>用户组</category>
+        <category>shell环境变量</category>
+        <category>系统变量</category>
+        <category>切换用户</category>
+        <category>sudo</category>
+        <category>文件属性</category>
+        <category>文件类型</category>
+        <category>block</category>
+        <category>inode</category>
+        <category>软链接</category>
+        <category>元数据</category>
+        <category>vim</category>
         <category>虚拟机</category>
-        <category>Xshell</category>
+        <category>CentOS</category>
+        <category>网卡</category>
+        <category>网络模式</category>
         <category>虚拟机快照</category>
         <category>虚拟机克隆</category>
         <category>GUI图形化</category>
-        <category>网卡</category>
-        <category>网络模式</category>
-        <category>Bash</category>
-        <category>命令提示符</category>
-        <category>命令快捷键</category>
-        <category>目录</category>
-        <category>路径</category>
-        <category>cat</category>
-        <category>more</category>
-        <category>less</category>
-        <category>head</category>
-        <category>tail</category>
         <category>mkdir</category>
         <category>touch</category>
         <category>mv</category>
         <category>tree</category>
         <category>cp</category>
+        <category>cat</category>
+        <category>more</category>
+        <category>less</category>
+        <category>head</category>
+        <category>tail</category>
         <category>grep</category>
         <category>awk</category>
         <category>which</category>
-        <category>文件属性</category>
         <category>sort</category>
         <category>uniq</category>
         <category>cut</category>
@@ -42,22 +56,8 @@
         <category>rz</category>
         <category>sz</category>
         <category>wget</category>
-        <category>文件类型</category>
-        <category>block</category>
-        <category>inode</category>
-        <category>软链接</category>
-        <category>元数据</category>
-        <category>用户</category>
-        <category>sudo</category>
-        <category>用户组</category>
-        <category>shell环境变量</category>
-        <category>系统变量</category>
-        <category>切换用户</category>
-        <category>NFS</category>
-        <category>vim</category>
-        <category>ssh</category>
-        <category>rsync</category>
-        <category>http</category>
+        <category>命令提示符</category>
+        <category>Xshell</category>
         <item>
             <guid isPermalink="true">http://wuhegucheng.github.io/2023/04/01/linux/base/08.%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/03.%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%861/</guid>
             <title>用户组管理1</title>
