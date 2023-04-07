@@ -37,6 +37,16 @@
             ]
         },
         {
+            "id": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/",
+            "url": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/",
+            "title": "Xshell的使用",
+            "date_published": "2023-04-01T08:46:15.000Z",
+            "content_html": "<h1 id=\"xshell的使用\"><a class=\"markdownIt-Anchor\" href=\"#xshell的使用\">#</a> Xshell 的使用</h1>\n<ul>\n<li>\n<h3 id=\"新建会话\"><a class=\"markdownIt-Anchor\" href=\"#新建会话\">#</a> 新建会话</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212813333.png\" alt=\"image-20220320212813333\"></p>\n<ul>\n<li>\n<h3 id=\"设置会话属性\"><a class=\"markdownIt-Anchor\" href=\"#设置会话属性\">#</a> 设置会话属性</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212929548.png\" alt=\"image-20220320212929548\"></p>\n<ul>\n<li>\n<h3 id=\"用户身份验证\"><a class=\"markdownIt-Anchor\" href=\"#用户身份验证\">#</a> 用户身份验证</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213002275.png\" alt=\"image-20220320213002275\"></p>\n<ul>\n<li>\n<h3 id=\"连接虚拟机\"><a class=\"markdownIt-Anchor\" href=\"#连接虚拟机\">#</a> 连接虚拟机</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213027809.png\" alt=\"image-20220320213027809\"></p>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213043806.png\" alt=\"image-20220320213043806\"></p>\n<h2 id=\"xshell连接虚拟机排错方案\"><a class=\"markdownIt-Anchor\" href=\"#xshell连接虚拟机排错方案\">#</a> Xshell 连接虚拟机排错方案</h2>\n<figure class=\"highlight python\"><figcaption data-lang=\"python\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">#1. 搞清楚，谁连接谁 </span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>检测物理机跟虚拟机之间是否能通信 </pre></td></tr><tr><td data-num=\"4\"></td><td><pre>windows <span class=\"token operator\">+</span> r </pre></td></tr><tr><td data-num=\"5\"></td><td><pre>ping <span class=\"token number\">10.0</span><span class=\"token number\">.0</span><span class=\"token number\">.100</span>（虚拟机的IP） </pre></td></tr><tr><td data-num=\"6\"></td><td><pre></pre></td></tr><tr><td data-num=\"7\"></td><td><pre><span class=\"token comment\">#2. 如何查看自己本机的 IP 地址 </span></pre></td></tr><tr><td data-num=\"8\"></td><td><pre>Linux：ip a </pre></td></tr><tr><td data-num=\"9\"></td><td><pre>windows：ipconfig</pre></td></tr></table></figure>",
+            "tags": [
+                "Xshell"
+            ]
+        },
+        {
             "id": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/",
             "url": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/05.%E5%BF%AB%E7%85%A7%E4%B8%8E%E5%85%8B%E9%9A%86/",
             "title": "虚拟机的快照、克隆",
@@ -46,16 +56,6 @@
                 "虚拟机快照",
                 "虚拟机克隆",
                 "GUI图形化"
-            ]
-        },
-        {
-            "id": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/",
-            "url": "http://wuhegucheng.github.io/2023/04/01/linux/base/02.CentOS%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/04.Xshell%E7%9A%84%E4%BD%BF%E7%94%A8/",
-            "title": "Xshell的使用",
-            "date_published": "2023-04-01T08:46:15.000Z",
-            "content_html": "<h1 id=\"xshell的使用\"><a class=\"markdownIt-Anchor\" href=\"#xshell的使用\">#</a> Xshell 的使用</h1>\n<ul>\n<li>\n<h3 id=\"新建会话\"><a class=\"markdownIt-Anchor\" href=\"#新建会话\">#</a> 新建会话</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212813333.png\" alt=\"image-20220320212813333\"></p>\n<ul>\n<li>\n<h3 id=\"设置会话属性\"><a class=\"markdownIt-Anchor\" href=\"#设置会话属性\">#</a> 设置会话属性</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320212929548.png\" alt=\"image-20220320212929548\"></p>\n<ul>\n<li>\n<h3 id=\"用户身份验证\"><a class=\"markdownIt-Anchor\" href=\"#用户身份验证\">#</a> 用户身份验证</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213002275.png\" alt=\"image-20220320213002275\"></p>\n<ul>\n<li>\n<h3 id=\"连接虚拟机\"><a class=\"markdownIt-Anchor\" href=\"#连接虚拟机\">#</a> 连接虚拟机</h3>\n</li>\n</ul>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213027809.png\" alt=\"image-20220320213027809\"></p>\n<p><img data-src=\"https://roger-hub.oss-cn-shanghai.aliyuncs.com/img_sre/image-20220320213043806.png\" alt=\"image-20220320213043806\"></p>\n<h2 id=\"xshell连接虚拟机排错方案\"><a class=\"markdownIt-Anchor\" href=\"#xshell连接虚拟机排错方案\">#</a> Xshell 连接虚拟机排错方案</h2>\n<figure class=\"highlight python\"><figcaption data-lang=\"python\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre><span class=\"token comment\">#1. 搞清楚，谁连接谁 </span></pre></td></tr><tr><td data-num=\"2\"></td><td><pre></pre></td></tr><tr><td data-num=\"3\"></td><td><pre>检测物理机跟虚拟机之间是否能通信 </pre></td></tr><tr><td data-num=\"4\"></td><td><pre>windows <span class=\"token operator\">+</span> r </pre></td></tr><tr><td data-num=\"5\"></td><td><pre>ping <span class=\"token number\">10.0</span><span class=\"token number\">.0</span><span class=\"token number\">.100</span>（虚拟机的IP） </pre></td></tr><tr><td data-num=\"6\"></td><td><pre></pre></td></tr><tr><td data-num=\"7\"></td><td><pre><span class=\"token comment\">#2. 如何查看自己本机的 IP 地址 </span></pre></td></tr><tr><td data-num=\"8\"></td><td><pre>Linux：ip a </pre></td></tr><tr><td data-num=\"9\"></td><td><pre>windows：ipconfig</pre></td></tr></table></figure>",
-            "tags": [
-                "Xshell"
             ]
         }
     ]
